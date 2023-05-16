@@ -1,0 +1,53 @@
+body {
+  font-family: "Red Hat Display";
+  background: #fbfbfb;
+}
+
+.specializations {
+  box-sizing: border-box;
+  /* grey1 */
+
+  background: #fff;
+  /* grey4 */
+  padding: 20px;
+  min-height: 300px;
+  border: 1px solid #adadad;
+  border-radius: 48px;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 56px;
+}
+
+.halfbackground {
+  background: linear-gradient(
+    to top,
+    #FFD097 0%,
+    #FFD097 50%,
+    white 50%,
+    white 100%
+  );
+}
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
