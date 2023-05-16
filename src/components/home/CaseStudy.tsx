@@ -6,7 +6,6 @@ import {
   Stack,
   Text,
   Image,
-  Container,
 } from "@chakra-ui/react";
 import Card from "./CardSolution";
 
