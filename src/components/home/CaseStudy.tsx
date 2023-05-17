@@ -7,7 +7,7 @@ import {
   Text,
   Image,
 } from "@chakra-ui/react";
-import Card from "./CardSolution";
+import Card from "./CardProject";
 
 const CaseStudy: React.FC = () => {
   return (
@@ -68,7 +68,7 @@ const CaseStudy: React.FC = () => {
             text={
               "LifePlan App pomaga odkryć własny potencjał oraz wzmocnić odporność psychiczną. Aplikacja umożliwia usprawnienie własnej pracy oraz zarządzanie czasem i zadaniami."
             }
-            buttonText={"->"}
+            buttonImg={"icons/arrow-right.svg"}
             href={""}
           />
         </Flex>
@@ -85,7 +85,7 @@ const CaseStudy: React.FC = () => {
             text={
               "LifePlan App pomaga odkryć własny potencjał oraz wzmocnić odporność psychiczną. Aplikacja umożliwia usprawnienie własnej pracy oraz zarządzanie czasem i zadaniami."
             }
-            buttonText={"->"}
+            buttonImg={"icons/arrow-right.svg"}
             href={""}
           />
         </Flex>

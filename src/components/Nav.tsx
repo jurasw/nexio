@@ -19,21 +19,22 @@ import {
 import {
   HamburgerIcon,
   CloseIcon,
+  ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
-import { useNavigate } from "react-router-dom";
 
 const Nav = () => {
   const { isOpen, onToggle } = useDisclosure();
-  const navigate = useNavigate();
 
   return (
     <Box>
       <Flex
         color={useColorModeValue("gray.600", "white")}
         minH={"60px"}
-        py={{ base: 5 }}
-        px={{ base: "10%" }}
+        py={{ base: 2 }}
+        px={"10%"}
+        borderStyle={"solid"}
+        borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
         <Flex
@@ -52,17 +53,17 @@ const Nav = () => {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
           <Image
-            onClick={() => {
-              navigate("/");
-            }}
-            style={{ marginRight: "auto", marginLeft: 0, float: "left" }}
-            maxH="80px"
-            src="logo.svg"
-            alt="logo"
+            py={"15px"}
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
+            src="logo.svg"
           />
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex
+            display={{ base: "none", md: "flex" }}
+            ml={10}
+            marginLeft="auto"
+            marginRight={"30px"}
+          >
             <DesktopNav />
           </Flex>
         </Flex>
@@ -74,27 +75,40 @@ const Nav = () => {
           spacing={6}
         >
           <Button
+            px="30px"
             as={"a"}
+            color="#fff"
             fontSize={"sm"}
-            fontWeight={400}
+            fontWeight={500}
             variant={"link"}
             href={"#"}
+            bg="#F19E38"
+            borderRadius={"40px"}
           >
-            Sign In
+            Kontakt{" "}
+            <Image
+              marginLeft="10px"
+              float="right"
+              src="icons/footer/mail.svg"
+            />
           </Button>
           <Button
             as={"a"}
             display={{ base: "none", md: "inline-flex" }}
+            borderWidth={"1px"}
+            borderColor="#F19E38"
+            padding="4px"
+            borderRadius={"48px"}
+            bg="rgba(255,255,255,0)"
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
-            bg={"pink.400"}
             href={"#"}
-            _hover={{
-              bg: "pink.300",
-            }}
+            // _hover={{
+            //   bg: "pink.300",
+            // }}
           >
-            Sign Up
+            <Image src="icons/language.svg" />
           </Button>
         </Stack>
       </Flex>
@@ -112,7 +126,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue("white", "gray.800");
 
   return (
-    <Stack direction={"row"} spacing={4} >
+    <Stack direction={"row"} spacing={4} alignItems={"center"}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
@@ -194,66 +208,70 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Stack p={4} display={{ md: "none" }}>
-      {/* {NAV_ITEMS.map((navItem) => (
+    <Stack
+      bg={useColorModeValue("white", "gray.800")}
+      p={4}
+      display={{ md: "none" }}
+    >
+      {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
-      ))} */}
+      ))}
     </Stack>
   );
 };
 
-// const MobileNavItem = ({ label, children, href }: NavItem) => {
-//   const { isOpen, onToggle } = useDisclosure();
+const MobileNavItem = ({ label, children, href }: NavItem) => {
+  const { isOpen, onToggle } = useDisclosure();
 
-//   return (
-//     <Stack spacing={4} onClick={children && onToggle}>
-//       <Flex
-//         py={2}
-//         as={Link}
-//         href={href ?? "#"}
-//         justify={"space-between"}
-//         align={"center"}
-//         _hover={{
-//           textDecoration: "none",
-//         }}
-//       >
-//         <Text
-//           fontWeight={600}
-//           color={useColorModeValue("gray.600", "gray.200")}
-//         >
-//           {label}
-//         </Text>
-//         {children && (
-//           <Icon
-//             as={ChevronDownIcon}
-//             transition={"all .25s ease-in-out"}
-//             transform={isOpen ? "rotate(180deg)" : ""}
-//             w={6}
-//             h={6}
-//           />
-//         )}
-//       </Flex>
+  return (
+    <Stack spacing={4} onClick={children && onToggle}>
+      <Flex
+        py={2}
+        as={Link}
+        href={href ?? "#"}
+        justify={"space-between"}
+        align={"center"}
+        _hover={{
+          textDecoration: "none",
+        }}
+      >
+        <Text
+          fontWeight={600}
+          color={useColorModeValue("gray.600", "gray.200")}
+        >
+          {label}
+        </Text>
+        {children && (
+          <Icon
+            as={ChevronDownIcon}
+            transition={"all .25s ease-in-out"}
+            transform={isOpen ? "rotate(180deg)" : ""}
+            w={6}
+            h={6}
+          />
+        )}
+      </Flex>
 
-//       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-//         <Stack
-//           mt={2}
-//           pl={4}
-//           borderLeft={1}
-//           borderStyle={"solid"}
-//           borderColor={useColorModeValue("gray.200", "gray.700")}
-//           align={"start"}
-//         >
-//           {children &&
-//             children.map((child) => (
-//               <Link key={child.label} py={2} href={child.href}>
-//                 {child.label}
-//               </Link>
-//             ))}
-//         </Stack>
-//       </Collapse>
-//     </Stack>
-//   );
-// };
+      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
+        <Stack
+          mt={2}
+          pl={4}
+          borderLeft={1}
+          borderStyle={"solid"}
+          borderColor={useColorModeValue("gray.200", "gray.700")}
+          align={"start"}
+        >
+          {children &&
+            children.map((child) => (
+              <Link key={child.label} py={2} href={child.href}>
+                {child.label}
+              </Link>
+            ))}
+        </Stack>
+      </Collapse>
+    </Stack>
+  );
+};
 
 interface NavItem {
   label: string;
@@ -264,15 +282,11 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Biznes",
-    href: "/biznes",
+    label: "Dla biznesu",
+    href: "#",
   },
   {
     label: "Kariera",
-    href: "/kariera",
-  },
-  {
-    label: "Kontakt",
     href: "#",
   },
 ];

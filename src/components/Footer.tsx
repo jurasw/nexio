@@ -8,6 +8,7 @@ import {
   Text,
   VisuallyHidden,
   useColorModeValue,
+  Image,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
@@ -149,7 +150,8 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      bg={"#F19E38"}
+      color="#000"
       rounded={"full"}
       w={8}
       h={8}
@@ -189,24 +191,67 @@ const Footer: React.FC = () => {
         <SimpleGrid
           templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}
           spacing={8}
+          py={50}
         >
           <Stack spacing={6}>
             <Box>
               <Logo />
             </Box>
           </Stack>
-          <Stack align={"flex-start"} minW={"250px"}>
+          <Stack align={"flex-start"} minW={"300px"}>
             <ListHeader>Nexio Management Sp. z o.o.</ListHeader>
-            <Text>ul. Szturmowa 2a</Text>
-            <Text>tel.: +48 22 244 13 50 </Text>
-            <Text>biuro@nexio.pl</Text>
+            <Text>
+              <Image
+                src={"icons/footer/map-pin.svg"}
+                marginRight="14px"
+                float="left"
+              />
+              ul. Szturmowa 2a, 02-678 Warszawa
+            </Text>
+            <Text>
+              <Image
+                src={"icons/footer/phone.svg"}
+                marginRight="14px"
+                float="left"
+              />
+              +48 22 244 13 50
+            </Text>
+            <Text className="footer-mail">
+              <Image
+                src={"icons/footer/mail.svg"}
+                marginRight="14px"
+                float="left"
+              />
+              biuro@nexio.pl
+            </Text>
             <Text>NIP: 525-23-65-494</Text>
           </Stack>
-          <Stack align={"flex-start"}>
+          <Stack align={"flex-start"} minW="250px">
             <ListHeader>OBSERWUJ NAS</ListHeader>
-            <Text>e-mail: biuro@nexio.pl</Text>
-            <Text>sprzedaż: sprzedaz@nexio.pl</Text>
-            <Text>rekrutacja: rekrutacja@nexio.pl</Text>
+            <Text className="footer-mail">
+              <Image
+                src={"icons/footer/mail.svg"}
+                marginRight="14px"
+                float="left"
+              />
+              biuro@nexio.pl
+            </Text>
+            <Text className="footer-mail">
+              <Image
+                src={"icons/footer/mail.svg"}
+                marginRight="14px"
+                float="left"
+              />
+              sprzedaz@nexio.pl
+            </Text>
+            <Text className="footer-mail">
+              <Image
+                src={"icons/footer/mail.svg"}
+                marginRight="14px"
+                float="left"
+              />
+              rekrutacja@nexio.pl
+            </Text>
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>NAWIGACJA</ListHeader>
@@ -220,16 +265,18 @@ const Footer: React.FC = () => {
         <Container
           as={Stack}
           maxW={"6xl"}
-          py={4}
+          p={45}
           direction={{ base: "column", md: "row" }}
           spacing={4}
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
+          borderTopWidth={1}
+          borderColor="#282828"
         >
           <Text>Copyright© 2023 Nexio Management. All rights reserved.</Text>
           <Stack direction={"row"} spacing={6}>
             <Link>polityka prywatności</Link>
-            <SocialButton label={"Twitter"} href={"#"}>
+            <SocialButton  label={"Twitter"} href={"#"}>
               <FaTwitter />
             </SocialButton>
             <SocialButton label={"YouTube"} href={"#"}>

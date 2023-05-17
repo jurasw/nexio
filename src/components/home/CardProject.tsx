@@ -14,13 +14,13 @@ interface Props {
   title: string;
   imageUrl: string;
   text: string;
-  buttonText: string;
+  buttonImg: string;
   href: string;
 }
 
-const Card: React.FC<Props> = ({ imageUrl, title, text, buttonText, href }) => {
+const Card: React.FC<Props> = ({ imageUrl, title, text, buttonImg, href }) => {
   return (
-    <Center py={6} style={{fontFamily: "Red Hat Display"}}>
+    <Center py={6} style={{ fontFamily: "Red Hat Display" }}>
       <Box
         borderRadius={"38px"}
         maxW={"445px"}
@@ -53,10 +53,15 @@ const Card: React.FC<Props> = ({ imageUrl, title, text, buttonText, href }) => {
           </Heading>
           <Text color={"gray.500"}>{text}</Text>
         </Stack>
-        <Stack mt={16} direction={"row"} spacing={4} align={"center"}>
-          <Stack direction={"column"} spacing={0} fontSize={"sm"}>
+        <Stack mt={16} direction={"row"} spacing={4} align={"right"}>
+          <Stack
+            direction={"column"}
+            spacing={0}
+            fontSize={"sm"}
+            marginLeft="auto"
+          >
             <Link href={href} color="#D07A0F" fontWeight={600}>
-              {buttonText}
+              <Image src={buttonImg} />
             </Link>
           </Stack>
         </Stack>
@@ -66,4 +71,3 @@ const Card: React.FC<Props> = ({ imageUrl, title, text, buttonText, href }) => {
 };
 
 export default Card;
-

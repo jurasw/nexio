@@ -10,10 +10,11 @@ import {
   Flex,
   Image,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <Container maxW={"7xl"} style={{ padding: "10%" }}>
+    <Container maxW={"7xl"} px={"10%"} py={"5%"}>
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -48,7 +49,7 @@ const Hero = () => {
               encoded with trust.
             </Text>
           </Heading>
-          <Text color={"gray.500"}>IT & consulting company</Text>
+          <Text color={"#000"}>IT & consulting company</Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
@@ -88,19 +89,76 @@ const Hero = () => {
             </div>
           </Stack>
         </Stack>
-        <Flex>
-          <Flex>
-            <div className="arrow bounce">
-              <a className="fa fa-arrow-down fa-2x" href="#"></a>
-            </div>
-          </Flex>
-          <Flex>
-            <div className="arrow bounce">
-              <a className="fa fa-arrow-down fa-2x" href="#"></a>
-            </div>
-          </Flex>
-        </Flex>
       </Stack>
+      <Flex direction={["column", "column", "row"]} marginTop="100px">
+        <Flex direction="column" w={["100%", "100%", "50%"]}>
+          <Text color="#A1A1A1" fontWeight={600} fontSize=" 10px">
+            PARTNERS & CLIENTS
+          </Text>
+          <div style={{ display: "flex" }}>
+            <Image src={"icons/companies/lot.svg"} />
+            <Image marginLeft="40px" src={"icons/companies/orange.svg"} />
+            <Image marginLeft="40px" src={"icons/companies/tmobile.svg"} />
+            <Image marginLeft="40px" src={"icons/companies/netia.svg"} />
+            <Image marginLeft="40px" src={"icons/companies/tvn.svg"} />
+            <Image marginLeft="40px" src={"icons/companies/fedex.svg"} />
+          </div>
+        </Flex>
+
+        <Flex direction="column" w={["100%", "100%", "50%"]} display="flex">
+          <div style={{ marginLeft: "auto", display: "flex"}}>
+            <Text
+              color="#000"
+              fontWeight={700}
+              fontSize="12px"
+              alignItems="center"
+              justifyContent="center"
+              display="flex"
+              marginRight={"20px"}
+            >
+              SCROLL DOWN
+            </Text>
+            <div
+              style={{
+                background: "#fff",
+                width: "60px",
+                height: "60px",
+                border: "1px solid #FFD097",
+                borderRadius: "100%",
+
+                alignItems: "center",
+                justifyContent: "center",
+                display: "flex",
+              }}
+            >
+              <Button
+                bg="#fff"
+                w="46px"
+                h="46px"
+                borderRadius={"100%"}
+                borderWidth={1}
+                borderColor="#E9E9E9"
+                margin="auto"
+              >
+                <motion.div
+                  animate={{ y: [-10, 10] }}
+                  transition={{
+                    repeat: Infinity,
+                    duration: 1,
+                    repeatType: "reverse",
+                  }}
+                >
+                  <Image
+                    position="relative"
+                    top={"-20px"}
+                    src={"icons/scroll-arrow.svg"}
+                  />
+                </motion.div>
+              </Button>
+            </div>
+          </div>
+        </Flex>
+      </Flex>
     </Container>
   );
 };

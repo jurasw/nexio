@@ -16,7 +16,6 @@ const About: React.FC = () => {
       justifyContent="center"
       alignItems="center"
       flexWrap="wrap"
-      marginTop={"100px"}
       style={{ fontFamily: "Red Hat Display", padding: "10%"}}
     >
       <Box flex={columnSize} maxWidth="100%" p={{ base: "1rem", md: "2rem" }}>
