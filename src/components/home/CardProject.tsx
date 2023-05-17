@@ -16,9 +16,10 @@ interface Props {
   text: string;
   buttonImg: string;
   href: string;
+  stack: string[];
 }
 
-const Card: React.FC<Props> = ({ imageUrl, title, text, buttonImg, href }) => {
+const Card: React.FC<Props> = ({ imageUrl, title, text, buttonImg, href, stack }) => {
   return (
     <Center py={6} style={{ fontFamily: "Red Hat Display" }}>
       <Box
@@ -42,6 +43,19 @@ const Card: React.FC<Props> = ({ imageUrl, title, text, buttonImg, href }) => {
             src={imageUrl}
             // layout={'fill'}
           />
+          <div
+            style={{
+              maxWidth: "100%",
+              paddingLeft: "20px",
+              top: "80%",
+              position: "absolute",
+              display: "flex",
+            }}
+          >
+             {stack.map((item) => ( <Text background="rgba(255, 255, 255, 0.95)" color="#F19E38" borderRadius={"9px"} padding="4px" px="10px" marginRight="10px">
+              {item}
+            </Text>))}
+          </div>
         </Box>
         <Stack paddingTop={"20%"}>
           <Heading

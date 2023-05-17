@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Button,
-  Flex,
-  Heading,
-  Stack,
-  Text,
-  Image,
-} from "@chakra-ui/react";
+import { Button, Flex, Heading, Stack, Text, Image } from "@chakra-ui/react";
 import Card from "./CardProject";
 
 const CaseStudy: React.FC = () => {
@@ -70,6 +63,7 @@ const CaseStudy: React.FC = () => {
             }
             buttonImg={"icons/arrow-right.svg"}
             href={""}
+            stack={["Flutter", "React JS", "iOS", "Android"]}
           />
         </Flex>
         <Flex
@@ -87,6 +81,7 @@ const CaseStudy: React.FC = () => {
             }
             buttonImg={"icons/arrow-right.svg"}
             href={""}
+            stack={["Flutter", "React JS", "iOS", "Android"]}
           />
         </Flex>
       </Flex>
