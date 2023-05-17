@@ -52,7 +52,7 @@ const Hero = () => {
           <Text color={"#000"}>IT & consulting company</Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
-            direction={{ base: "column", sm: "row" }}
+            direction={["column", "column", "row"]}
           >
             <Button
               rounded={"full"}
@@ -90,23 +90,42 @@ const Hero = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Flex direction={["column", "column", "row"]} marginTop="100px">
-        <Flex direction="column" w={["100%", "100%", "50%"]}>
-          <Text color="#A1A1A1" fontWeight={600} fontSize=" 10px">
-            PARTNERS & CLIENTS
-          </Text>
-          <div style={{ display: "flex" }}>
-            <Image src={"icons/companies/lot.svg"} />
-            <Image marginLeft="40px" src={"icons/companies/orange.svg"} />
-            <Image marginLeft="40px" src={"icons/companies/tmobile.svg"} />
-            <Image marginLeft="40px" src={"icons/companies/netia.svg"} />
-            <Image marginLeft="40px" src={"icons/companies/tvn.svg"} />
+      <Flex direction={["column", "row", "row"]} marginTop="100px">
+  <Flex direction="column" w={["100%", "100%", "60%"]} maxW={"100%"}>
+    <Text color="#A1A1A1" fontWeight={600} fontSize="10px">
+      PARTNERS & CLIENTS
+    </Text>
+    <div style={{ display: "flex", flexWrap: "wrap", maxWidth: "100%" }}>
+            <Image
+              src={"icons/companies/lot.svg"}
+              style={{ marginBottom: "10px" }}
+            />
+            <Image
+              marginLeft="40px"
+              src={"icons/companies/orange.svg"}
+              style={{ marginBottom: "10px" }}
+            />
+            <Image
+              marginLeft="40px"
+              src={"icons/companies/tmobile.svg"}
+              style={{ marginBottom: "10px" }}
+            />
+            <Image
+              marginLeft="40px"
+              src={"icons/companies/netia.svg"}
+              style={{ marginBottom: "10px" }}
+            />
+            <Image
+              marginLeft="40px"
+              src={"icons/companies/tvn.svg"}
+              style={{ marginBottom: "10px" }}
+            />
             <Image marginLeft="40px" src={"icons/companies/fedex.svg"} />
           </div>
         </Flex>
 
-        <Flex direction="column" w={["100%", "100%", "50%"]} display="flex">
-          <div style={{ marginLeft: "auto", display: "flex"}}>
+        <Flex direction="column" w={["100%", "100%", "40%"]} display="flex">
+          <div style={{ marginLeft: "auto", display: "flex" }}>
             <Text
               color="#000"
               fontWeight={700}

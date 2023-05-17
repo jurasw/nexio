@@ -104,44 +104,53 @@ const TestimonialsCarousel = () => {
         <br/>Oceny wszysktich klientów
       </Text>
       <Flex direction="column" alignItems="center" marginTop="100px">
-        <Flex width="100vw" justifyContent="center" alignItems="center" mb={4}>
-          {displayedTestimonials.map((testimonial) => (
-            <Box
-              bg={"white"}
-              key={testimonial.id}
-              border={"1px"}
-              borderColor="#C6C6C6"
-              borderRadius={"8px"}
-              height={"316px"}
-              width="634px"
-              borderWidth="1px"
-              p={4}
-              mx={2}
-            >
-              <Image src={testimonial.logoUrl} />
-              <Text fontSize="xl" mb={2}>
-                "{testimonial.testimonial}"
-              </Text>
-              <Text fontWeight="bold">{testimonial.name}</Text>
-              <Text>{testimonial.position}</Text>
-            </Box>
-          ))}
-        </Flex>
-        <Flex alignItems={"left"}>
-          {testimonials.map((testimonial, index) => (
-            <Box
-              key={testimonial.id}
-              width={index === activeIndex ? "41px" : "22px"}
-              height="8px"
-              borderRadius="20px"
-              bg={index === activeIndex ? "#F19E38" : "#FFD097"}
-              mx={2}
-              cursor="pointer"
-              onClick={() => handleSlideChange(index)}
-            />
-          ))}
-        </Flex>
-      </Flex>
+  <Flex
+    width="100%"
+    maxWidth="100%"
+    justifyContent="center"
+    alignItems="center"
+    flexWrap="wrap"
+    mb={4}
+  >
+    {displayedTestimonials.map((testimonial) => (
+      <Box
+        bg={"white"}
+        key={testimonial.id}
+        border={"1px"}
+        borderColor="#C6C6C6"
+        borderRadius={"8px"}
+        height={["auto", "316px"]}
+        width={["100%", "50%", "33.33%", "25%"]}
+        borderWidth="1px"
+        p={4}
+        mx={2}
+        my={2}
+      >
+        <Image src={testimonial.logoUrl} />
+        <Text fontSize="xl" mb={2}>
+          "{testimonial.testimonial}"
+        </Text>
+        <Text fontWeight="bold">{testimonial.name}</Text>
+        <Text>{testimonial.position}</Text>
+      </Box>
+    ))}
+  </Flex>
+  <Flex alignItems={"left"}>
+    {testimonials.map((testimonial, index) => (
+      <Box
+        key={testimonial.id}
+        width={index === activeIndex ? "41px" : "22px"}
+        height="8px"
+        borderRadius="20px"
+        bg={index === activeIndex ? "#F19E38" : "#FFD097"}
+        mx={2}
+        cursor="pointer"
+        onClick={() => handleSlideChange(index)}
+      />
+    ))}
+  </Flex>
+</Flex>
+
     </div>
   );
 };
