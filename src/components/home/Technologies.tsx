@@ -1,5 +1,4 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
-import TechTile from "./TechTile";
+import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
 import Title from "./Title";
 
 const Technologies: React.FC = () => {
@@ -43,8 +42,46 @@ const Technologies: React.FC = () => {
           </Text>
         </Flex>
       </Flex>
-
-      <Flex direction={["column", "row"]} marginTop={"50px"} gap={2}>
+      <Grid
+        marginTop={"50px"}
+        templateColumns={{
+          base: "1fr",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
+          xl: "repeat(6, 1fr)",
+        }}
+        gap={4}
+      >
+        {[
+          { title: "Python", imageUrl: "/icons/technologies/python.svg" },
+          { title: "JavaScript", imageUrl: "/icons/technologies/js.svg" },
+          { title: "React", imageUrl: "/icons/technologies/react.svg" },
+          { title: "Flutter", imageUrl: "/icons/technologies/flutter.svg" },
+          { title: "Angular", imageUrl: "/icons/technologies/angular.svg" },
+          { title: "C#", imageUrl: "/icons/technologies/cs.svg" },
+          { title: "Azure", imageUrl: "/icons/technologies/azure.svg" },
+          { title: "Java", imageUrl: "/icons/technologies/java.svg" },
+          { title: "Xamarin", imageUrl: "/icons/technologies/xamarin.svg" },
+          { title: "MUAI", imageUrl: "/icons/technologies/muai.svg" },
+          { title: "iOS", imageUrl: "/icons/technologies/ios.svg" },
+          { title: "Android", imageUrl: "/icons/technologies/android.svg" },
+        ].map((item, index) => (
+          <Box key={index} bg="rgba(255,255,255,0)" borderWidth="1px" borderColor="#CACACA" borderRadius={"15px"} p={4} py={"50px"} textAlign="center">
+            <img src={item.imageUrl} style={{ margin: "auto" }} />
+            <p
+              style={{
+                fontFamily: "Red Hat Display",
+                fontWeight: 700,
+                fontSize: "12px",
+                lineHeight: "22px",
+              }}
+            >
+              {item.title}
+            </p>
+          </Box>
+        ))}
+      </Grid>
+      {/* <Flex direction={["column", "row"]} marginTop={"50px"} gap={2}>
         <Flex direction="column" w={["100%", "50%"]} alignItems="center">
           <TechTile
             imageUrl={"/icons/technologies/flutter.svg"}
@@ -78,7 +115,7 @@ const Technologies: React.FC = () => {
             title={"Python"}
           />
         </Flex>
-      </Flex>
+      </Flex> */}
     </div>
   );
 };

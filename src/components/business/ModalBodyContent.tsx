@@ -120,6 +120,12 @@ const BusinessModalBodyContent = () => {
           </Box>
         ))}
       </Grid>
+      <Text color={"#000000"} fontSize="24px" marginTop={"20px"}>
+        Jeśli masz pytania, skontaktuj się z nami:
+      </Text>
+      <Text fontSize="24px" color="#F19E38" textDecoration={"underline"}>
+        sprzedaz@nexio.pl
+      </Text>
     </>
   );
 };
