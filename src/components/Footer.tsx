@@ -163,7 +163,8 @@ const SocialButton = ({
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+        bg: "#D07A0F",
+        color: "#000",
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -276,7 +277,7 @@ const Footer: React.FC = () => {
           <Text>Copyright© 2023 Nexio Management. All rights reserved.</Text>
           <Stack direction={"row"} spacing={6}>
             <Link>polityka prywatności</Link>
-            <SocialButton  label={"Twitter"} href={"#"}>
+            <SocialButton label={"Twitter"} href={"#"}>
               <FaTwitter />
             </SocialButton>
             <SocialButton label={"YouTube"} href={"#"}>

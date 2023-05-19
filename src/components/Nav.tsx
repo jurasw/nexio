@@ -15,6 +15,12 @@ import {
   useBreakpointValue,
   useDisclosure,
   Image,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalCloseButton,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -22,101 +28,190 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+import { useState } from "react";
+import BusinessModalBodyContent from "./business/ModalBodyContent";
+import CareerModalBodyContent from "./career/ModalBodyContent";
 
 const Nav = () => {
-  const { isOpen, onToggle } = useDisclosure();
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [business, setBusiness] = useState(false);
+  const [career, setCareer] = useState(false);
 
   return (
-    <Box>
-      <Flex
-        color={useColorModeValue("gray.600", "white")}
-        minH={"60px"}
-        py={{ base: 2 }}
-        px={"10%"}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
-        align={"center"}
-      >
+    <>
+      <Box>
         <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
+          color={useColorModeValue("gray.600", "white")}
+          minH={"60px"}
+          py={{ base: 2 }}
+          px={"10%"}
+          borderStyle={"solid"}
+          borderColor={useColorModeValue("gray.200", "gray.900")}
+          align={"center"}
         >
-          <IconButton
-            onClick={onToggle}
-            icon={
-              isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
-            }
-            variant={"ghost"}
-            aria-label={"Toggle Navigation"}
-          />
-        </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Image
-            py={"15px"}
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            src="logo.svg"
-          />
-
           <Flex
-            display={{ base: "none", md: "flex" }}
-            ml={10}
-            marginLeft="auto"
-            marginRight={"30px"}
+            flex={{ base: 1, md: "auto" }}
+            ml={{ base: -2 }}
+            display={{ base: "flex", md: "none" }}
           >
-            <DesktopNav />
+            <IconButton
+              onClick={() => {
+                setMobileMenu(!mobileMenu);
+              }}
+              icon={
+                mobileMenu ? (
+                  <CloseIcon w={3} h={3} />
+                ) : (
+                  <HamburgerIcon w={5} h={5} />
+                )
+              }
+              variant={"ghost"}
+              aria-label={"Toggle Navigation"}
+            />
           </Flex>
+          <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+            <Image
+              py={"15px"}
+              textAlign={useBreakpointValue({ base: "center", md: "left" })}
+              src="logo.svg"
+            />
+
+            <Flex
+              display={{ base: "none", md: "flex" }}
+              ml={10}
+              marginLeft="auto"
+              marginRight={"30px"}
+            >
+              <DesktopNav />
+            </Flex>
+          </Flex>
+
+          <Stack
+            flex={{ base: 1, md: 0 }}
+            justify={"flex-end"}
+            direction={"row"}
+            spacing={6}
+          >
+            <Button
+              rounded={"full"}
+              display="flex"
+              size={"lg"}
+              bg="rgba(255, 208, 151, 0)"
+              fontWeight={"normal"}
+              _hover={{
+                borderWidth: 0,
+                borderColor: "#F19E38",
+                bg: "rgba(255, 208, 151, 0.2)",
+              }}
+              onClick={() => {
+                setBusiness(!business);
+              }}
+            >
+              Dla biznesu
+            </Button>
+            <Button
+              rounded={"full"}
+              display="flex"
+              size={"lg"}
+              bg="rgba(255, 208, 151, 0)"
+              fontWeight={"normal"}
+              _hover={{
+                borderWidth: 0,
+                borderColor: "#F19E38",
+                bg: "rgba(255, 208, 151, 0.2)",
+              }}
+              onClick={() => {
+                setCareer(!career);
+              }}
+            >
+              Kariera
+            </Button>
+
+            <Button
+              px="30px"
+              as={"a"}
+              color="#fff"
+              fontSize={"sm"}
+              fontWeight={500}
+              variant={"link"}
+              href={"#"}
+              bg="#F19E38"
+              borderRadius={"40px"}
+              _hover={{
+                bg: "#D07A0F",
+                color: "#fff",
+              }}
+            >
+              Kontakt
+              <Image
+                marginLeft="10px"
+                float="right"
+                src="icons/footer/mail.svg"
+              />
+            </Button>
+            <Button
+              as={"a"}
+              display={{ base: "none", md: "inline-flex" }}
+              borderWidth={"1px"}
+              borderColor="#F19E38"
+              padding="4px"
+              borderRadius={"48px"}
+              bg="rgba(255,255,255,0)"
+              fontSize={"sm"}
+              fontWeight={600}
+              color={"white"}
+              href={"#"}
+              // _hover={{
+              //   bg: "pink.300",
+              // }}
+            >
+              <Image src="icons/language.svg" />
+            </Button>
+          </Stack>
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={6}
-        >
-          <Button
-            px="30px"
-            as={"a"}
-            color="#fff"
-            fontSize={"sm"}
-            fontWeight={500}
-            variant={"link"}
-            href={"#"}
-            bg="#F19E38"
-            borderRadius={"40px"}
-          >
-            Kontakt{" "}
-            <Image
-              marginLeft="10px"
-              float="right"
-              src="icons/footer/mail.svg"
-            />
-          </Button>
-          <Button
-            as={"a"}
-            display={{ base: "none", md: "inline-flex" }}
-            borderWidth={"1px"}
-            borderColor="#F19E38"
-            padding="4px"
-            borderRadius={"48px"}
-            bg="rgba(255,255,255,0)"
-            fontSize={"sm"}
-            fontWeight={600}
-            color={"white"}
-            href={"#"}
-            // _hover={{
-            //   bg: "pink.300",
-            // }}
-          >
-            <Image src="icons/language.svg" />
-          </Button>
-        </Stack>
-      </Flex>
-
-      <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse>
-    </Box>
+        <Collapse in={business} animateOpacity>
+          <MobileNav />
+        </Collapse>
+      </Box>
+      <Modal
+        id="biznes"
+        isOpen={business}
+        onClose={() => {
+          setBusiness(!business);
+        }}
+      >
+        <ModalOverlay />
+        <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
+          <ModalHeader fontSize="38px" paddingTop="50px">
+            Zadbaj o rozwój swojego biznesu z zaufanym partnerem
+            technologicznym.
+          </ModalHeader>
+          <ModalCloseButton margin="50px" />
+          <ModalBody>
+            <BusinessModalBodyContent />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+      <Modal
+        id="kariera"
+        isOpen={career}
+        onClose={() => {
+          setCareer(!career);
+        }}
+      >
+        <ModalOverlay />
+        <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
+          <ModalHeader fontSize="38px" paddingTop="50px">
+            Kształtuj swoją karierę z Nexio.
+          </ModalHeader>
+          <ModalCloseButton margin="50px" />
+          <ModalBody>
+            <CareerModalBodyContent />
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import { Box, Flex, Text, Image, Heading } from "@chakra-ui/react";
 import { useState } from "react";
+import Title from "./Title";
 
 // Testimonial data
 const testimonials = [
@@ -70,10 +71,7 @@ const TestimonialsCarousel = () => {
         // borderTop: "1px solid #000000",
       }}
     >
-      <Text color="#F19E38" fontWeight={600} fontSize=" 12px">
-        <Image float="left" marginRight="10px" src={"minilogo.svg"} />
-        REFERENCJE
-      </Text>
+      <Title title={"REFERENCJE"} />
       <Heading fontSize={"48px"} fontWeight={400}>
         <Text
           as={"span"}
@@ -101,56 +99,56 @@ const TestimonialsCarousel = () => {
         {Array.from({ length: 5 }).map((_) => (
           <Image float="right" marginLeft="10px" src={"icons/star.svg"} />
         ))}
-        <br/>Oceny wszysktich klientów
+        <br />
+        Oceny wszysktich <span style={{ color: "#F19E38" }}>{" klientów"}</span>
       </Text>
       <Flex direction="column" alignItems="center" marginTop="100px">
-  <Flex
-    width="100%"
-    maxWidth="100%"
-    justifyContent="center"
-    alignItems="center"
-    flexWrap="wrap"
-    mb={4}
-  >
-    {displayedTestimonials.map((testimonial) => (
-      <Box
-        bg={"white"}
-        key={testimonial.id}
-        border={"1px"}
-        borderColor="#C6C6C6"
-        borderRadius={"8px"}
-        height={["auto", "316px"]}
-        width={["100%", "50%", "33.33%", "25%"]}
-        borderWidth="1px"
-        p={4}
-        mx={2}
-        my={2}
-      >
-        <Image src={testimonial.logoUrl} />
-        <Text fontSize="xl" mb={2}>
-          "{testimonial.testimonial}"
-        </Text>
-        <Text fontWeight="bold">{testimonial.name}</Text>
-        <Text>{testimonial.position}</Text>
-      </Box>
-    ))}
-  </Flex>
-  <Flex alignItems={"left"}>
-    {testimonials.map((testimonial, index) => (
-      <Box
-        key={testimonial.id}
-        width={index === activeIndex ? "41px" : "22px"}
-        height="8px"
-        borderRadius="20px"
-        bg={index === activeIndex ? "#F19E38" : "#FFD097"}
-        mx={2}
-        cursor="pointer"
-        onClick={() => handleSlideChange(index)}
-      />
-    ))}
-  </Flex>
-</Flex>
-
+        <Flex
+          width="100%"
+          maxWidth="100%"
+          justifyContent="center"
+          alignItems="center"
+          flexWrap="wrap"
+          mb={4}
+        >
+          {displayedTestimonials.map((testimonial) => (
+            <Box
+              bg={"white"}
+              key={testimonial.id}
+              border={"1px"}
+              borderColor="#C6C6C6"
+              borderRadius={"8px"}
+              height={["auto", "316px"]}
+              width={["100%", "50%", "33.33%", "25%"]}
+              borderWidth="1px"
+              p={4}
+              mx={2}
+              my={2}
+            >
+              <Image src={testimonial.logoUrl} />
+              <Text fontSize="xl" mb={2}>
+                "{testimonial.testimonial}"
+              </Text>
+              <Text fontWeight="bold">{testimonial.name}</Text>
+              <Text>{testimonial.position}</Text>
+            </Box>
+          ))}
+        </Flex>
+        <Flex alignItems={"left"}>
+          {testimonials.map((testimonial, index) => (
+            <Box
+              key={testimonial.id}
+              width={index === activeIndex ? "41px" : "22px"}
+              height="8px"
+              borderRadius="20px"
+              bg={index === activeIndex ? "#F19E38" : "#FFD097"}
+              mx={2}
+              cursor="pointer"
+              onClick={() => handleSlideChange(index)}
+            />
+          ))}
+        </Flex>
+      </Flex>
     </div>
   );
 };

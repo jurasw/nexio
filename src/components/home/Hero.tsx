@@ -62,6 +62,10 @@ const Hero = () => {
               border="2px"
               borderColor={"#F19E38"}
               bg={"rgba(255, 255, 255, 0)"}
+              _hover={{
+                borderColor: "#F19E38",
+                bg: "rgba(255, 208, 151, 0.2)",
+              }}
             >
               Porozmawiaj z ekspertem
             </Button>
@@ -73,11 +77,17 @@ const Hero = () => {
                 alignItems: "center",
               }}
             >
-              <Link
-                display="flex"
+              <Button
                 rounded={"full"}
+                display="flex"
                 size={"lg"}
+                bg="rgba(255, 208, 151, 0)"
                 fontWeight={"normal"}
+                _hover={{
+                  borderWidth: 0,
+                  borderColor: "#F19E38",
+                  bg: "rgba(255, 208, 151, 0.2)",
+                }}
               >
                 Nasza oferta
                 <Image
@@ -85,17 +95,24 @@ const Hero = () => {
                   marginLeft="10px"
                   src={"arrow-right-circle.svg"}
                 />
-              </Link>
+              </Button>
             </div>
           </Stack>
         </Stack>
       </Stack>
       <Flex direction={["column", "row", "row"]} marginTop="100px">
-  <Flex direction="column" w={["100%", "100%", "60%"]} maxW={"100%"}>
-    <Text color="#A1A1A1" fontWeight={600} fontSize="10px">
-      PARTNERS & CLIENTS
-    </Text>
-    <div style={{ display: "flex", flexWrap: "wrap", maxWidth: "100%" }}>
+        <Flex direction="column" w={["100%", "100%", "60%"]} maxW={"100%"}>
+          <Text color="#A1A1A1" fontWeight={600} fontSize="10px">
+            PARTNERS & CLIENTS
+          </Text>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              maxWidth: "100%",
+              marginTop: "20px",
+            }}
+          >
             <Image
               src={"icons/companies/lot.svg"}
               style={{ marginBottom: "10px" }}

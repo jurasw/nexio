@@ -19,7 +19,13 @@ interface Props {
   stack: string[];
 }
 
-const Card: React.FC<Props> = ({ imageUrl, title, text, buttonImg, href, stack }) => {
+const Card: React.FC<Props> = ({
+  title,
+  text,
+  buttonImg,
+  href,
+  stack,
+}) => {
   return (
     <Center py={6} style={{ fontFamily: "Red Hat Display" }}>
       <Box
@@ -31,33 +37,27 @@ const Card: React.FC<Props> = ({ imageUrl, title, text, buttonImg, href, stack }
         p={6}
         overflow={"hidden"}
       >
-        <Box
-          h={"210px"}
-          bg={"gray.100"}
-          mt={-6}
-          mx={-6}
-          mb={6}
-          pos={"relative"}
+        <div
+          style={{
+            display: "flex",
+          }}
         >
-          <Image
-            src={imageUrl}
-            // layout={'fill'}
-          />
-          <div
-            style={{
-              maxWidth: "100%",
-              paddingLeft: "20px",
-              top: "80%",
-              position: "absolute",
-              display: "flex",
-            }}
-          >
-             {stack.map((item) => ( <Text background="rgba(255, 255, 255, 0.95)" color="#F19E38" borderRadius={"9px"} padding="4px" px="10px" marginRight="10px">
+          {stack.map((item) => (
+            <Text
+              background="rgba(255, 208, 151, 0.3)"
+              color="#F19E38"
+              borderRadius={"9px"}
+              padding="4px"
+              px="10px"
+              margin="10px"
+              fontSize="10px"
+              fontWeight={700}
+            >
               {item}
-            </Text>))}
-          </div>
-        </Box>
-        <Stack paddingTop={"20%"}>
+            </Text>
+          ))}
+        </div>
+        <Stack paddingTop={"40px"}>
           <Heading
             color={useColorModeValue("gray.700", "white")}
             fontSize={"2xl"}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Flex, Heading, Stack, Text, Image } from "@chakra-ui/react";
 import Card from "./CardProject";
+import Title from "./Title";
 
 const CaseStudy: React.FC = () => {
   return (
@@ -9,15 +10,13 @@ const CaseStudy: React.FC = () => {
         paddingTop: "20px",
         background: "#FDFCFC",
         padding: "10%",
-        backgroundImage: "url('/background2.png')",
-        backgroundSize: "cover",
+        backgroundImage: "url('/bgCase.png')",
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Stack spacing={0} align={"center"} marginBottom={"80px"}>
-        <Text color="#F19E38" fontWeight={600} fontSize=" 12px">
-          <Image float="left" marginRight="10px" src={"minilogo.svg"} />
-          CASE STUDY
-        </Text>
+        <Title title={"CASE STUDY"} />
         <Heading>
           <Text
             as={"span"}
@@ -93,6 +92,7 @@ const CaseStudy: React.FC = () => {
           fontWeight={"normal"}
           px={6}
           bg={"#000"}
+          _hover={{ bg: "#343434" }}
         >
           Porozmawiaj z ekspertem
           <Image marginLeft="10px" src={"arrow-up-right.svg"} />

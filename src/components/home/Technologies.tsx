@@ -1,15 +1,13 @@
 import { Flex, Heading, Text, Image } from "@chakra-ui/react";
 import TechTile from "./TechTile";
+import Title from "./Title";
 
 const Technologies: React.FC = () => {
   return (
     <div style={{ padding: "10%" }}>
       <Flex direction={["column", "row"]}>
         <Flex direction="column" w={["100%", "50%"]}>
-          <Text color="#F19E38" fontWeight={600} fontSize=" 12px">
-            <Image float="left" marginRight="10px" src={"minilogo.svg"} />
-            TECHNOLOGIA
-          </Text>
+          <Title title={"TECHNOLOGIA"} />
           <Heading lineHeight={1.1} fontWeight={600} fontSize={"48px"}>
             <Text
               as={"span"}

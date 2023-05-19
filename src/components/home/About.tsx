@@ -8,6 +8,7 @@ import {
   Text,
   useBreakpointValue,
 } from "@chakra-ui/react";
+import Title from "./Title";
 
 const About: React.FC = () => {
   const columnSize = useBreakpointValue({ base: "100%", md: "50%" });
@@ -19,10 +20,7 @@ const About: React.FC = () => {
       style={{ fontFamily: "Red Hat Display", padding: "10%"}}
     >
       <Box flex={columnSize} maxWidth="100%" p={{ base: "1rem", md: "2rem" }}>
-        <Text color="#F19E38" fontWeight={600} fontSize=" 12px">
-          <Image float="left" marginRight="10px" src={"minilogo.svg"} />
-          POZNAJ NAS
-        </Text>
+        <Title title={"OZNAJ NAS"} />
         <Heading fontSize={"48px"} fontWeight={400}>
           <Text
             as={"span"}
@@ -95,7 +93,7 @@ const About: React.FC = () => {
         alignItems="center"
       >
         <Image
-          src={"nexio_about.png"}
+          src={"about.png"}
           alt={"title"}
           maxW="100%"
           maxH="100%"
