@@ -7,7 +7,6 @@ import {
   Stack,
   Text,
   VisuallyHidden,
-  useColorModeValue,
   Image,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";

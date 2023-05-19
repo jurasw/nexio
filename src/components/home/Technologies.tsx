@@ -1,4 +1,4 @@
-import { Flex, Heading, Text, Image } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import TechTile from "./TechTile";
 import Title from "./Title";
 

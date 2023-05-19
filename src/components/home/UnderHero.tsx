@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Heading, Text, Image } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import Card from "./CardSolution";
 import Title from "./Title";
 

@@ -6,7 +6,6 @@ import {
   Button,
   Icon,
   IconProps,
-  Link,
   Flex,
   Image,
 } from "@chakra-ui/react";
