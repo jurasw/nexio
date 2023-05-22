@@ -16,10 +16,11 @@ const Home: React.FC = () => {
         backgroundSize: "contain",
         fontFamily: "Red Hat Display",
         backgroundRepeat: "no-repeat",
+        width: "100%" 
       }}
     >
       <Nav />
-      <div>
+      <div style={{ }}>
         <Hero />
         <MyComponent />
         <Technologies />
