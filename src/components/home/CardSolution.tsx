@@ -1,11 +1,10 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import {
   Box,
   Center,
   Heading,
   Text,
   Stack,
-  Link,
   useColorModeValue,
   Image,
 } from "@chakra-ui/react";
@@ -14,11 +13,10 @@ interface Props {
   title: string;
   imageUrl: string;
   text: string;
-  buttonText: string;
-  href: string;
+  children: ReactNode;
 }
 
-const Card: React.FC<Props> = ({ imageUrl, title, text, buttonText, href }) => {
+const Card: React.FC<Props> = ({ imageUrl, title, text, children }) => {
   return (
     <Center py={6} style={{fontFamily: "Red Hat Display"}}>
       <Box
@@ -54,11 +52,7 @@ const Card: React.FC<Props> = ({ imageUrl, title, text, buttonText, href }) => {
           <Text color={"gray.500"}>{text}</Text>
         </Stack>
         <Stack mt={16} direction={"row"} spacing={4} align={"center"}>
-          <Stack direction={"column"} spacing={0} fontSize={"sm"}>
-            <Link href={href} color="#D07A0F" fontWeight={600}>
-              {buttonText}
-            </Link>
-          </Stack>
+        {children}
         </Stack>
       </Box>
     </Center>
