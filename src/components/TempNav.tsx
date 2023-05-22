@@ -19,6 +19,7 @@ import {
   ModalBody,
   ModalCloseButton,
   Spacer,
+  Link
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import BusinessModalBodyContent from "./business/ModalBodyContent";
@@ -81,10 +82,12 @@ export default function Simple() {
                   Kariera
                 </Button>
 
-                <Button
+                <Link
                   px="30px"
+                  py="10px"
                   color="#fff"
                   fontSize={"sm"}
+                  href="#footer"
                   fontWeight={500}
                   bg="#F19E38"
                   mx="10px"
@@ -100,7 +103,7 @@ export default function Simple() {
                     float="right"
                     src="icons/footer/mail.svg"
                   />
-                </Button>
+                </Link>
 
                 <MenuButton
                   textAlign="center"

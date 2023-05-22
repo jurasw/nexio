@@ -8,6 +8,7 @@ import {
   IconProps,
   Flex,
   Image,
+  Link,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
@@ -65,17 +66,20 @@ const Hero = () => {
             spacing={{ base: 4, sm: 6 }}
             direction={["column", "column", "row"]}
           >
-            <Button
+            <Link
               rounded={"full"}
               size={"lg"}
               fontWeight={"normal"}
+              href="#footer"
               px={6}
+              py={"10px"}
               border="2px"
               borderColor={"#F19E38"}
               bg={"rgba(255, 255, 255, 0)"}
               _hover={{
                 borderColor: "#F19E38",
                 bg: "rgba(255, 208, 151, 0.2)",
+                color: "#000",
               }}
               _active={{
                 borderColor: "#F19E38",
@@ -83,7 +87,7 @@ const Hero = () => {
               }}
             >
               Porozmawiaj z ekspertem
-            </Button>
+            </Link>
             <div
               style={{
                 justifyContent: "center",
@@ -102,8 +106,8 @@ const Hero = () => {
                   borderWidth: 0,
                   borderColor: "#F19E38",
                   bg: "rgba(255, 208, 151, 0.2)",
+                  color: "#000",
                 }}
-                _focus={{ _focus: "none" }}
               >
                 Nasza oferta
                 <Image

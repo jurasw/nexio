@@ -193,6 +193,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <Box
+        id="footer"
         bg={"#000"}
         color={"#ffffff"}
         style={{ fontFamily: "Red Hat Display" }}
@@ -345,10 +346,8 @@ const Footer: React.FC = () => {
       <Modal id="polityka" isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent maxW="1200px" borderRadius="32px">
-          <ModalHeader>
-            Polityka prywatności
-          </ModalHeader>
-          <ModalCloseButton/>
+          <ModalHeader>Polityka prywatności</ModalHeader>
+          <ModalCloseButton />
           <ModalBody>
             <div>
               <p>&nbsp;</p>
