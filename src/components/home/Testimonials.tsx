@@ -20,30 +20,30 @@ const testimonials = [
       "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam nec nulla sit amet nisi aliquet euismod.",
     position: "CTO",
   },
-  {
-    id: 3,
-    logoUrl: "testimonials_logo.svg",
-    name: "David Johnson",
-    testimonial:
-      "Phasellus iaculis consectetur nisl ut semper. Ut eu elit tincidunt, fermentum risus a, condimentum lectus.",
-    position: "CTO",
-  },
-  {
-    id: 4,
-    logoUrl: "testimonials_logo.svg",
-    name: "Emily Davis",
-    testimonial:
-      "Aliquam euismod nunc sed ligula semper interdum. Nullam pellentesque lacus vitae turpis auctor, at auctor nisl gravida.",
-    position: "CTO",
-  },
-  {
-    id: 5,
-    logoUrl: "testimonials_logo.svg",
-    name: "Michael Wilson",
-    testimonial:
-      "Cras eget ipsum et est dapibus dignissim. Nam gravida ligula at magna dignissim, eget vestibulum sem dapibus.",
-    position: "CTO",
-  },
+  // {
+  //   id: 3,
+  //   logoUrl: "testimonials_logo.svg",
+  //   name: "David Johnson",
+  //   testimonial:
+  //     "Phasellus iaculis consectetur nisl ut semper. Ut eu elit tincidunt, fermentum risus a, condimentum lectus.",
+  //   position: "CTO",
+  // },
+  // {
+  //   id: 4,
+  //   logoUrl: "testimonials_logo.svg",
+  //   name: "Emily Davis",
+  //   testimonial:
+  //     "Aliquam euismod nunc sed ligula semper interdum. Nullam pellentesque lacus vitae turpis auctor, at auctor nisl gravida.",
+  //   position: "CTO",
+  // },
+  // {
+  //   id: 5,
+  //   logoUrl: "testimonials_logo.svg",
+  //   name: "Michael Wilson",
+  //   testimonial:
+  //     "Cras eget ipsum et est dapibus dignissim. Nam gravida ligula at magna dignissim, eget vestibulum sem dapibus.",
+  //   position: "CTO",
+  // },
 ];
 
 const TestimonialsCarousel = () => {
