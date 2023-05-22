@@ -18,7 +18,6 @@ const Hero = () => {
       px={"10%"}
       py={"5%"}
       minH="100vh"
-      backgroundColor="rgba(255, 208, 151, 0.1)"
     >
       <Stack
         align={"center"}
