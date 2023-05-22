@@ -166,9 +166,9 @@ const Nav = () => {
                 }}
                 _focus={{ boxShadow: "none" }}
               >
-                <strong>PL</strong> {"   polski"}
+                <strong>{"PL   "}</strong> -polski
               </MenuItem>
-              <MenuItem
+              {/* <MenuItem
                 bg="rgba(255,255,255,0)"
                 borderWidth="0px"
                 _hover={{
@@ -179,8 +179,8 @@ const Nav = () => {
                 }}
                 _focus={{ boxShadow: "none" }}
               >
-                <strong>EN</strong> {"   angielski"}
-              </MenuItem>
+                <strong>EN</strong> {"   -angielski"}
+              </MenuItem> */}
             </MenuList>
           </Menu>
         </Flex>
