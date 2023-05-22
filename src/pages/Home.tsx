@@ -6,7 +6,7 @@ import About from "../components/home/About";
 import MyComponent from "../components/home/UnderHero";
 import Technologies from "../components/home/Technologies";
 import CaseStudy from "../components/home/CaseStudy";
-import TestimonialsCarousel from "../components/home/Testimonials";
+import TempTestimonials from "../components/home/TempTestimonials";
 
 const Home: React.FC = () => {
   return (
@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         <Technologies />
         <CaseStudy />
         <About />
-        <TestimonialsCarousel />
+        <TempTestimonials />
       </div>
       <Footer />
     </div>
