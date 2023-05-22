@@ -13,7 +13,7 @@ const Home: React.FC = () => {
   return (
     <Container
       backgroundImage="url('/hero.png')"
-      backgroundSize={["cover", "contain"]}
+      backgroundSize={["0%", "contain"]}
       fontFamily="Red Hat Display"
       backgroundRepeat="no-repeat"
       width="100%"
