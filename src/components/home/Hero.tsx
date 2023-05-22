@@ -48,7 +48,8 @@ const Hero = () => {
               encoded with trust.
             </Text>
           </Heading>
-          <Text color={"#000"}>IT & consulting company</Text>
+          <Text color={"#000"}>Nexio Management to firma technologiczno-konsultingowa, świadcząca <br/> 
+          kompleksowe usługi w obszarze budowy, utrzymania i rozwoju rozwiązań <br/> softwareowych.</Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={["column", "column", "row"]}

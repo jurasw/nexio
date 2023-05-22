@@ -80,6 +80,14 @@ const About: React.FC = () => {
           borderColor={"#F19E38"}
           bg={"rgba(255, 255, 255, 0)"}
           marginTop={"44px"}
+          _hover={{
+            borderColor: "#F19E38",
+            bg: "rgba(255, 208, 151, 0.2)",
+          }}
+          _active={{
+            borderColor: "#F19E38",
+            bg: "rgba(255, 208, 151, 0.2)",
+          }}
         >
           Skontaktuj się z nami
         </Button>

@@ -47,12 +47,10 @@ const MyComponent: React.FC = () => {
           </Text>
         </Heading>
         <Text color={"gray.500"} paddingTop="20px">
-          Sed id consectetur est. Quisque id dui at dolor sagittis feugiat.
-          Donec
-          <br />
-          faucibus mi a est placerat, at malesuada dolor imperdiet. Quisque sed
-          <br />
-          bibendum augue.
+        Wspieramy rozwój technologiczny firm przy użyciu nowoczesnych <br/> 
+        technologii. Budujemy innowacyjne rozwiązania, bazując na realnych <br/> 
+        potrzebach naszych klientów. Dobieramy specjalistów, którzy wpisują <br/> 
+        się w charakterystykę danego przedsiębiorstwa.
         </Text>
         <Flex
           direction={["column", "row"]}

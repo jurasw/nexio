@@ -161,7 +161,10 @@ const Nav = () => {
                   bg: "rgba(255,255,255,0)",
                   borderWidth: "0px",
                   border: "none",
+                  borderColor: "rgba(255,255,255,0)",
+                  boxShadow: "none",
                 }}
+                _focus={{ boxShadow: "none" }}
               >
                 <strong>PL</strong> {"   polski"}
               </MenuItem>
@@ -171,7 +174,10 @@ const Nav = () => {
                 _hover={{
                   bg: "rgba(255,255,255,0)",
                   borderWidth: "0px",
+                  borderColor: "rgba(255,255,255,0)",
+                  boxShadow: "none",
                 }}
+                _focus={{ boxShadow: "none" }}
               >
                 <strong>EN</strong> {"   angielski"}
               </MenuItem>

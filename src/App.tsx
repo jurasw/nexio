@@ -5,14 +5,11 @@ import { ChakraProvider } from "@chakra-ui/react";
 import "./styles.css";
 const App: React.FC = () => {
   return (
-    <BrowserRouter >
+    <BrowserRouter>
       <ChakraProvider>
         <Routes>
-          <Route >
-            <Route
-              index
-              element={<Home />}
-            />
+          <Route>
+            <Route index element={<Home />} />
           </Route>
         </Routes>
       </ChakraProvider>
