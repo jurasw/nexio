@@ -1,5 +1,6 @@
-body{
+body {
   width: 100%;
+  max-width: 100%;
 }
 
 #root {
@@ -43,4 +44,8 @@ body{
 
 .read-the-docs {
   color: #888;
+}
+
+button:focus {
+  outline: "none";
 }

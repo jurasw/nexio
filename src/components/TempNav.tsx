@@ -58,6 +58,7 @@ export default function Simple() {
                     borderColor: "#F19E38",
                     bg: "rgba(255, 208, 151, 0.2)",
                   }}
+
                   onClick={() => {
                     setBusiness(!business);
                   }}
@@ -159,6 +160,7 @@ export default function Simple() {
             <Stack as={"nav"} spacing={4} bg="#fff">
               <Menu>
                 <Button
+               
                   rounded={"full"}
                   display="flex"
                   size={"lg"}
