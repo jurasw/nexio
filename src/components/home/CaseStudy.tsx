@@ -71,7 +71,7 @@ const CaseStudy: React.FC = () => {
           alignItems="center"
           mt="20px"
         >
-          <Flex w="100%" h="8em" mt="20px" />
+          <Flex w="100%" h={["0em","8em"]} mt="20px" />
           <Card
             imageUrl={"/appcase2.svg"}
             title={"LifePlan App"}

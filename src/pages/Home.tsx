@@ -7,16 +7,15 @@ import MyComponent from "../components/home/UnderHero";
 import Technologies from "../components/home/Technologies";
 import CaseStudy from "../components/home/CaseStudy";
 import TempTestimonials from "../components/home/TempTestimonials";
+import { Container } from "@chakra-ui/react";
 
 const Home: React.FC = () => {
   return (
-    <div
-      style={{
-        backgroundImage: "url('/hero.png')",
-        backgroundSize: "contain",
-        fontFamily: "Red Hat Display",
-        backgroundRepeat: "no-repeat",
-      }}
+    <Container
+    backgroundImage= "url('/hero.png')"
+    backgroundSize= {["cover", "contain"]}
+    fontFamily= "Red Hat Display"
+    backgroundRepeat= "no-repeat"
     >
       <Nav />
       <div>
@@ -28,7 +27,7 @@ const Home: React.FC = () => {
         <TempTestimonials />
       </div>
       <Footer />
-    </div>
+    </Container>
   );
 };
 

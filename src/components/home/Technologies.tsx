@@ -7,7 +7,7 @@ const Technologies: React.FC = () => {
       <Flex direction={["column", "row"]}>
         <Flex direction="column" w={["100%", "50%"]}>
           <Title title={"TECHNOLOGIA"} />
-          <Heading lineHeight={1.1} fontWeight={600} fontSize={"48px"}>
+          <Heading lineHeight={1.1} fontWeight={600} fontSize={["38px", "48px"]}>
             <Text
               as={"span"}
               position={"relative"}
