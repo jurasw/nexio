@@ -95,3 +95,5 @@ body {
 
   color: #f19e38;
 }
+
+button:focus {outline:0;}

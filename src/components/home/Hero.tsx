@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <Container maxW={"7xl"} px={"10%"} py={"5%"}>
+    <Container maxW={"100%"} px={"10%"} py={"5%"} minH="100vh">
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -65,6 +65,10 @@ const Hero = () => {
                 borderColor: "#F19E38",
                 bg: "rgba(255, 208, 151, 0.2)",
               }}
+              _active={{
+                borderColor: "#F19E38",
+                bg: "rgba(255, 208, 151, 0.2)",
+              }}
             >
               Porozmawiaj z ekspertem
             </Button>
@@ -87,6 +91,7 @@ const Hero = () => {
                   borderColor: "#F19E38",
                   bg: "rgba(255, 208, 151, 0.2)",
                 }}
+                _focus={{_focus: "none"}}
               >
                 Nasza oferta
                 <Image
@@ -166,7 +171,7 @@ const Hero = () => {
                 display: "flex",
               }}
             >
-              <Button
+              <Container
                 bg="#fff"
                 w="46px"
                 h="46px"
@@ -189,7 +194,7 @@ const Hero = () => {
                     src={"icons/scroll-arrow.svg"}
                   />
                 </motion.div>
-              </Button>
+              </Container>
             </div>
           </div>
         </Flex>

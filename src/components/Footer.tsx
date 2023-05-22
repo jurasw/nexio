@@ -255,9 +255,35 @@ const Footer: React.FC = () => {
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>NAWIGACJA</ListHeader>
-            <Link href={"#"}>Dla biznesu</Link>
-            <Link href={"#"}>Kariera</Link>
-            <Link href={"#"}>Kontakt</Link>
+            <Link
+              _hover={{
+                color: "#fff",
+                textDecoration: "underline"
+
+              }}
+              href={"#"}
+            >
+              Dla biznesu
+            </Link>
+            <Link
+              _hover={{
+                color: "#fff",
+                textDecoration: "underline"
+              }}
+              href={"#"}
+            >
+              Kariera
+            </Link>
+            <Link
+              _hover={{
+                color: "#fff",
+                textDecoration: "underline"
+
+              }}
+              href={"#"}
+            >
+              Kontakt
+            </Link>
           </Stack>
         </SimpleGrid>
       </Container>
