@@ -12,6 +12,11 @@ export default function TempTestimonials() {
   >
     <Title title={"REFERENCJE"} />
     <Heading fontSize={"48px"} fontWeight={400}>
+   
+              <Text as={"span"} color="#000">
+
+        Co mówią nasi
+      </Text>
       <Text
         as={"span"}
         position={"relative"}
@@ -26,11 +31,7 @@ export default function TempTestimonials() {
           left: 0,
           zIndex: -1,
         }}
-      >
-        Co mówią nasi
-      </Text>
-      <Text as={"span"} color="#000">
-        {" klienci"}
+      >        {" klienci"}
       </Text>
     </Heading>
     <Text float="right">

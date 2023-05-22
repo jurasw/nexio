@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         <Technologies />
         <CaseStudy />
         <About />
-        <TempTestimonials />
+        {/* <TempTestimonials /> */}
       </div>
       <Footer />
     </div>
