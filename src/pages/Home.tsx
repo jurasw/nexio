@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         backgroundSize: "contain",
         fontFamily: "Red Hat Display",
         backgroundRepeat: "no-repeat",
-        width: "100%" 
+        maxWidth: "100%" 
       }}
     >
       <Nav />
