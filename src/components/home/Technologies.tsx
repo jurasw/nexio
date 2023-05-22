@@ -7,7 +7,11 @@ const Technologies: React.FC = () => {
       <Flex direction={["column", "row"]}>
         <Flex direction="column" w={["100%", "50%"]}>
           <Title title={"TECHNOLOGIA"} />
-          <Heading lineHeight={1.1} fontWeight={600} fontSize={["38px", "48px"]}>
+          <Heading
+            lineHeight={1.1}
+            fontWeight={600}
+            fontSize={["38px", "48px"]}
+          >
             <Text
               as={"span"}
               position={"relative"}
@@ -45,8 +49,8 @@ const Technologies: React.FC = () => {
       <Grid
         marginTop={"50px"}
         templateColumns={{
-          base: "1fr",
-          md: "repeat(2, 1fr)",
+          base: "repeat(3, 1fr)",
+          md: "repeat(3, 1fr)",
           lg: "repeat(3, 1fr)",
           xl: "repeat(6, 1fr)",
         }}
@@ -66,7 +70,16 @@ const Technologies: React.FC = () => {
           { title: "iOS", imageUrl: "/icons/technologies/ios.svg" },
           { title: "Android", imageUrl: "/icons/technologies/android.svg" },
         ].map((item, index) => (
-          <Box key={index} bg="rgba(255,255,255,0)" borderWidth="1px" borderColor="#CACACA" borderRadius={"15px"} p={4} py={"50px"} textAlign="center">
+          <Box
+            key={index}
+            bg="rgba(255,255,255,0)"
+            borderWidth="1px"
+            borderColor="#CACACA"
+            borderRadius={"15px"}
+            p={4}
+            py={[4,"50px"]}
+            textAlign="center"
+          >
             <img src={item.imageUrl} style={{ margin: "auto" }} />
             <p
               style={{

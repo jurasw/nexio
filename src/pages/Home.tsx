@@ -6,30 +6,30 @@ import MyComponent from "../components/home/UnderHero";
 import Technologies from "../components/home/Technologies";
 import CaseStudy from "../components/home/CaseStudy";
 import TempNav from "../components/TempNav";
-// import TempTestimonials from "../components/home/TempTestimonials";
+import { Stack } from "@chakra-ui/react";
+import TempTestimonials from "../components/home/TempTestimonials";
 
 const Home: React.FC = () => {
   return (
-    
-    <div
-      style={{
-        backgroundImage: "url('/hero.png')",
-        backgroundSize: "contain",
-        fontFamily: "Red Hat Display",
-        backgroundRepeat: "no-repeat",
-      }}
+    <Stack
+      maxW={"100%"}
+      backgroundColor={"rgba(255, 208, 151, 0)"}
+      backgroundImage="url('/hero.png')"
+      backgroundSize={["0", "0", "0", "contain"]}
+      fontFamily="Red Hat Display"
+      backgroundRepeat="no-repeat"
     >
       <TempNav />
-      <div style={{ }}>
+      <div style={{ margin: 0 }}>
         <Hero />
         <MyComponent />
         <Technologies />
         <CaseStudy />
         <About />
-        {/* <TempTestimonials /> */}
+        <TempTestimonials />
       </div>
       <Footer />
-    </div>
+    </Stack>
   );
 };
 

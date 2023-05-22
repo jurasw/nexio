@@ -18,6 +18,8 @@ const Hero = () => {
       px={"10%"}
       py={"5%"}
       minH="100vh"
+      bg={["rgba(255, 208, 151, 0.1)", "rgba(255, 208, 151, 0)"]}
+      mt={0}
     >
       <Stack
         align={"center"}
@@ -114,7 +116,7 @@ const Hero = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Flex direction={["column", "row", "row"]} marginTop="100px">
+      <Flex direction={["column", "column", "row"]} marginTop="100px" w="100%">
         <Flex direction="column" w={["100%", "100%", "60%"]} maxW={"100%"}>
           <Text color="#A1A1A1" fontWeight={600} fontSize="10px">
             PARTNERS & CLIENTS
@@ -132,26 +134,26 @@ const Hero = () => {
               style={{ marginBottom: "10px" }}
             />
             <Image
-              marginLeft="40px"
+              marginLeft="5%"
               src={"icons/companies/orange.svg"}
               style={{ marginBottom: "10px" }}
             />
             <Image
-              marginLeft="40px"
+              marginLeft="5%"
               src={"icons/companies/tmobile.svg"}
               style={{ marginBottom: "10px" }}
             />
             <Image
-              marginLeft="40px"
+              marginLeft="5%"
               src={"icons/companies/netia.svg"}
               style={{ marginBottom: "10px" }}
             />
             <Image
-              marginLeft="40px"
+              marginLeft="5%"
               src={"icons/companies/tvn.svg"}
               style={{ marginBottom: "10px" }}
             />
-            <Image marginLeft="40px" src={"icons/companies/fedex.svg"} />
+            <Image marginLeft="5%" src={"icons/companies/fedex.svg"} />
           </div>
         </Flex>
 

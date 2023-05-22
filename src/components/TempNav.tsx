@@ -18,7 +18,7 @@ import {
   ModalHeader,
   ModalBody,
   ModalCloseButton,
-  Spacer
+  Spacer,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import BusinessModalBodyContent from "./business/ModalBodyContent";
@@ -30,13 +30,18 @@ export default function Simple() {
   const [career, setCareer] = useState(false);
   return (
     <>
-      <Box bg="rgba(255,255,255,0)" px={"10%"} py={2} w="100%">
+      <Box
+        bg={["rgba(255, 208, 151, 0.1)", "rgba(255,255,255,0)"]}
+        px={"10%"}
+        py={2}
+        w="100%"
+      >
         <Flex h={16} alignItems={"center"} w="100%">
           <HStack spacing={8} alignItems={"center"} w="100%" overflow="auto">
             <Image src={"logo.svg"} alignSelf="flex-start" />
             <Spacer />
             <HStack
-            alignSelf="flex-end" 
+              alignSelf="flex-end"
               w="100%"
               as={"nav"}
               display={{ base: "none", md: "flex" }}
@@ -139,6 +144,8 @@ export default function Simple() {
             </HStack>
           </HStack>
           <IconButton
+            bg={"#fff"}
+            borderColor={"#F19E38"}
             size={"md"}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
             aria-label={"Open Menu"}
@@ -256,7 +263,7 @@ export default function Simple() {
             Zadbaj o rozwój swojego biznesu z zaufanym partnerem
             technologicznym.
           </ModalHeader>
-          <ModalCloseButton margin="50px" />
+          <ModalCloseButton margin={["0", "50px"]} />
           <ModalBody>
             <BusinessModalBodyContent />
           </ModalBody>
@@ -274,7 +281,7 @@ export default function Simple() {
           <ModalHeader fontSize="38px" paddingTop="50px">
             Kształtuj swoją karierę z Nexio.
           </ModalHeader>
-          <ModalCloseButton margin="50px" />
+          <ModalCloseButton margin={["0", "50px"]} />
           <ModalBody>
             <CareerModalBodyContent />
           </ModalBody>

@@ -1,6 +1,7 @@
 body {
   font-family: "Red Hat Display";
   background: #fbfbfb;
+  max-width: 100%;
 }
 
 .specializations {
@@ -96,4 +97,6 @@ body {
   color: #f19e38;
 }
 
-button:focus {outline:0;}
+button:focus {
+  outline: 0;
+}
