@@ -13,7 +13,13 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <Container maxW={"100%"} px={"10%"} py={"5%"} minH="100vh">
+    <Container
+      maxW={"100%"}
+      px={"10%"}
+      py={"5%"}
+      minH="100vh"
+      backgroundColor="rgba(255, 208, 151, 0.1)"
+    >
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
@@ -48,8 +54,12 @@ const Hero = () => {
               encoded with trust.
             </Text>
           </Heading>
-          <Text color={"#000"}>Nexio Management to firma technologiczno-konsultingowa, świadcząca <br/> 
-          kompleksowe usługi w obszarze budowy, utrzymania i rozwoju rozwiązań <br/> softwareowych.</Text>
+          <Text color={"#000"}>
+            Nexio Management to firma technologiczno-konsultingowa, świadcząca{" "}
+            <br />
+            kompleksowe usługi w obszarze budowy, utrzymania i rozwoju rozwiązań{" "}
+            <br /> softwareowych.
+          </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={["column", "column", "row"]}
@@ -92,7 +102,7 @@ const Hero = () => {
                   borderColor: "#F19E38",
                   bg: "rgba(255, 208, 151, 0.2)",
                 }}
-                _focus={{_focus: "none"}}
+                _focus={{ _focus: "none" }}
               >
                 Nasza oferta
                 <Image
