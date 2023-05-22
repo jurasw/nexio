@@ -1,15 +1,50 @@
-import { Box, Flex, Text, Image } from "@chakra-ui/react";
+import { Box, Flex, Text, Image, Heading } from "@chakra-ui/react";
+import Title from "./Title";
 
 export default function TempTestimonials() {
   return (
+    <div
+    style={{
+      padding: "10%",
+      background: "#FDFCFC",
+      // borderTop: "1px solid #000000",
+    }}
+  >
+    <Title title={"REFERENCJE"} />
+    <Heading fontSize={"48px"} fontWeight={400}>
+      <Text
+        as={"span"}
+        position={"relative"}
+        bgGradient="linear(to-l,#F19E38, #000000)"
+        bgClip="text"
+        _after={{
+          content: "''",
+          width: "full",
+          height: "30%",
+          position: "absolute",
+          bottom: 1,
+          left: 0,
+          zIndex: -1,
+        }}
+      >
+        Co mówią nasi
+      </Text>
+      <Text as={"span"} color="#000">
+        {" klienci"}
+      </Text>
+    </Heading>
+    <Text float="right">
+      5.0
+      {Array.from({ length: 5 }).map((_) => (
+        <Image float="right" marginLeft="10px" src={"icons/star.svg"} />
+      ))}
+      <br />
+      Oceny wszysktich <span style={{ color: "#F19E38" }}>{" klientów"}</span>
+    </Text>
     <Flex
-      style={{
-        background: "#FDFCFC",
-        backgroundImage: "url('/bgCase.png')",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
+    marginTop="100px"
       direction={["column", "row"]}
+      gap={10}
     >
         <Flex>
       <Box
@@ -80,5 +115,6 @@ export default function TempTestimonials() {
       </Box>
       </Flex>
     </Flex>
+    </div>
   );
 }

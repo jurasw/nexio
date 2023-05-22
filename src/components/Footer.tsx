@@ -197,7 +197,7 @@ const Footer: React.FC = () => {
         color={"#ffffff"}
         style={{ fontFamily: "Red Hat Display" }}
       >
-        <Container as={Stack} maxW={"6xl"} py={10}>
+        <Container as={Stack}  py={10}>
           <SimpleGrid
             templateColumns={{ sm: "1fr 1fr", md: "2fr 1fr 1fr 2fr" }}
             spacing={8}

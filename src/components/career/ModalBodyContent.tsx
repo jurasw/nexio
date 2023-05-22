@@ -65,6 +65,7 @@ const CareerModalBodyContent = () => {
         Poza świetną atmosferą w pracy, znajdziesz u nas:
       </Text>
       <Grid
+      mt={5}
         templateColumns={{
           base: "1fr",
           md: "repeat(2, 1fr)",
