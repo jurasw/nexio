@@ -94,41 +94,6 @@ const Technologies: React.FC = () => {
           </Box>
         ))}
       </Grid>
-      {/* <Flex direction={["column", "row"]} marginTop={"50px"} gap={2}>
-        <Flex direction="column" w={["100%", "50%"]} alignItems="center">
-          <TechTile
-            imageUrl={"/icons/technologies/flutter.svg"}
-            title={"Flutter"}
-          />
-        </Flex>
-        <Flex direction="column" w={["100%", "50%"]} alignItems="center">
-          <TechTile
-            imageUrl={"/icons/technologies/react.svg"}
-            title={"React"}
-          />
-        </Flex>
-        <Flex direction="column" w={["100%", "50%"]} alignItems="center">
-          <TechTile imageUrl={"/icons/technologies/ios.svg"} title={"iOS"} />
-        </Flex>
-        <Flex direction="column" w={["100%", "50%"]} alignItems="center">
-          <TechTile
-            imageUrl={"/icons/technologies/android.svg"}
-            title={"Android"}
-          />
-        </Flex>
-        <Flex direction="column" w={["100%", "50%"]} alignItems="center">
-          <TechTile
-            imageUrl={"/icons/technologies/js.svg"}
-            title={"JavaScript"}
-          />
-        </Flex>
-        <Flex direction="column" w={["100%", "50%"]} alignItems="center">
-          <TechTile
-            imageUrl={"/icons/technologies/python.svg"}
-            title={"Python"}
-          />
-        </Flex>
-      </Flex> */}
     </div>
   );
 };
