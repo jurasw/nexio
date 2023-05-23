@@ -76,6 +76,7 @@ const Hero = () => {
                 fontSize={"16px"}
                 fontWeight={"normal"}
                 px={6}
+                py={4}
                 border="2px"
                 borderColor={"#F19E38"}
                 bg={"rgba(255, 255, 255, 0)"}
@@ -100,7 +101,12 @@ const Hero = () => {
                 alignItems: "center",
               }}
             >
-              <Link href="https://www.pracuj.pl/praca/nexio%20management%20sp.%20z%20o.o.;en">
+              <Link
+                _hover={{
+                  textDecoration: "none",
+                }}
+                href="https://www.pracuj.pl/praca/nexio%20management%20sp.%20z%20o.o.;en"
+              >
                 <Button
                   rounded={"full"}
                   display="flex"
@@ -112,6 +118,7 @@ const Hero = () => {
                     borderColor: "#F19E38",
                     bg: "rgba(255, 208, 151, 0.2)",
                     color: "#000",
+                    textDecoration: "none",
                   }}
                 >
                   Nasza oferta

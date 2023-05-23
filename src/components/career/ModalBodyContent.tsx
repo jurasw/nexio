@@ -58,6 +58,7 @@ const CareerModalBodyContent = () => {
           _hover={{
             borderColor: "#F19E38",
             bg: "rgba(255, 208, 151, 0.2)",
+            color: "#000",
           }}
         >
           Zobacz oferty pracy
@@ -190,6 +191,7 @@ const CareerModalBodyContent = () => {
           _hover={{
             borderColor: "#F19E38",
             bg: "rgba(255, 208, 151, 0.2)",
+            color: "#000",
           }}
         >
           Znajdź ofertę dla siebie
