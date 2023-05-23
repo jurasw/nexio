@@ -100,26 +100,28 @@ const Hero = () => {
                 alignItems: "center",
               }}
             >
-              <Button
-                rounded={"full"}
-                display="flex"
-                size={"lg"}
-                bg="rgba(255, 208, 151, 0)"
-                fontWeight={"normal"}
-                _hover={{
-                  borderWidth: 0,
-                  borderColor: "#F19E38",
-                  bg: "rgba(255, 208, 151, 0.2)",
-                  color: "#000",
-                }}
-              >
-                Nasza oferta
-                <Image
-                  float="right"
-                  marginLeft="10px"
-                  src={"arrow-right-circle.svg"}
-                />
-              </Button>
+              <Link href="https://www.pracuj.pl/praca/nexio%20management%20sp.%20z%20o.o.;en">
+                <Button
+                  rounded={"full"}
+                  display="flex"
+                  size={"lg"}
+                  bg="rgba(255, 208, 151, 0)"
+                  fontWeight={"normal"}
+                  _hover={{
+                    borderWidth: 0,
+                    borderColor: "#F19E38",
+                    bg: "rgba(255, 208, 151, 0.2)",
+                    color: "#000",
+                  }}
+                >
+                  Nasza oferta
+                  <Image
+                    float="right"
+                    marginLeft="10px"
+                    src={"arrow-right-circle.svg"}
+                  />
+                </Button>
+              </Link>
             </div>
           </Stack>
         </Stack>

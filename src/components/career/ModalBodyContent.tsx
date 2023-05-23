@@ -6,6 +6,7 @@ import {
   Box,
   Grid,
   Image,
+  Link,
 } from "@chakra-ui/react";
 
 const CareerModalBodyContent = () => {
@@ -44,22 +45,25 @@ const CareerModalBodyContent = () => {
           DevOpsami i Administratorami.
         </Text>
       </Stack>
-      <Button
-        rounded={"full"}
-        size={"lg"}
-        marginTop="25px"
-        fontWeight={"normal"}
-        px={6}
-        border="2px"
-        borderColor={"#F19E38"}
-        bg={"rgba(255, 255, 255, 0)"}
-        _hover={{
-          borderColor: "#F19E38",
-          bg: "rgba(255, 208, 151, 0.2)",
-        }}
-      >
-        Zobacz oferty pracy
-      </Button>
+      <Link href="https://www.pracuj.pl/praca/nexio%20management%20sp.%20z%20o.o.;en">
+        <Button
+          rounded={"full"}
+          size={"lg"}
+          marginTop="25px"
+          fontWeight={"normal"}
+          px={6}
+          border="2px"
+          borderColor={"#F19E38"}
+          bg={"rgba(255, 255, 255, 0)"}
+          _hover={{
+            borderColor: "#F19E38",
+            bg: "rgba(255, 208, 151, 0.2)",
+          }}
+        >
+          Zobacz oferty pracy
+        </Button>
+      </Link>
+
       <Heading
         color={"#000"}
         fontSize={"24px"}
@@ -172,23 +176,25 @@ const CareerModalBodyContent = () => {
       </Heading>
 
       <Image src={"etapy.png"} m={"auto"} mt={5} />
-      <Button
-        mt={5}
-        rounded={"full"}
-        size={"lg"}
-        marginTop="25px"
-        fontWeight={"normal"}
-        px={6}
-        border="2px"
-        borderColor={"#F19E38"}
-        bg={"rgba(255, 255, 255, 0)"}
-        _hover={{
-          borderColor: "#F19E38",
-          bg: "rgba(255, 208, 151, 0.2)",
-        }}
-      >
-        Znajdź ofertę dla siebie
-      </Button>
+      <Link href="https://www.pracuj.pl/praca/nexio%20management%20sp.%20z%20o.o.;en">
+        <Button
+          mt={5}
+          rounded={"full"}
+          size={"lg"}
+          marginTop="25px"
+          fontWeight={"normal"}
+          px={6}
+          border="2px"
+          borderColor={"#F19E38"}
+          bg={"rgba(255, 255, 255, 0)"}
+          _hover={{
+            borderColor: "#F19E38",
+            bg: "rgba(255, 208, 151, 0.2)",
+          }}
+        >
+          Znajdź ofertę dla siebie
+        </Button>
+      </Link>
       <Text color={"#000000"} fontSize="24px" marginTop={"40px"}>
         Jeśli masz pytania dotyczące procesu, skontaktuj się z naszym działem
         rekrutacji:
