@@ -19,6 +19,7 @@ const BusinessModalBodyContent = () => {
     <>
       <Text color={"#000000"}>
         Twoje projekty IT w naszych rękach. Zaopiekujemy się Twoim pomysłem,
+        <br />
         usprawniając technologiczny postęp Twojej firmy.
       </Text>
       <Stack
