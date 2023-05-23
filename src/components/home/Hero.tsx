@@ -35,6 +35,7 @@ const Hero = () => {
             // fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
             <Text
+              fontSize={["50px", "70px"]}
               as={"span"}
               position={"relative"}
               bgGradient="linear(to-l,#F19E38, #000000)"
@@ -52,7 +53,7 @@ const Hero = () => {
               Digital future
             </Text>
             <br />
-            <Text as={"span"} color={"#00"}>
+            <Text fontSize={["50px", "70px"]} as={"span"} color={"#00"}>
               encoded with trust.
             </Text>
           </Heading>

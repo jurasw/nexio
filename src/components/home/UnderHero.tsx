@@ -36,9 +36,10 @@ const MyComponent: React.FC = () => {
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+            // fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
             <Text
+              fontSize={["30px", "48px"]}
               as={"span"}
               position={"relative"}
               color="#000"
@@ -52,24 +53,21 @@ const MyComponent: React.FC = () => {
                 zIndex: -1,
               }}
             >
-              Proper solutions
+              Rozwiązania IT, tworzone z myślą
             </Text>
             <br />
             <Text
+              fontSize={["30px", "48px"]}
               as={"span"}
               bgGradient="linear(to-l,#F19E38, #000000)"
               bgClip="text"
             >
-              for you
+              o potrzebach Twojego biznesu.
             </Text>
           </Heading>
           <Text color={"gray.500"} paddingTop="20px">
-            Wspieramy rozwój technologiczny firm przy użyciu nowoczesnych <br />
-            technologii. Budujemy innowacyjne rozwiązania, bazując na realnych{" "}
-            <br />
-            potrzebach naszych klientów. Dobieramy specjalistów, którzy wpisują{" "}
-            <br />
-            się w charakterystykę danego przedsiębiorstwa.
+            Wspieramy rozwój firm przy użyciu nowoczesnych technologii. <br />
+            Budujemy efektywne zespoły na miarę potrzeb naszych Klientów.
           </Text>
           <Flex
             direction={["column", "row"]}
