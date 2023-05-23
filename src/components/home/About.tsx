@@ -18,7 +18,9 @@ const About: React.FC = () => {
       justifyContent="center"
       alignItems="center"
       flexWrap="wrap"
-      style={{ fontFamily: "Red Hat Display", padding: "10%" }}
+      px="10%"
+      py="5%"
+      style={{ fontFamily: "Red Hat Display"}}
     >
       <Box flex={columnSize} maxWidth="100%" p={{ base: "1rem", md: "2rem" }}>
         <Title title={"POZNAJ NAS"} />

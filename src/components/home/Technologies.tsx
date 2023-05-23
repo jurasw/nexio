@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Technologies: React.FC = () => {
   return (
-    <div style={{ padding: "10%" }}>
+    <div style={{ paddingLeft: "10%", paddingRight: "10%" }}>
       <Flex direction={["column", "row"]}>
         <Flex direction="column" w={["100%", "50%"]}>
           <Title title={"TECHNOLOGIA"} />
