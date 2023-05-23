@@ -39,7 +39,7 @@ export default function Simple() {
       >
         <Flex h={16} alignItems={"center"} w="100%">
           <HStack spacing={8} alignItems={"center"} w="100%" overflow="auto">
-            <Image src={"logo.svg"} alignSelf="flex-start" />
+            <Image src={"logo.svg"} alignSelf="flex-start" pt={["25px", 0]} />
             <Spacer />
             <HStack
               alignSelf="flex-end"

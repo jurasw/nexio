@@ -101,7 +101,7 @@ export default function TempTestimonials() {
           </Flex> */}
           <Flex>
             <Box
-            maxW={"50%"}
+            maxW={["100%","50%"]}
               bg={"white"}
               border={"1px"}
               borderColor="#C6C6C6"
