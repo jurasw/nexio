@@ -69,7 +69,7 @@ const CaseStudy: React.FC = () => {
               "LifePlan App pomaga odkryć własny potencjał oraz wzmocnić odporność psychiczną. Aplikacja umożliwia usprawnienie własnej pracy oraz zarządzanie czasem i zadaniami."
             }
             buttonImg={"icons/arrow-right.svg"}
-            href={""}
+            href={"https://kaminskifoundation.life/lifeplan-app/"}
             stack={["Flutter", "React", "iOS", "Android"]}
           />
         </Flex>
@@ -80,7 +80,7 @@ const CaseStudy: React.FC = () => {
           mt="20px"
         >
           <Flex w="100%" h={["0em", "8em"]} mt="20px" />
-          <Card
+          {/* <Card
             imageUrl={"/appcase2.svg"}
             title={"LifePlan App"}
             text={
@@ -89,7 +89,7 @@ const CaseStudy: React.FC = () => {
             buttonImg={"icons/arrow-right.svg"}
             href={""}
             stack={["Flutter", "React", "iOS", "Android"]}
-          />
+          /> */}
         </Flex>
       </Flex>
       <Stack align={"center"} marginTop={"80px"}>

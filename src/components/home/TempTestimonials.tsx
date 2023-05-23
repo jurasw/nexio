@@ -59,7 +59,7 @@ export default function TempTestimonials() {
           <span style={{ color: "#F19E38" }}>{" klientów"}</span>
         </Text>
         <Flex marginTop="100px" direction={["column", "row"]} gap={10}>
-          <Flex>
+          {/* <Flex>
             <Box
               bg={"white"}
               border={"1px"}
@@ -98,9 +98,10 @@ export default function TempTestimonials() {
               </Text>
               <Text fontSize="16px">Product Manager</Text>
             </Box>
-          </Flex>
+          </Flex> */}
           <Flex>
             <Box
+            maxW={"50%"}
               bg={"white"}
               border={"1px"}
               borderColor="#C6C6C6"
@@ -109,8 +110,8 @@ export default function TempTestimonials() {
               borderWidth="1px"
               p={8}
               mx={2}
-              my={2}
-            >
+              m={"auto"}
+              >
               <Image src={"testimonials/marek_kaminski.svg"} mb={5} />
               <Text fontSize="16px" mb={2}>
                 Realizacja projektu - aplikacji LifePlan App, tworzonego we
@@ -149,9 +150,9 @@ export default function TempTestimonials() {
         }}
       >
         <ModalOverlay />
-        <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
+        <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"75px"}>
           <ModalCloseButton />
-          <ModalBody>
+          <ModalBody mt={"75px"}>
             <Image src={"testimonials/marek_kaminski.svg"} mb={5} />
             <Text fontSize="16px" mb={2}>
               Realizacja projektu - aplikacji LifePlan App, tworzonego we
