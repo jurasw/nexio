@@ -112,7 +112,7 @@ export default function TempTestimonials() {
               mx={2}
               m={"auto"}
               >
-              <Image src={"testimonials/marek_kaminski.svg"} mb={5} />
+              <Image maxW="150px" src={"testimonials/marek_kaminski.svg"} mb={5} />
               <Text fontSize="16px" mb={2}>
                 Realizacja projektu - aplikacji LifePlan App, tworzonego we
                 współpracy z Nexio Management sp. z o.o. przebiegała bardzo
