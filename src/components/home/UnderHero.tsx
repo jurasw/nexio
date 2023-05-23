@@ -78,7 +78,7 @@ const MyComponent: React.FC = () => {
               <Flex w="100%" h={["0em", "8em"]} mt="20px" />
               <Card
                 imageUrl={
-                  "mlody-przystojny-mezczyzna-praca-w-biurze-przy-uzyciu-komputera.jpg"
+                  "biznes.png"
                 }
                 title={"Dla biznesu"}
                 text={
