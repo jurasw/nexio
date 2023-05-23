@@ -8,6 +8,7 @@ import {
   useColorModeValue,
   Image,
 } from "@chakra-ui/react";
+import { motion } from 'framer-motion';
 
 interface Props {
   title: string;
@@ -18,7 +19,13 @@ interface Props {
 
 const Card: React.FC<Props> = ({ imageUrl, title, text, children }) => {
   return (
-    <Center py={6} style={{fontFamily: "Red Hat Display"}}>
+    <motion.div
+    initial={{ y: '50%' }}
+    transition={{ duration: 0.5 }}
+    whileInView={{ y: 0 }}
+
+  >
+    <Center py={6} style={{fontFamily: "Red Hat Display"}} className="slide-in-bottom">
       <Box
         borderRadius={"38px"}
         maxW={"445px"}
@@ -56,6 +63,8 @@ const Card: React.FC<Props> = ({ imageUrl, title, text, children }) => {
         </Stack>
       </Box>
     </Center>
+    </motion.div>
+
   );
 };
 
