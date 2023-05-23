@@ -34,7 +34,7 @@ const BusinessModalBodyContent = () => {
           Body Leasing
         </Heading>
         <Text color={"gray.500"}>
-          jest strategią, która umożliwia firmom szybkie skorzystanie z naszych
+          jest strategią, która umożliwia firmom szybkie skorzystanie z usług naszych
           konsultantów, aby efektywnie zwiększyć swoją <br />
           zdolność do realizacji projektów i osiągnięcia celów biznesowych.
         </Text>

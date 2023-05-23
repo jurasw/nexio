@@ -21,7 +21,7 @@ const About: React.FC = () => {
       style={{ fontFamily: "Red Hat Display", padding: "10%" }}
     >
       <Box flex={columnSize} maxWidth="100%" p={{ base: "1rem", md: "2rem" }}>
-        <Title title={"OZNAJ NAS"} />
+        <Title title={"POZNAJ NAS"} />
         <Heading fontSize={"48px"} fontWeight={400}>
           <Text
             as={"span"}
