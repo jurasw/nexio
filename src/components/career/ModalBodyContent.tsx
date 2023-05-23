@@ -5,6 +5,7 @@ import {
   Button,
   Box,
   Grid,
+  Image,
 } from "@chakra-ui/react";
 
 const CareerModalBodyContent = () => {
@@ -162,7 +163,34 @@ const CareerModalBodyContent = () => {
           </Box>
         ))}
       </Grid>
-      <Text color={"#000000"} fontSize="24px" marginTop={"20px"}>
+      <Heading
+        color={"#000"}
+        fontSize={"24px"}
+        fontWeight={400}
+        marginTop="60px"
+      >
+        Etapy rekrutacji
+      </Heading>
+
+      <Image src={"etapy.png"} m={"auto"} mt={5} />
+      <Button
+        mt={5}
+        rounded={"full"}
+        size={"lg"}
+        marginTop="25px"
+        fontWeight={"normal"}
+        px={6}
+        border="2px"
+        borderColor={"#F19E38"}
+        bg={"rgba(255, 255, 255, 0)"}
+        _hover={{
+          borderColor: "#F19E38",
+          bg: "rgba(255, 208, 151, 0.2)",
+        }}
+      >
+        Znajdź ofertę dla siebie
+      </Button>
+      <Text color={"#000000"} fontSize="24px" marginTop={"40px"}>
         Jeśli masz pytania dotyczące procesu, skontaktuj się z naszym działem
         rekrutacji:
       </Text>
