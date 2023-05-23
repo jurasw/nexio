@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Box,
-  Button,
+  Link,
   Flex,
   Heading,
   Image,
@@ -17,7 +17,7 @@ const About: React.FC = () => {
       justifyContent="center"
       alignItems="center"
       flexWrap="wrap"
-      style={{ fontFamily: "Red Hat Display", padding: "10%"}}
+      style={{ fontFamily: "Red Hat Display", padding: "10%" }}
     >
       <Box flex={columnSize} maxWidth="100%" p={{ base: "1rem", md: "2rem" }}>
         <Title title={"OZNAJ NAS"} />
@@ -50,6 +50,7 @@ const About: React.FC = () => {
             fontWeight: "400",
             fontSize: "18px",
             marginTop: "54px",
+            marginBottom: "35px",
           }}
         >
           Jesteśmy zaufanym partnerem w tworzeniu szytych na miarę rozwiązań,
@@ -71,10 +72,13 @@ const About: React.FC = () => {
           utrzymujemy i rozwijamy nawet najbardziej wymagające systemy IT oraz
           dopasowujemy specjalistów do projektów klienta.
         </Text>
-        <Button
+        <Link
+          mt={5}
+          href="#footer"
           rounded={"full"}
           size={"lg"}
           fontWeight={"normal"}
+          py={"10px"}
           px={6}
           border="2px"
           borderColor={"#F19E38"}
@@ -90,7 +94,7 @@ const About: React.FC = () => {
           }}
         >
           Skontaktuj się z nami
-        </Button>
+        </Link>
       </Box>
       <Box
         flex={columnSize}

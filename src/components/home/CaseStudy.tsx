@@ -62,7 +62,7 @@ const CaseStudy: React.FC = () => {
             }
             buttonImg={"icons/arrow-right.svg"}
             href={""}
-            stack={["Flutter", "React JS", "iOS", "Android"]}
+            stack={["Flutter", "React", "iOS", "Android"]}
           />
         </Flex>
         <Flex
@@ -80,7 +80,7 @@ const CaseStudy: React.FC = () => {
             }
             buttonImg={"icons/arrow-right.svg"}
             href={""}
-            stack={["Flutter", "React JS", "iOS", "Android"]}
+            stack={["Flutter", "React", "iOS", "Android"]}
           />
         </Flex>
       </Flex>

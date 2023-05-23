@@ -31,62 +31,6 @@ body {
   );
 }
 
-.animated-button {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: #42a5f5;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.animated-button.animate {
-  animation: upAndDown 1s infinite alternate;
-}
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  border-top: 2px solid #fff;
-  border-right: 2px solid #fff;
-  transform-origin: center;
-  transition: transform 0.3s ease;
-}
-
-.animated-button.animate .arrow {
-  animation: rotate 1s infinite alternate;
-}
-
-@keyframes upAndDown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-  50% {
-    transform: translate(-50%, -50%) rotate(180deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(0);
-  }
-}
 .footer-mail {
   font-weight: 400;
   font-size: 16px;

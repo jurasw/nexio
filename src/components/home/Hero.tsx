@@ -32,7 +32,7 @@ const Hero = () => {
           <Heading
             lineHeight={1.1}
             fontWeight={600}
-            fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
+            // fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
           >
             <Text
               as={"span"}
@@ -65,10 +65,13 @@ const Hero = () => {
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={["column", "column", "row"]}
+            textAlign={"center"}
           >
             <Link
+              maxW={"235px"}
+              m={["auto", "auto", 0]}
               rounded={"full"}
-              size={"lg"}
+              fontSize={"16px"}
               fontWeight={"normal"}
               href="#footer"
               px={6}
@@ -120,7 +123,11 @@ const Hero = () => {
           </Stack>
         </Stack>
       </Stack>
-      <Flex direction={["column", "column", "row"]} marginTop="100px" w="100%">
+      <Flex
+        direction={["column", "column", "row"]}
+        marginTop={["10px", "100px"]}
+        w="100%"
+      >
         <Flex direction="column" w={["100%", "100%", "60%"]} maxW={"100%"}>
           <Text color="#A1A1A1" fontWeight={600} fontSize="10px">
             PARTNERS & CLIENTS

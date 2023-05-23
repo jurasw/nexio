@@ -77,7 +77,7 @@ const MyComponent: React.FC = () => {
             gap={10}
           >
             <Flex direction="column" w={["100%", "50%"]} alignItems="center">
-              <Flex w="100%" h="8em" mt="20px" />
+              <Flex w="100%" h={["0em", "8em"]} mt="20px" />
               <Card
                 imageUrl={
                   "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
