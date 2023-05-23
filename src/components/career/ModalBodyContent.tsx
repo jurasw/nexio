@@ -23,8 +23,8 @@ const CareerModalBodyContent = () => {
         </Heading>
         <Text color={"gray.500"}>
           Jesteśmy elastyczni względem Twoich potrzeb. Możesz pracować zdalnie,
-          hybrydowo lub z biura. B2B, Umowa o Pracę i inne - w zależności od
-          Twoich preferencji.
+          hybrydowo lub z biura.
+          <br /> B2B, Umowa o Pracę i inne - w zależności od Twoich preferencji.
         </Text>
       </Stack>
       <Stack
@@ -36,13 +36,12 @@ const CareerModalBodyContent = () => {
         padding="25px"
       >
         <Heading color={"#000"} fontSize={"24px"} fontWeight={400}>
-          Pracuje u nas wielu specjalistów, nie tylko z IT.
+          Znajdziesz u nas możliwość pracy w różnych obszarach IT{" "}
         </Heading>
         <Text color={"gray.500"}>
-          Analityczki i Analitycy, DevOpsi, Architektki i Architekci,
-          Programistki i Programiści Front i Backend, Testerki i Testerzy,
-          Project Managerki i Managerowie, Rekrueterzy i Rekruterki i wielu
-          innych.
+          Będziesz pracować z doświadczonymi: Project Managerami, Architektami,
+          Analitykami, Scrum Masterami, <br /> Programistami, Testerami,
+          DevOpsami i Administratorami.
         </Text>
       </Stack>
       <Button

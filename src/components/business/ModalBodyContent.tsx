@@ -33,9 +33,9 @@ const BusinessModalBodyContent = () => {
           Body Leasing
         </Heading>
         <Text color={"gray.500"}>
-          Nie musisz się martwić o jakość swojego projektu. Nasi specjaliści
-          idealnie wypełnią luki w Twoim zespole, dostarczając jakość, której
-          oczekujesz.
+          jest strategią, która umożliwia firmom szybkie skorzystanie z naszych
+          konsultantów, aby efektywnie zwiększyć swoją <br />
+          zdolność do realizacji projektów i osiągnięcia celów biznesowych.
         </Text>
       </Stack>
       <Stack
@@ -47,11 +47,31 @@ const BusinessModalBodyContent = () => {
         marginTop="25px"
       >
         <Heading color={"#000"} fontSize={"24px"} fontWeight={400}>
-          Nearshoring
+          Team leasing
         </Heading>
         <Text color={"gray.500"}>
-          Zamiast tworzyć zespół od zera, skorzystaj z naszej specjalistycznej
-          wiedzy oraz bazy ekspertów.
+          wynajmując zespół w ramach team leasingu, firma korzysta z wiedzy i
+          umiejętności specjalistów, którzy są już zgrani jako <br /> zespół i
+          posiadają doświadczenie w pracy nad podobnymi projektami.
+        </Text>
+      </Stack>
+      <Stack
+        bg="#FDFCFC"
+        borderWidth="1px"
+        borderColor="#DFDFDF"
+        borderRadius="8px"
+        padding="25px"
+        marginTop="25px"
+      >
+        <Heading color={"#000"} fontSize={"24px"} fontWeight={400}>
+          Advanced Team Leasing
+        </Heading>
+        <Text color={"gray.500"}>
+          bardziej rozbudowana forma team leasingu, która oferuje klientowi
+          pełny zespół specjalistów, zarówno w zakresie <br /> umiejętności
+          technicznych, jak również elementów zarządzania projektem i przejęcia
+          odpowiedzialności za efekt <br />
+          końcowy.
         </Text>
       </Stack>
       <Stack
@@ -66,8 +86,9 @@ const BusinessModalBodyContent = () => {
           Managed Services
         </Heading>
         <Text color={"gray.500"}>
-          Realizacja, utrzymanie, rozwój projektu IT w pełni w naszych rękach.
-          Stajemy się Twoim zewnętrznym zespołem.
+          podejście biznesowe, w którym Nexio przejmuje pełną odpowiedzialność
+          za dostarczanie i zarządzanie określonym <br />
+          zakresem usług dla Klienta.
         </Text>
       </Stack>
       <Stack
@@ -79,12 +100,30 @@ const BusinessModalBodyContent = () => {
         marginTop="25px"
       >
         <Heading color={"#000"} fontSize={"24px"} fontWeight={400}>
-          Fix Price
+          Fixed Price
         </Heading>
         <Text color={"gray.500"}>
-          Twój projekt, nasze wykonanie - wspólnie ustalone warunki. Poznajemy
-          potrzeby Twojego biznesu, ustalamy plan działania, cenę i czas
-          realizacji.
+          model najczęściej stosowany w przypadku usług software developmentu.
+          Cena jest ustalana z góry na podstawie <br /> określonego zakresu
+          prac. Wymaga dokładnej specyfikacji wymagań Klienta
+        </Text>
+      </Stack>
+      <Stack
+        bg="#FDFCFC"
+        borderWidth="1px"
+        borderColor="#DFDFDF"
+        borderRadius="8px"
+        padding="25px"
+        marginTop="25px"
+      >
+        <Heading color={"#000"} fontSize={"24px"} fontWeight={400}>
+          Nearshoring
+        </Heading>
+        <Text color={"gray.500"}>
+          kompleksowa usługa wsparcia dla Klientów zagranicznych poszukujących
+          wysokiej jakości specjalistów. W zależności od <br /> potrzeb, Nexio
+          może pomóc w zbudowaniu zespołu (tu także kompetencje spoza IT), jak
+          również zorganizować całe <br /> biuro na terenie Polski.
         </Text>
       </Stack>
       <Heading

@@ -40,9 +40,11 @@ const Technologies: React.FC = () => {
         </Flex>
         <Flex direction="column" w={["100%", "50%"]}>
           <Text color={"gray.500"} paddingTop="20px">
-            Sieć programistów, walidatorów, budowniczych, instytucji oraz
-            partnerów z całego świata napędza rozwój Nexio management. Odkryj
-            społeczność, która w najszybszym tempie przemienia świat finansów.
+            Znajomość szeregu technologii pozwala naszym ekspertom tworzyć{" "}
+            <br />
+            niestandardowe rozwiązania, które spełniają oczekiwania naszych
+            klientów <br />w zakresie funkcjonalności, wydajności i
+            użyteczności.
           </Text>
         </Flex>
       </Flex>
@@ -77,7 +79,7 @@ const Technologies: React.FC = () => {
             borderColor="#CACACA"
             borderRadius={"15px"}
             p={4}
-            py={[4,"50px"]}
+            py={[4, "50px"]}
             textAlign="center"
           >
             <img src={item.imageUrl} style={{ margin: "auto" }} />
