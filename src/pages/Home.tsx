@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import About from "../components/home/About";
 import MyComponent from "../components/home/UnderHero";
 import Technologies from "../components/home/Technologies";
-import CaseStudy from "../components/home/CaseStudy";
+// import CaseStudy from "../components/home/CaseStudy";
 import TempNav from "../components/TempNav";
 import { Stack } from "@chakra-ui/react";
 import TempTestimonials from "../components/home/TempTestimonials";
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
         <Hero />
         <MyComponent />
         <Technologies />
-        <CaseStudy />
+        {/* <CaseStudy /> */}
         <About />
         <TempTestimonials />
       </div>
