@@ -97,6 +97,16 @@ body {
   color: #f19e38;
 }
 
+.footer-mail:hover {
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration-line: underline;
+  cursor: pointer;
+  /* nexio-dark-orange */
+
+  color: #f19e38;
+}
+
 button:focus {
   outline: "none";
 }

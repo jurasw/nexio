@@ -1,4 +1,11 @@
-import { Text, Stack, Heading, Button, Box, Grid } from "@chakra-ui/react";
+import {
+  Text,
+  Stack,
+  Heading,
+  Button,
+  Box,
+  Grid,
+} from "@chakra-ui/react";
 
 const CareerModalBodyContent = () => {
   return (
@@ -159,9 +166,16 @@ const CareerModalBodyContent = () => {
         Jeśli masz pytania dotyczące procesu, skontaktuj się z naszym działem
         rekrutacji:
       </Text>
-      <Text fontSize="24px" color="#F19E38" textDecoration={"underline"}>
+      <a
+        href="mailto: rekrutacja@nexio.pl"
+        style={{
+          fontSize: "24px",
+          color: "#F19E38",
+          textDecoration: "underline",
+        }}
+      >
         rekrutacja@nexio.pl
-      </Text>
+      </a>
     </>
   );
 };

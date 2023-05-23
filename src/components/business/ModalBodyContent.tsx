@@ -123,9 +123,16 @@ const BusinessModalBodyContent = () => {
       <Text color={"#000000"} fontSize="24px" marginTop={"20px"}>
         Jeśli masz pytania, skontaktuj się z nami:
       </Text>
-      <Text fontSize="24px" color="#F19E38" textDecoration={"underline"}>
+      <a
+        href="mailto: sprzedaz@nexio.pl"
+        style={{
+          fontSize: "24px",
+          color: "#F19E38",
+          textDecoration: "underline",
+        }}
+      >
         sprzedaz@nexio.pl
-      </Text>
+      </a>
     </>
   );
 };

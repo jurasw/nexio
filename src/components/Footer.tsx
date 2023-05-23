@@ -227,42 +227,42 @@ const Footer: React.FC = () => {
                 />
                 +48 22 244 13 50
               </Text>
-              <Text className="footer-mail">
+              <a href="mailto: biuro@nexio.pl" className="footer-mail">
                 <Image
                   src={"icons/footer/mail.svg"}
                   marginRight="14px"
                   float="left"
                 />
                 biuro@nexio.pl
-              </Text>
+              </a>
               <Text>NIP: 525-23-65-494</Text>
             </Stack>
             <Stack align={"flex-start"} minW="250px">
               <ListHeader>OBSERWUJ NAS</ListHeader>
-              <Text className="footer-mail">
+              <a href="mailto: biuro@nexio.pl" className="footer-mail">
                 <Image
                   src={"icons/footer/mail.svg"}
                   marginRight="14px"
                   float="left"
                 />
                 biuro@nexio.pl
-              </Text>
-              <Text className="footer-mail">
+              </a>
+              <a href="mailto: sprzedaz@nexio.pl" className="footer-mail">
                 <Image
                   src={"icons/footer/mail.svg"}
                   marginRight="14px"
                   float="left"
                 />
                 sprzedaz@nexio.pl
-              </Text>
-              <Text className="footer-mail">
+              </a>
+              <a href="mailto: rekrutacja@nexio.pl" className="footer-mail">
                 <Image
                   src={"icons/footer/mail.svg"}
                   marginRight="14px"
                   float="left"
                 />
                 rekrutacja@nexio.pl
-              </Text>
+              </a>
             </Stack>
             <Stack align={"flex-start"}>
               <ListHeader>NAWIGACJA</ListHeader>
