@@ -1,12 +1,13 @@
 import React from "react";
 import {
   Box,
-  Link,
+  Button,
   Flex,
   Heading,
   Image,
   Text,
   useBreakpointValue,
+  Link,
 } from "@chakra-ui/react";
 import Title from "./Title";
 
@@ -50,7 +51,6 @@ const About: React.FC = () => {
             fontWeight: "400",
             fontSize: "18px",
             marginTop: "54px",
-            marginBottom: "35px",
           }}
         >
           Jesteśmy zaufanym partnerem w tworzeniu szytych na miarę rozwiązań,
@@ -72,28 +72,28 @@ const About: React.FC = () => {
           utrzymujemy i rozwijamy nawet najbardziej wymagające systemy IT oraz
           dopasowujemy specjalistów do projektów klienta.
         </Text>
-        <Link
-          mt={5}
-          href="#footer"
-          rounded={"full"}
-          size={"lg"}
-          fontWeight={"normal"}
-          py={"10px"}
-          px={6}
-          border="2px"
-          borderColor={"#F19E38"}
-          bg={"rgba(255, 255, 255, 0)"}
-          marginTop={"44px"}
-          _hover={{
-            borderColor: "#F19E38",
-            bg: "rgba(255, 208, 151, 0.2)",
-          }}
-          _active={{
-            borderColor: "#F19E38",
-            bg: "rgba(255, 208, 151, 0.2)",
-          }}
-        >
-          Skontaktuj się z nami
+        <Link href={"#footer"}>
+          <Button
+            rounded={"full"}
+            size={"lg"}
+            fontWeight={"normal"}
+            px={6}
+            border="2px"
+            borderColor={"#F19E38"}
+            bg={"rgba(255, 255, 255, 0)"}
+            marginTop={"44px"}
+            _hover={{
+              borderColor: "#F19E38",
+              bg: "rgba(255, 208, 151, 0.2)",
+              color: "#000",
+            }}
+            _active={{
+              borderColor: "#F19E38",
+              bg: "rgba(255, 208, 151, 0.2)",
+            }}
+          >
+            Skontaktuj się z nami
+          </Button>
         </Link>
       </Box>
       <Box

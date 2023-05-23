@@ -68,29 +68,29 @@ const Hero = () => {
             direction={["column", "column", "row"]}
             textAlign={"center"}
           >
-            <Link
-              maxW={"235px"}
-              m={["auto", "auto", 0]}
-              rounded={"full"}
-              fontSize={"16px"}
-              fontWeight={"normal"}
-              href="#footer"
-              px={6}
-              py={"10px"}
-              border="2px"
-              borderColor={"#F19E38"}
-              bg={"rgba(255, 255, 255, 0)"}
-              _hover={{
-                borderColor: "#F19E38",
-                bg: "rgba(255, 208, 151, 0.2)",
-                color: "#000",
-              }}
-              _active={{
-                borderColor: "#F19E38",
-                bg: "rgba(255, 208, 151, 0.2)",
-              }}
-            >
-              Porozmawiaj z ekspertem
+            <Link href={"#footer"}>
+              <Button
+                maxW={"235px"}
+                // m={["auto", "auto", 0]}
+                rounded={"full"}
+                fontSize={"16px"}
+                fontWeight={"normal"}
+                px={6}
+                border="2px"
+                borderColor={"#F19E38"}
+                bg={"rgba(255, 255, 255, 0)"}
+                _hover={{
+                  borderColor: "#F19E38",
+                  bg: "rgba(255, 208, 151, 0.2)",
+                  color: "#000",
+                }}
+                _active={{
+                  borderColor: "#F19E38",
+                  bg: "rgba(255, 208, 151, 0.2)",
+                }}
+              >
+                Porozmawiaj z ekspertem
+              </Button>
             </Link>
             <div
               style={{

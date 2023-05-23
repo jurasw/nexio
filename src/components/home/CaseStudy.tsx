@@ -1,5 +1,13 @@
 import React from "react";
-import { Button, Flex, Heading, Stack, Text, Image } from "@chakra-ui/react";
+import {
+  Button,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  Image,
+  Link,
+} from "@chakra-ui/react";
 import Card from "./CardProject";
 import Title from "./Title";
 
@@ -71,7 +79,7 @@ const CaseStudy: React.FC = () => {
           alignItems="center"
           mt="20px"
         >
-          <Flex w="100%" h={["0em","8em"]} mt="20px" />
+          <Flex w="100%" h={["0em", "8em"]} mt="20px" />
           <Card
             imageUrl={"/appcase2.svg"}
             title={"LifePlan App"}
@@ -85,18 +93,20 @@ const CaseStudy: React.FC = () => {
         </Flex>
       </Flex>
       <Stack align={"center"} marginTop={"80px"}>
-        <Button
-          color="#fff"
-          rounded={"full"}
-          size={"lg"}
-          fontWeight={"normal"}
-          px={6}
-          bg={"#000"}
-          _hover={{ bg: "#343434" }}
-        >
-          Porozmawiaj z ekspertem
-          <Image marginLeft="10px" src={"arrow-up-right.svg"} />
-        </Button>
+        <Link href={"#footer"}>
+          <Button
+            color="#fff"
+            rounded={"full"}
+            size={"lg"}
+            fontWeight={"normal"}
+            px={6}
+            bg={"#000"}
+            _hover={{ bg: "#343434" }}
+          >
+            Porozmawiaj z ekspertem
+            <Image marginLeft="10px" src={"arrow-up-right.svg"} />
+          </Button>
+        </Link>
       </Stack>
     </section>
   );
