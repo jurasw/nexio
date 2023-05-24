@@ -6,12 +6,11 @@ const BusinessModalBodyContent = () => {
     "Analiza Systemowa",
     "Projektowanie Architektury",
     "Prototypowanie MVP",
-    "UX/UI Desing",
+    "UX/UI Design",
     "Zarządzenie projektami",
     "Programowanie",
     "Konfigurowanie środowisk",
     "Wdrożenia",
-    "Testowanie",
     "Testowanie",
   ];
 

@@ -68,7 +68,7 @@ const Technologies: React.FC = () => {
           { title: "Azure", imageUrl: "/icons/technologies/azure.svg" },
           { title: "Java", imageUrl: "/icons/technologies/java.svg" },
           { title: "Xamarin", imageUrl: "/icons/technologies/xamarin.svg" },
-          { title: "MUAI", imageUrl: "/icons/technologies/muai.svg" },
+          { title: "MAUI", imageUrl: "/icons/technologies/muai.svg" },
           { title: "iOS", imageUrl: "/icons/technologies/ios.svg" },
           { title: "Android", imageUrl: "/icons/technologies/android.svg" },
         ].map((item, index) => (

@@ -1,6 +1,6 @@
 export const PrivacyPolicy = () => {
   return (
-    <>
+    <div style={{padding:"40px"}}>
       <div>
         <p>&nbsp;</p>
         <ol>
@@ -416,6 +416,6 @@ export const PrivacyPolicy = () => {
           </span>
         </p>{" "}
       </div>
-    </>
+    </div>
   );
 };

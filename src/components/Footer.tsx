@@ -353,7 +353,7 @@ const Footer: React.FC = () => {
       <Modal id="polityka" isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent maxW="1200px" borderRadius="32px">
-          <ModalHeader>Polityka prywatności</ModalHeader>
+          <ModalHeader m={4}>Polityka prywatności</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <PrivacyPolicy />
