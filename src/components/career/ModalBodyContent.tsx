@@ -11,7 +11,7 @@ import {
 
 const CareerModalBodyContent = () => {
   return (
-    <>
+    <div style={{padding: "40px"}}>
       <Stack
         bg="#FDFCFC"
         borderWidth="1px"
@@ -211,7 +211,7 @@ const CareerModalBodyContent = () => {
       >
         rekrutacja@nexio.pl
       </a>
-    </>
+    </div>
   );
 };
 

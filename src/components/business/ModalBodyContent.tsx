@@ -15,7 +15,7 @@ const BusinessModalBodyContent = () => {
   ];
 
   return (
-    <>
+    <div style={{padding: "40px"}}>
       <Text color={"#000000"}>
         Twoje projekty IT w naszych rękach. Zaopiekujemy się Twoim pomysłem,
         <br />
@@ -172,7 +172,7 @@ const BusinessModalBodyContent = () => {
       >
         sprzedaz@nexio.pl
       </a>
-    </>
+    </div>
   );
 };
 

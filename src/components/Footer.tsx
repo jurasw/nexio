@@ -369,7 +369,7 @@ const Footer: React.FC = () => {
       >
         <ModalOverlay />
         <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
-          <ModalHeader fontSize="38px" paddingTop="50px">
+          <ModalHeader fontSize="38px" padding="40px">
             Zadbaj o rozwój swojego biznesu z zaufanym partnerem
             technologicznym.
           </ModalHeader>
@@ -388,7 +388,7 @@ const Footer: React.FC = () => {
       >
         <ModalOverlay />
         <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
-          <ModalHeader fontSize="38px" paddingTop="50px">
+          <ModalHeader fontSize="38px" padding="40px">
             Kształtuj swoją karierę z Nexio.
           </ModalHeader>
           <ModalCloseButton margin={["0", "50px"]} />

@@ -19,7 +19,7 @@ import {
   ModalBody,
   ModalCloseButton,
   Spacer,
-  Link
+  Link,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import BusinessModalBodyContent from "./business/ModalBodyContent";
@@ -39,7 +39,7 @@ export default function Simple() {
       >
         <Flex h={16} alignItems={"center"} w="100%">
           <HStack spacing={8} alignItems={"center"} w="100%" overflow="auto">
-            <Image src={"logo.svg"} alignSelf="flex-start" pt={["25px", 0]} />
+            <Image src={"logo.svg"} alignSelf="flex-start" pt={"25px"} />
             <Spacer />
             <HStack
               alignSelf="flex-end"
@@ -261,7 +261,7 @@ export default function Simple() {
       >
         <ModalOverlay />
         <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
-          <ModalHeader fontSize="38px" paddingTop="50px">
+          <ModalHeader fontSize="38px" padding="40px">
             Zadbaj o rozwój swojego biznesu z zaufanym partnerem
             technologicznym.
           </ModalHeader>
@@ -280,7 +280,7 @@ export default function Simple() {
       >
         <ModalOverlay />
         <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
-          <ModalHeader fontSize="38px" paddingTop="50px">
+          <ModalHeader fontSize="38px" padding="40px">
             Kształtuj swoją karierę z Nexio.
           </ModalHeader>
           <ModalCloseButton margin={["0", "50px"]} />
