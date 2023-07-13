@@ -93,7 +93,7 @@ const Specialization: React.FC = () => {
               onClick={() => openModal(item.title, item.text)}
             >
               <Image src={"icons/arrow-right.svg"} float="right" />
-              <Text mt={9} float="left" w={"50%"}>
+              <Text mt={9} float="left" w={"50%"} whiteSpace="nowrap">
                 {item.title}
               </Text>
             </Box>
