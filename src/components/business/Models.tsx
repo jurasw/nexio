@@ -88,7 +88,7 @@ const Models: React.FC = () => {
         {items.map((item, index) => (
           <Box
             key={index}
-            bg="transparent"
+            bg="rgba(255,255,255,0.78)"
             p={9}
             borderWidth={"1px"}
             borderColor={"#F2EEEC"}
@@ -98,6 +98,7 @@ const Models: React.FC = () => {
           >
             <Image
               border={"1px"}
+              bg="#fff"
               borderColor={"#D9D9D9"}
               borderRadius={"8px"}
               src={item.image}
