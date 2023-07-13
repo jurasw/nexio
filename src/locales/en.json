@@ -1,0 +1,185 @@
+{
+    "nexio-management": "Nexio Management is a technology and consulting company that provides comprehensive services in the area of construction, maintenance and development of software solutions ",
+    "expert-button": "Talk to an expert",
+    "offer-button": "Our offer",
+
+    "talk-to-our-expert": "Talk to our expert",
+
+
+    "it-solution": "IT solutions created to",
+    "business-needs": "meet the needs of your business",
+    "client-support": "We support the development of companies based on cutting-edge technologies. We build high-performing teams responding to the needs of our clients",
+    "for-business": "For business",
+    "develop-your-company": "Develop your company in collaboration with a partner who anticipates your digital needs and offers the right digital tools",
+    "see-our-offer": "See our offer",
+    "career": "Career", 
+    "positive-impact": "Make a positive impact on your career. See the possibilities for developing your skills in Nexio",
+    "create-together": "See what we can create together",
+
+    "technology": "technology",
+    "our-technological": "Our technological",
+    "environment": "environment",
+    "proficiency": "Proficiency in a wide range of the latest technologies allows our experts to create custom solutions that fulfill the expectations of our clients in terms of functionality, efficiency and usability",
+
+    "see-our": "See our",
+    "see-projects": "projects",
+
+    "building-solutions": "When building solutions, we focus on the real needs of our clients.",
+    "depth-of-experience": "We rely on the depth of experience and expertise of our specialists.",
+
+    "know-us": "Get to know us",
+    "contact-us": "Contact us",
+
+    "see-reference" :"See Reference",
+
+
+    "fund-title": "R&D dedicated fund",
+    "fund-text": "With the aim of further dynamic development of the company and the search for modern solutions, products and services, Nexio Management became the main investor and shareholder in the Platinum Alfa investment fund from January 2019.",
+    "fund-btn": "Find out more",
+
+    "about-1a": "We are a trusted partner in creating custom-made solutions,", 
+    "about-1b": "introducing business",
+    "about-1c": "to the path of full or partial digitalization and",
+    "about-1d": "optimalization of business processes",
+    "about-1e": "with the use of innovative technologies",
+
+    "about-2a": "We have over",
+    "about-2b": "17 years of experience in the Polish IT market",
+    "about-2c": "and abroad. We operate based on transparent and honest relations.",
+
+    "about-3a": "As a part of our services, we deliver",
+    "about-3b": "dedicated solutions",
+    "about-3c": ", maintain and develop even the most demanding and challenging IT systems, and match our specialists to client's projects.",
+
+    "what-say": "What clients say",
+    "clients": " about us",
+
+    "offer": "offer",
+    "operate-models": "Get to know the business models in which we",
+    "operate": "operate.",
+
+    "how-help": "How can we help",
+    "areas": "Areas of specialization",
+
+    "business-analysis": "Business analysis",
+    "business-analysis-text": "Conducting a business and system analysis allows for a comprehensive understanding of the company's operations, the identification of relationships between different elements and the improvement of organizational processes. A joint business and system analysis enables identification of optimal solutions, elimination of inefficiencies and minimization of risks.",
+    "system-analysis": "System analysis",
+    "system-analysis-text": "",
+    "architecture-design": "Architecture design",
+    "architecture-design-text": "IT architecture design involves creating a comprehensive plan for the structure and components of an IT system, considering both technical aspects and business requirements. The process includes identifying the needs and defining the goals of the organization, analyzing the existing IT infrastructure and developing an architectural strategy, with appropriate technologies.",
+    "mvp": "MVP prototyping",
+    "mvp-text": "",
+    "ux-ui": "UX/UI design",
+    "ux-ui-text": "UI/UX (user interface/user experience) service involves designing and creating interactive and intuitive interfaces and pleasant experiences for users of applications or websites. It focuses on providing easy navigation, aesthetic design and responsiveness to enhance usability and user satisfaction.",
+    "project-management": "Project management",
+    "project-management-text": "IT project management involves planning, organizing, controlling and coordinating resources and activities to successfully implement IT projects. This includes identifying project goals, managing the schedule, budget and team, monitoring progress and resolving problems.",
+    "programming": "Programming",
+    "programming-text": "The programming process is a sequence of activities to create software. It begins with analyzing and understanding the requirements, then designing the structure and logic of the program, followed by implementation, that is, writing the code. Once the code is written, it is followed by testing, verification of performance and possible corrections.",
+    "env-config": "Configuring environments",
+    "env-config-text": "",
+    "implementations": "Implementation",
+    "implementations-text": "",
+    "testing": "Testing",
+    "testing-text": "Complex IT testing is the process by which full and comprehensive testing of software is carried out to verify its functionality, performance and compliance with requirements. It includes unit, integration, system and acceptance testing to identify bugs, incompatibilities and potential vulnerabilities in the system.",
+    "service": "Maintenance / service",
+    "service-text": "",
+
+    "offer-for-business": "Offer for business",
+    "business-hero1": "Provide for the development",
+    "business-hero2": " of your business with a trusted ",
+    "business-hero3": "technology partner",
+    "look-after-idea": "We will look after your idea, improving the digital progress of your company",
+
+    "partenrs": "Partners &",
+    "clients2": " Clients",
+
+    "managed-services": "Business approach, in which Nexio takes full responsibility for the provision and management of a specific range of services for the Client",
+    "fixed-price": "Model often used in case of software development services. Price is set in advance based on specified scope of work. It requires a precise specification of the client’s needs",
+    "nearshoring": "Comprehensive service for foreign clients, searching for high-quality specialists. Depending on your needs, Nexio can help you build a team (also non IT-competencies) as well as organize the entire office in Poland",
+    "advanced-team-leasing": "More extensive form of team leasing which offers the client a full team of specialists in terms of technical skills as well as elements of project management and taking responsibility for the final result",
+    "team-leasing": "By hiring a leasing team, the company uses expertise and skills of our specialists, who are already well-coordinated as a team and have experience in working on similar projects",
+    "body-leasing": "A strategy that allows companies to quickly use services of our consultants in order to effectively increase ability of implementing projects and achieving business goals",
+
+    "carrer-in-nexio": "Carrer in nexio",
+    "shape-career" :"Shape your career",
+    "with" :"with",
+    "career-description": "It is YOU who decide in which direction you want to develop. We make it easy and possible for you",
+
+    "possibilities": "Possibilities in Nexio",
+    "cooperation": "See how our cooperation can looks like.",
+
+    "possibilities-card1-title": "We operate in many cooperation models",
+    "possibilities-card1-text": "We are flexible to your needs. You can work remotely, hybrid or in the office, B2B, contract of employment and others – depending on your needs.",
+    "possibilities-card2-title": "In Nexio you will find the opportunity to work in various IT areas",    
+    "possibilities-card2-text": "You will be working with experienced Project Managers, Architects, Analysts, Scrum Masters, Developers, Testers, DevOps and Administrators",
+
+    "advantages": "Additional advantages of Nexio",
+    "why": "Why is working at Nexio so well-liked?",
+    "atmosphere": "You will find not only the great work atmosphere but also",
+    "technologies": "New technologies", 
+    "projects": "Attractive projects",
+    "people": "Interesting people", 
+    "benefits": "Benefits",
+
+    "opinions-title": "OPINIONS OF OUR CONSULTANTS",
+    "opinions-header": "Our employees about us",
+    "opinions-text": "Co myślą o pracy w Nexio?",
+
+    "how-it-work": "How does it work?",
+    "recruitment": "Recruitment",
+    "stages": "stages",
+
+    "hr": "HR conversations",
+    "technical": "Technical interview", 
+    "job-offer": "Job offer",
+    "welcome": "Welcome to Nexio!",
+
+    "job-title": "FIND A JOB FOR YOU",
+    "job-header": "Want to join us?",
+    "job-position": "Position",
+    "job-location": "Location",
+    "job-technologies": "Technologies",
+    "job-text1": "Don't see a position for you?",
+    "job-text2": "Go to the application form and send your CV.",
+
+    "application-form": "application form",
+    "no-offer-title": "You haven't found a suitable offer?",
+    "contact-anyway": "Contact us anyway. Often at the beginning, we are looking for specialists in our base – it is worth searching in it!",
+    "send-application": "Send us your application",
+
+    "contact-title1": "We will be happy to",
+    "contact-title2": "answer",
+    "contact-title3": "to your questions!",
+    "contact": "Contact",
+    "company-details": "Company's details",
+
+    "write-to-us": "Write to us", 
+    "name": "Name", 
+    "email": "E-mail address", 
+    "select": "Select department",
+    "message": "Message",
+    "message-content": "Enter the content of the message",
+    "send-message": "Send a message",
+
+    "agree": "By sending a message you agree to the regulations of the Nexio.pl website",
+
+    "office-title": "Nexio office",
+    "office-text1": "Any questions?",
+    "office-text2": "Contact us!",
+    "sales-title": "Sales department",
+    "sales-text1": "You want to check out our offer?",
+    "sales-text2": "Let us know!",
+    "recruitment-title": "Recruitment department",
+    "recruitment-text1": "You want to work with us?",
+    "recruitment-text2": "Write to us!",
+
+    "news": "News",
+
+    "polish": "Polish",
+    "english": "English",
+    "close": "Close",
+    "search": "Search",
+
+    "additional-contact": "ADDITIONAL CONTACT",
+    "privacy-policy": "Privacy policy"
+}

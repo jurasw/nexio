@@ -27,7 +27,7 @@ const Card: React.FC<Props> = ({ title, text, buttonImg, href, stack }) => {
       transition={{ duration: 0.5 }}
       whileInView={{ y: 0 }}
     >
-      <Center py={6} style={{ fontFamily: "Red Hat Display" }}>
+      <Center py={6} fontFamily="Red Hat Display">
         <Box
           borderRadius={"38px"}
           maxW={"445px"}

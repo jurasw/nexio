@@ -1,156 +1,284 @@
-import { Box, Flex, Text, Image, Heading } from "@chakra-ui/react";
-import { useState } from "react";
-import Title from "./Title";
+import { SetStateAction, useState } from "react";
+import {
+  Box,
+  Button,
+  Container,
+  Flex,
+  HStack,
+  Heading,
+  Image,
+  Modal,
+  ModalBody,
+  ModalCloseButton,
+  ModalContent,
+  ModalOverlay,
+  Spacer,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import Title from "../SectionTitle";
+import { useTranslation } from "react-i18next";
+import { CloseIcon } from "@chakra-ui/icons";
 
-// Testimonial data
-const testimonials = [
-  {
-    id: 1,
-    logoUrl: "testimonials_logo.svg",
-    name: "John Doe",
-    testimonial:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed commodo dui vel lectus faucibus efficitur.",
-    position: "CTO",
-  },
-  {
-    id: 2,
-    logoUrl: "testimonials_logo.svg",
-    name: "Jane Smith",
-    testimonial:
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam nec nulla sit amet nisi aliquet euismod.",
-    position: "CTO",
-  },
-  // {
-  //   id: 3,
-  //   logoUrl: "testimonials_logo.svg",
-  //   name: "David Johnson",
-  //   testimonial:
-  //     "Phasellus iaculis consectetur nisl ut semper. Ut eu elit tincidunt, fermentum risus a, condimentum lectus.",
-  //   position: "CTO",
-  // },
-  // {
-  //   id: 4,
-  //   logoUrl: "testimonials_logo.svg",
-  //   name: "Emily Davis",
-  //   testimonial:
-  //     "Aliquam euismod nunc sed ligula semper interdum. Nullam pellentesque lacus vitae turpis auctor, at auctor nisl gravida.",
-  //   position: "CTO",
-  // },
-  // {
-  //   id: 5,
-  //   logoUrl: "testimonials_logo.svg",
-  //   name: "Michael Wilson",
-  //   testimonial:
-  //     "Cras eget ipsum et est dapibus dignissim. Nam gravida ligula at magna dignissim, eget vestibulum sem dapibus.",
-  //   position: "CTO",
-  // },
-];
-
-const TestimonialsCarousel = () => {
+const Testimonials = () => {
+  const testimonials = [
+    {
+      image: "testimonials/marek_kaminski.svg",
+      author: "Monika Samul",
+      position: "Product Manager",
+      text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
+    },
+    {
+      image: "testimonials/marek_kaminski.svg",
+      author: "Monika Samul",
+      position: "Product Manager",
+      text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
+    },
+    {
+      image: "testimonials/marek_kaminski.svg",
+      author: "Monika Samul",
+      position: "Product Manager",
+      text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
+    },
+    {
+      image: "testimonials/marek_kaminski.svg",
+      author: "Monika Samul",
+      position: "Product Manager",
+      text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
+    },
+    {
+      image: "testimonials/marek_kaminski.svg",
+      author: "Monika Samul",
+      position: "Product Manager",
+      text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
+    },
+  ];
   const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleSlideChange = (index: number) => {
+  const visibleItems = testimonials.slice(activeIndex, activeIndex + 3);
+  const visibleDots =
+    testimonials.length > 3 ? visibleItems.length : testimonials.length;
+  const isMobile = useMediaQuery("(max-width: 768px)")[0];
+  const visibleItemsCount = isMobile ? 1 : 3;
+  const handleClickDot = (index: number) => {
     setActiveIndex(index);
   };
+  const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
+  const [modal, setModal] = useState({
+    image: "",
+    text: "",
+    author: "",
+    position: "",
+  });
 
-  const startIndex = activeIndex % testimonials.length;
-  const endIndex = (startIndex + 2) % testimonials.length;
-  const displayedTestimonials =
-    endIndex >= startIndex
-      ? testimonials.slice(startIndex, endIndex + 1)
-      : [
-          ...testimonials.slice(startIndex),
-          ...testimonials.slice(0, endIndex + 1),
-        ];
-
+  const openModal = (
+    modal: SetStateAction<{
+      image: string;
+      text: string;
+      author: string;
+      position: string;
+    }>
+  ) => {
+    setModal(modal);
+    setOpen(true);
+  };
   return (
-    <div
-      style={{
-        padding: "10%",
-        background: "#FDFCFC",
-        // borderTop: "1px solid #000000",
-      }}
-    >
-      <Title title={"REFERENCJE"} />
-      <Heading fontSize={"48px"} fontWeight={400}>
-        <Text
-          as={"span"}
-          position={"relative"}
-          bgGradient="linear(to-l,#F19E38, #000000)"
-          bgClip="text"
-          _after={{
-            content: "''",
-            width: "full",
-            height: "30%",
-            position: "absolute",
-            bottom: 1,
-            left: 0,
-            zIndex: -1,
-          }}
-        >
-          Co mówią nasi
-        </Text>
-        <Text as={"span"} color="#000">
-          {" klienci"}
-        </Text>
-      </Heading>
-      <Text float="right">
-        5.0
-        {Array.from({ length: 5 }).map((_) => (
-          <Image float="right" marginLeft="10px" src={"icons/star.svg"} />
-        ))}
-        <br />
-        Oceny wszysktich <span style={{ color: "#F19E38" }}>{" klientów"}</span>
-      </Text>
-      <Flex direction="column" alignItems="center" marginTop="100px">
-        <Flex
-          width="100%"
-          maxWidth="100%"
-          justifyContent="center"
-          alignItems="center"
-          flexWrap="wrap"
-          mb={4}
-        >
-          {displayedTestimonials.map((testimonial) => (
-            <Box
-              bg={"white"}
-              key={testimonial.id}
-              border={"1px"}
-              borderColor="#C6C6C6"
-              borderRadius={"8px"}
-              height={["auto", "316px"]}
-              width={["100%", "50%", "33.33%", "25%"]}
-              borderWidth="1px"
-              p={4}
-              mx={2}
-              my={2}
+    <>
+      <Container
+        maxW={"100%"}
+        px={"10%"}
+        w={"100vw"}
+        overflow={"hidden"}
+        overflowX={"hidden"}
+        maxWidth="100vw"
+        position={"relative"}
+      >
+        <Title title={"REFERENCJE"} />
+        <Flex direction={{ base: "column", md: "row" }} alignItems="center">
+          <Heading
+            fontSize={{ base: "36px", md: "48px" }}
+            fontWeight={400}
+            mb={{ base: "10px", md: 0 }}
+          >
+            <Text as="span" color="#000">
+              {t("what-say")}
+            </Text>
+            <Text
+              as="span"
+              position="relative"
+              bgGradient="linear(to-l, #F19E38, #000000)"
+              bgClip="text"
+              _after={{
+                content: "''",
+                width: "full",
+                height: "30%",
+                position: "absolute",
+                bottom: 1,
+                left: 0,
+                zIndex: -1,
+              }}
             >
-              <Image src={testimonial.logoUrl} />
-              <Text fontSize="xl" mb={2}>
-                "{testimonial.testimonial}"
-              </Text>
-              <Text fontWeight="bold">{testimonial.name}</Text>
-              <Text>{testimonial.position}</Text>
-            </Box>
-          ))}
+              {t("clients")}
+            </Text>
+          </Heading>
+          <Spacer />
+          {/* <Box textAlign={{ base: "center", md: "right" }}>
+          <Text>
+            5.0
+            {Array.from({ length: 5 }).map((_, index) => (
+              <Image
+                key={index}
+                display="inline-block"
+                marginLeft="10px"
+                src={"icons/star.svg"}
+                alt="star"
+              />
+            ))}
+          </Text>
+          <Text>
+            Oceny wszystkich{" "}
+            <Text as="span" color="#F19E38">
+              klientów
+            </Text>
+          </Text>
+        </Box> */}
         </Flex>
-        <Flex alignItems={"left"}>
-          {testimonials.map((testimonial, index) => (
-            <Box
-              key={testimonial.id}
-              width={index === activeIndex ? "41px" : "22px"}
-              height="8px"
-              borderRadius="20px"
-              bg={index === activeIndex ? "#F19E38" : "#FFD097"}
-              mx={2}
-              cursor="pointer"
-              onClick={() => handleSlideChange(index)}
-            />
-          ))}
-        </Flex>
-      </Flex>
-    </div>
+
+        <Box
+          my={8}
+          display="flex"
+          justifyContent="center"
+          flexDirection="column"
+          maxWidth="100vw"
+          overflow="hidden"
+        >
+          <Box display="flex" justifyContent="center" mb={4} overflow="hidden">
+            {visibleItems.slice(0, visibleItemsCount).map((item, index) => {
+              const isLast = index === visibleItems.length - 1;
+              const scale = isLast ? 0.8 : 1;
+              const opacity = isLast ? 0.4 : 1;
+              const isFirstFromLeft =
+                index === 0 && testimonials.indexOf(item) === activeIndex;
+
+              return (
+                <motion.div
+                  key={index}
+                  style={{
+                    scale,
+                    opacity,
+                    marginRight: "1rem",
+                    width: `calc(100%)`,
+                    ...(isLast && {
+                      position: "absolute",
+                      right: "-22%",
+                      width: `calc(100% / ${visibleItemsCount})`,
+                    }),
+                  }}
+                >
+                  <Box
+                    bg="transparent"
+                    borderRadius="8px"
+                    border={"1px"}
+                    borderColor={"#C6C6C6"}
+                    fontSize="xl"
+                    p={9}
+                    position="relative"
+                    fontFamily={"Red Hat Display"}
+                  >
+                    <Image src={item.image} mb={5} />
+                    <Text
+                      fontSize="16px"
+                      mb={2}
+                      overflow="hidden"
+                      fontWeight={400}
+                    >
+                      {item.text.substring(0, 315)}
+                      {"... "}
+                      <span
+                        style={{
+                          color: "#F19E38",
+                          textDecoration: "underline",
+                          cursor: "pointer",
+                          fontWeight: "700",
+                        }}
+                        onClick={() =>
+                          openModal({
+                            image: item.image,
+                            text: item.text,
+                            author: item.author,
+                            position: item.position,
+                          })
+                        }
+                      >
+                        {t("see-reference")}
+                      </span>
+                    </Text>
+                    <Text fontWeight="bold" fontSize="16px">
+                      {item.author}
+                    </Text>
+                    <Text fontSize="16px">{item.position}</Text>
+                    {isFirstFromLeft && (
+                      <Box
+                        position="absolute"
+                        bottom="-0.5"
+                        left="5"
+                        width="75%"
+                        height="4px"
+                        bg="primary"
+                      />
+                    )}
+                  </Box>
+                </motion.div>
+              );
+            })}
+          </Box>
+
+          <HStack spacing={2} mt={5}>
+            {Array.from({ length: visibleDots }).map((_, index) => (
+              <Box
+                key={index}
+                h="8px"
+                w={activeIndex === index ? "41px" : "22px"}
+                bg={activeIndex === index ? "primary" : "primary.light"}
+                borderRadius="20px"
+                onClick={() => handleClickDot(index)}
+                cursor="pointer"
+              />
+            ))}
+          </HStack>
+        </Box>
+      </Container>
+      <Modal isOpen={open} onClose={() => setOpen(false)} isCentered>
+        <ModalOverlay />
+        <ModalContent minW={"75%"} p={"2%"} borderRadius={"32px"}>
+          <ModalCloseButton
+            color="#4A4A4A"
+            fontFamily={"Red Hat Display"}
+            fontWeight={400}
+            p={14}
+            px={20}
+            _hover={{ bg: "rgba(255,255,255,0)" }}
+          >
+            {t("close")}
+            <Button ml={4} border="1px" borderColor="#D9D9D9" bg="#fff">
+              <CloseIcon />
+            </Button>
+          </ModalCloseButton>
+          <ModalBody>
+            <Image src={modal.image} mb={5} />
+            <Text fontSize="16px" mb={2} maxH={"175px"} overflow="hidden">
+              {modal.text}
+            </Text>
+            <Text fontWeight="bold" fontSize="16px">
+              {modal.author}
+            </Text>
+            <Text fontSize="16px">{modal.position}</Text>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </>
   );
 };
 
-export default TestimonialsCarousel;
+export default Testimonials;

@@ -8,258 +8,143 @@ import {
   IconProps,
   Flex,
   Image,
-  Link,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalCloseButton,
 } from "@chakra-ui/react";
-import { motion } from "framer-motion";
-import { useState } from "react";
-import BusinessModalBodyContent from "../business/ModalBodyContent";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { Path } from "../../pages/Paths";
+import ScrollAnimation from "../ScrollAnimation";
 
 const Hero = () => {
-  const [business, setBusiness] = useState(false);
+  const { t } = useTranslation();
+  const navigate = useNavigate();
 
   return (
-    <>
-      <Container
-        maxW={"100%"}
-        px={"10%"}
-        py={"5%"}
-        minH="100vh"
-        bg={["rgba(255, 208, 151, 0.1)", "rgba(255, 208, 151, 0)"]}
-        mt={0}
+    <Container
+      maxW={"100%"}
+      px={"10%"}
+      py={"5%"}
+      minH="100vh"
+      bg={["rgba(255, 208, 151, 0.1)", "rgba(255, 208, 151, 0)"]}
+      mt={0}
+    >
+      <Stack
+        align={"center"}
+        spacing={{ base: 8, md: 10 }}
+        py={{ base: 10, md: 14 }}
+        direction={{ base: "column", md: "row" }}
       >
-        <Stack
-          align={"center"}
-          spacing={{ base: 8, md: 10 }}
-          py={{ base: 10, md: 14 }}
-          direction={{ base: "column", md: "row" }}
-        >
-          <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-            <Heading
-              lineHeight={1.1}
-              fontWeight={600}
-              // fontSize={{ base: "3xl", sm: "4xl", lg: "6xl" }}
-            >
-              <Text
-                fontSize={["50px", "70px"]}
-                as={"span"}
-                position={"relative"}
-                bgGradient="linear(to-l,#F19E38, #000000)"
-                bgClip="text"
-                _after={{
-                  content: "''",
-                  width: "full",
-                  height: "30%",
-                  position: "absolute",
-                  bottom: 1,
-                  left: 0,
-                  zIndex: -1,
-                }}
-              >
-                Digital future
-              </Text>
-              <br />
-              <Text fontSize={["50px", "70px"]} as={"span"} color={"#00"}>
-                encoded with trust.
-              </Text>
-            </Heading>
-            <Text color={"#000"}>
-              Nexio Management to firma technologiczno-konsultingowa, świadcząca{" "}
-              <br />
-              kompleksowe usługi w obszarze budowy, utrzymania i rozwoju
-              rozwiązań <br /> softwareowych.
-            </Text>
-            <Stack
-              spacing={{ base: 4, sm: 6 }}
-              direction={["column", "column", "row"]}
-              textAlign={"center"}
-            >
-              <Link href={"#footer"}>
-                <Button
-                  maxW={"235px"}
-                  // m={["auto", "auto", 0]}
-                  rounded={"full"}
-                  fontSize={"16px"}
-                  fontWeight={"normal"}
-                  px={6}
-                  py={4}
-                  border="2px"
-                  borderColor={"#F19E38"}
-                  bg={"rgba(255, 255, 255, 0)"}
-                  _hover={{
-                    borderColor: "#F19E38",
-                    bg: "rgba(255, 208, 151, 0.2)",
-                    color: "#000",
-                  }}
-                  _active={{
-                    borderColor: "#F19E38",
-                    bg: "rgba(255, 208, 151, 0.2)",
-                  }}
-                >
-                  Porozmawiaj z ekspertem
-                </Button>
-              </Link>
-              <div
-                style={{
-                  justifyContent: "center",
-                  textAlign: "center",
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <Button
-                  onClick={() => {
-                    setBusiness(!business);
-                  }}
-                  rounded={"full"}
-                  display="flex"
-                  size={"lg"}
-                  bg="rgba(255, 208, 151, 0)"
-                  fontWeight={"normal"}
-                  _hover={{
-                    borderWidth: 0,
-                    borderColor: "#F19E38",
-                    bg: "rgba(255, 208, 151, 0.2)",
-                    color: "#000",
-                    textDecoration: "none",
-                  }}
-                >
-                  Nasza oferta
-                  <Image
-                    float="right"
-                    marginLeft="10px"
-                    src={"arrow-right-circle.svg"}
-                  />
-                </Button>
-              </div>
-            </Stack>
-          </Stack>
-        </Stack>
-        <Flex
-          direction={["column", "column", "row"]}
-          marginTop={["10px", "100px"]}
-          w="100%"
-        >
-          <Flex direction="column" w={["100%", "100%", "60%"]} maxW={"100%"}>
-            <Text color="#A1A1A1" fontWeight={600} fontSize="10px">
-              PARTNERS & CLIENTS
-            </Text>
-            <div
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                maxWidth: "100%",
-                marginTop: "20px",
+        <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+          <Heading
+            lineHeight={1.1}
+            fontWeight={600}
+            fontSize={["40px", "70px"]}
+          >
+            <Text
+              as={"span"}
+              position={"relative"}
+              bgGradient="linear(to-l,#F19E38, #000000)"
+              bgClip="text"
+              _after={{
+                content: "''",
+                width: "full",
+                height: "30%",
+                position: "absolute",
+                bottom: 1,
+                left: 0,
+                zIndex: -1,
               }}
             >
-              <Image
-                src={"icons/companies/lot.svg"}
-                style={{ marginBottom: "10px" }}
-              />
-              <Image
-                marginLeft="5%"
-                src={"icons/companies/orange.svg"}
-                style={{ marginBottom: "10px" }}
-              />
-              <Image
-                marginLeft="5%"
-                src={"icons/companies/tmobile.svg"}
-                style={{ marginBottom: "10px" }}
-              />
-              <Image
-                marginLeft="5%"
-                src={"icons/companies/netia.svg"}
-                style={{ marginBottom: "10px" }}
-              />
-              <Image
-                marginLeft="5%"
-                src={"icons/companies/tvn.svg"}
-                style={{ marginBottom: "10px" }}
-              />
-              <Image marginLeft="5%" src={"icons/companies/fedex.svg"} />
-            </div>
-          </Flex>
+              Digital future
+            </Text>
+            <br />
+            <Text as={"span"} color={"#00"}>
+              encoded with trust.
+            </Text>
+          </Heading>
+          <Text color={"#000"} w={["100%", "100%", "100%", "50%"]}>
+            {t("nexio-management")}
+          </Text>
+          <Stack
+            spacing={{ base: 4, sm: 6 }}
+            direction={["column", "column", "row"]}
+            textAlign={"center"}
+          >
+            <Button
+              variant={"expertButton"}
+              onClick={() => navigate(Path.CONTACT)}
+            >
+              {t("expert-button")}
+            </Button>
 
-          <Flex direction="column" w={["100%", "100%", "40%"]} display="flex">
-            <div style={{ marginLeft: "auto", display: "flex" }}>
-              <Text
-                color="#000"
-                fontWeight={700}
-                fontSize="12px"
-                alignItems="center"
-                justifyContent="center"
-                display="flex"
-                marginRight={"20px"}
-              >
-                SCROLL DOWN
-              </Text>
-              <div
-                style={{
-                  background: "#fff",
-                  width: "60px",
-                  height: "60px",
-                  border: "1px solid #FFD097",
-                  borderRadius: "100%",
-
-                  alignItems: "center",
-                  justifyContent: "center",
-                  display: "flex",
-                }}
-              >
-                <Container
-                  bg="#fff"
-                  w="46px"
-                  h="46px"
-                  borderRadius={"100%"}
-                  borderWidth={1}
-                  borderColor="#E9E9E9"
-                  margin="auto"
-                >
-                  <motion.div
-                    animate={{ y: [-10, 10] }}
-                    transition={{
-                      repeat: Infinity,
-                      duration: 1,
-                      repeatType: "reverse",
-                    }}
-                  >
-                    <Image
-                      position="relative"
-                      top={"-20px"}
-                      src={"icons/scroll-arrow.svg"}
-                    />
-                  </motion.div>
-                </Container>
-              </div>
-            </div>
-          </Flex>
-        </Flex>
-      </Container>
-      <Modal
-        id="biznes"
-        isOpen={business}
-        onClose={() => {
-          setBusiness(!business);
-        }}
+            <Button
+              rounded={"full"}
+              display="flex"
+              size={"lg"}
+              bg="rgba(255, 208, 151, 0)"
+              fontWeight={"normal"}
+              _hover={{
+                borderWidth: 0,
+                borderColor: "#F19E38",
+                bg: "rgba(255, 208, 151, 0.2)",
+                color: "#000",
+                textDecoration: "none",
+              }}
+              onClick={() => navigate(Path.BUSINESS)}
+            >
+              {t("offer-button")}
+              <Image
+                float="right"
+                marginLeft="10px"
+                src={"arrow-right-circle.svg"}
+              />
+            </Button>
+          </Stack>
+        </Stack>
+      </Stack>
+      <Flex
+        direction={["column", "column", "row"]}
+        marginTop={["10px", "100px"]}
+        w="100%"
       >
-        <ModalOverlay />
-        <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
-          <ModalHeader fontSize="38px" paddingTop="50px">
-            Zadbaj o rozwój swojego biznesu z zaufanym partnerem
-            technologicznym.
-          </ModalHeader>
-          <ModalCloseButton margin={["0", "50px"]} />
-          <ModalBody>
-            <BusinessModalBodyContent />
-          </ModalBody>
-        </ModalContent>
-      </Modal>
-    </>
+        <Flex direction="column" w={["100%", "100%", "60%"]} maxW={"100%"}>
+          <Text color="#A1A1A1" fontWeight={600} fontSize="10px">
+            PARTNERS & CLIENTS
+          </Text>
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              maxWidth: "100%",
+              marginTop: "20px",
+            }}
+          >
+            <Image ml={"5%"} src={"icons/companies/orange.svg"} mb={"10px"} />
+            <Image ml={"5%"} src={"icons/companies/tmobile.svg"} mb={"10px"} />
+            <Image ml={"5%"} src={"icons/companies/netia.svg"} mb={"10px"} />
+            <Image ml={"5%"} src={"icons/companies/tvn.svg"} mb={"10px"} />
+            <Image ml={"5%"} src={"icons/companies/fedex.svg"} mb={"10px"} />
+            <Image ml={"5%"} src={"icons/companies/axa.svg"} />
+          </div>
+        </Flex>
+
+        <Flex direction="column" w={["100%", "100%", "40%"]} display="flex">
+          <div style={{ marginLeft: "auto", display: "flex" }}>
+            <Text
+              color="#000"
+              fontWeight={700}
+              fontSize="12px"
+              alignItems="center"
+              justifyContent="center"
+              display="flex"
+              marginRight={"20px"}
+            >
+              SCROLL DOWN
+            </Text>
+            <ScrollAnimation />
+          </div>
+        </Flex>
+      </Flex>
+    </Container>
   );
 };
 

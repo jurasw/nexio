@@ -1,404 +1,273 @@
 import {
   Box,
   Flex,
-  Text,
+  HStack,
+  IconButton,
   Button,
-  Stack,
-  Collapse,
-  Icon,
-  Link,
-  useColorModeValue,
-  useBreakpointValue,
-  useDisclosure,
-  Image,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalBody,
-  ModalCloseButton,
-  MenuButton,
-  MenuItem,
-  MenuList,
   Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  useDisclosure,
+  Stack,
+  Image,
+  Spacer,
+  Text,
 } from "@chakra-ui/react";
-import { ChevronDownIcon } from "@chakra-ui/icons";
-import { useState } from "react";
-import BusinessModalBodyContent from "./business/ModalBodyContent";
-import CareerModalBodyContent from "./career/ModalBodyContent";
+import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { useTranslation } from "react-i18next";
+import { Path } from "../pages/Paths";
+import { useNavigate } from "react-router-dom";
+import { SocialButton } from "./SocialButton";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import PrivatePolicy from "./PrivatePolicy";
 
-const Nav = () => {
-  // const [mobileMenu, setMobileMenu] = useState(false);
-  const [business, setBusiness] = useState(false);
-  const [career, setCareer] = useState(false);
+export default function Simple() {
+  const { i18n, t } = useTranslation();
+  const navigate = useNavigate();
 
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box>
-        <Flex
-          color={useColorModeValue("gray.600", "white")}
-          minH={"60px"}
-          py={{ base: 2 }}
-          px={"10%"}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.900")}
-          align={"center"}
-        >
-          <Flex
-            flex={{ base: 1, md: "auto" }}
-            ml={{ base: -2 }}
-            display={{ base: "flex", md: "none" }}
-          >
-            {/* <IconButton
-              onClick={() => {
-                setMobileMenu(!mobileMenu);
-              }}
-              icon={
-                mobileMenu ? (
-                  <CloseIcon w={3} h={3} />
-                ) : (
-                  <HamburgerIcon w={5} h={5} />
-                )
-              }
-              variant={"ghost"}
-              aria-label={"Toggle Navigation"}
-            /> */}
-          </Flex>
-          <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-            <Image
-              py={"15px"}
-              textAlign={useBreakpointValue({ base: "center", md: "left" })}
-              src="logo.svg"
+      <Box bg={["rgba(255, 208, 151, 0.1)", "rgba(255,255,255,0)"]} w="100%">
+        {!isOpen && (
+          <Flex h={16} alignItems={"center"} w="100%" px={"10%"} py={2}>
+            <HStack
+              spacing={8}
+              alignItems={"center"}
+              w="100%"
+              overflow="auto"
+              m={"auto"}
+            >
+              <Image
+                src={"/logo.svg"}
+                alignSelf="flex-start"
+                pt={"25px"}
+                cursor={"pointer"}
+                onClick={() => navigate(Path.HOME)}
+              />
+              <Spacer />
+              <HStack
+                alignSelf="flex-end"
+                as={"nav"}
+                display={{ base: "none", md: "flex" }}
+              >
+                <Menu>
+                  <Button
+                    variant={"menuButton"}
+                    onClick={() => navigate(Path.BUSINESS)}
+                  >
+                    {t("for-business")}
+                  </Button>
+                  <Button
+                    variant={"menuButton"}
+                    onClick={() => navigate(Path.CAREER)}
+                  >
+                    {t("career")}
+                  </Button>
+                  <Button
+                    variant={"menuButton"}
+                    onClick={() => navigate(Path.BLOG)}
+                  >
+                    Blog
+                  </Button>
+                  <Button
+                   variant="contactButtonDekstop"
+                    onClick={() => navigate(Path.CONTACT)}
+                  >
+                    {t("contact")}
+                    <Image
+                      marginLeft="10px"
+                      float="right"
+                      src="/icons/footer/mail.svg"
+                    />
+                  </Button>
+
+                  <MenuButton
+                    textAlign="center"
+                    display={{ base: "none", md: "inline-flex" }}
+                    borderWidth={"1px"}
+                    borderColor="#F19E38"
+                    padding="4px"
+                    borderRadius={"48px"}
+                    bg="rgba(255,255,255,0)"
+                    fontSize={"sm"}
+                    fontWeight={600}
+                    color={"white"}
+                    p={"10px"}
+                  >
+                    <Image src="/icons/language.svg" />
+                  </MenuButton>
+                  <MenuList
+                    bg="#FFFAF5"
+                    borderWidth="1px"
+                    borderColor="#F19E38"
+                    boxShadow="0px 4px 4px rgba(0, 0, 0, 0.1)"
+                    borderRadius="20px"
+                  >
+                    <MenuItem
+                      bg="rgba(255,255,255,0)"
+                      borderWidth="0px"
+                      _hover={{
+                        bg: "rgba(255,255,255,0)",
+                        borderWidth: "0px",
+                        border: "none",
+                        borderColor: "rgba(255,255,255,0)",
+                        boxShadow: "none",
+                      }}
+                      _focus={{ boxShadow: "none" }}
+                      onClick={() => i18n.changeLanguage("pl")}
+                    >
+                      <strong style={{ marginRight: "5px" }}>{"PL"}</strong>
+                      {t("polish")}
+                    </MenuItem>
+                    <MenuItem
+                      bg="rgba(255,255,255,0)"
+                      borderWidth="0px"
+                      _hover={{
+                        bg: "rgba(255,255,255,0)",
+                        borderWidth: "0px",
+                        border: "none",
+                        borderColor: "rgba(255,255,255,0)",
+                        boxShadow: "none",
+                      }}
+                      _focus={{ boxShadow: "none" }}
+                      onClick={() => i18n.changeLanguage("en")}
+                    >
+                      <strong style={{ marginRight: "5px" }}>{"EN"}</strong>
+                      {t("english")}
+                    </MenuItem>
+                  </MenuList>
+                </Menu>
+              </HStack>
+            </HStack>
+            <IconButton
+              bg={"#fff"}
+              borderColor={"#F19E38"}
+              size={"md"}
+              icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+              aria-label={"Open Menu"}
+              display={{ md: "none" }}
+              onClick={isOpen ? onClose : onOpen}
             />
           </Flex>
+        )}
 
-          <Menu>
-            <Button
-              rounded={"full"}
-              display="flex"
-              size={"lg"}
-              bg="rgba(255, 208, 151, 0)"
-              fontWeight={"normal"}
-              _hover={{
-                borderWidth: 0,
-                borderColor: "#F19E38",
-                bg: "rgba(255, 208, 151, 0.2)",
-              }}
-              onClick={() => {
-                setBusiness(!business);
-              }}
+        {isOpen ? (
+          <Box pb={4} display={{ md: "none" }}>
+            <Stack
+              as={"nav"}
+              spacing={4}
+              bg="#fff"
+              width={"100%"}
+              position={"fixed"}
+              h={"100vh"}
+              zIndex={5}
             >
-              Dla biznesu
-            </Button>
-            <Button
-              rounded={"full"}
-              display="flex"
-              size={"lg"}
-              bg="rgba(255, 208, 151, 0)"
-              fontWeight={"normal"}
-              _hover={{
-                borderWidth: 0,
-                borderColor: "#F19E38",
-                bg: "rgba(255, 208, 151, 0.2)",
-              }}
-              onClick={() => {
-                setCareer(!career);
-              }}
-            >
-              Kariera
-            </Button>
+              <HStack bg={"#fff"} p={4}>
+                <Image
+                  src={"/logo.svg"}
+                  alignSelf="flex-start"
+                  pt={"25px"}
+                  cursor={"pointer"}
+                  onClick={() => navigate(Path.HOME)}
+                />
+                <Spacer />
+                <IconButton
+                  borderColor={"#F19E38"}
+                  size={"md"}
+                  icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+                  aria-label={"Open Menu"}
+                  display={{ md: "none" }}
+                  onClick={isOpen ? onClose : onOpen}
+                />
+              </HStack>
+              <Menu>
+                <Button
+                  fontWeight={500}
+                  variant={"menuButton"}
+                  onClick={() => navigate(Path.BUSINESS)}
+                >
+                  {t("for-business")}
+                </Button>
+                <Button
+                  fontWeight={500}
+                  variant={"menuButton"}
+                  onClick={() => navigate(Path.CAREER)}
+                >
+                  {t("career")}
+                </Button>
+                <Button
+                  fontWeight={500}
+                  variant={"menuButton"}
+                  onClick={() => navigate(Path.BLOG)}
+                >
+                  Blog
+                </Button>
+                <Button
+                  fontWeight={500}
+                  variant="contactButton"
+                  onClick={() => navigate(Path.CONTACT)}
+                >
+                  {t("contact")}
+                </Button>
 
-            <Button
-              px="30px"
-              color="#fff"
-              fontSize={"sm"}
-              fontWeight={500}
-              bg="#F19E38"
-              mx="10px"
-              borderRadius={"40px"}
-              _hover={{
-                bg: "#D07A0F",
-                color: "#fff",
-              }}
-            >
-              Kontakt
-              <Image
-                marginLeft="10px"
-                float="right"
-                src="icons/footer/mail.svg"
-              />
-            </Button>
-
-            <MenuButton
-              textAlign="center"
-              display={{ base: "none", md: "inline-flex" }}
-              borderWidth={"1px"}
-              borderColor="#F19E38"
-              padding="4px"
-              borderRadius={"48px"}
-              bg="rgba(255,255,255,0)"
-              fontSize={"sm"}
-              fontWeight={600}
-              color={"white"}
-              p={"10px"}
-              // _hover={{
-              //   bg: "pink.300",
-              // }}>
-            >
-              <Image src="icons/language.svg" />
-            </MenuButton>
-            <MenuList
-              bg="#FFFAF5"
-              borderWidth="1px"
-              borderColor="#F19E38"
-              boxShadow="0px 4px 4px rgba(0, 0, 0, 0.1)"
-              borderRadius="20px"
-            >
-              <MenuItem
-                bg="rgba(255,255,255,0)"
-                borderWidth="0px"
-                _hover={{
-                  bg: "rgba(255,255,255,0)",
-                  borderWidth: "0px",
-                  border: "none",
-                  borderColor: "rgba(255,255,255,0)",
-                  boxShadow: "none",
-                }}
-                _focus={{ boxShadow: "none" }}
-              >
-                <strong>{"PL   "}</strong> -polski
-              </MenuItem>
-              {/* <MenuItem
-                bg="rgba(255,255,255,0)"
-                borderWidth="0px"
-                _hover={{
-                  bg: "rgba(255,255,255,0)",
-                  borderWidth: "0px",
-                  borderColor: "rgba(255,255,255,0)",
-                  boxShadow: "none",
-                }}
-                _focus={{ boxShadow: "none" }}
-              >
-                <strong>EN</strong> {"   -angielski"}
-              </MenuItem> */}
-            </MenuList>
-          </Menu>
-        </Flex>
-
-        <Collapse in={business} animateOpacity>
-          <MobileNav />
-        </Collapse>
+                <MenuButton
+                  textAlign="center"
+                  display={{ base: "none", md: "inline-flex" }}
+                  borderWidth={"1px"}
+                  borderColor="#F19E38"
+                  padding="4px"
+                  borderRadius={"48px"}
+                  bg="rgba(255,255,255,0)"
+                  fontSize={"sm"}
+                  fontWeight={600}
+                  color={"white"}
+                  p={"10px"}
+                >
+                  <Image src="/icons/language.svg" />
+                </MenuButton>
+              </Menu>
+              <Spacer />
+              <Box bg={"#000"} p={6} textAlign={"center"}>
+                <HStack gap={5} justifyContent={"center"}>
+                  <SocialButton
+                    label={"Linked in"}
+                    href={
+                      "https://www.linkedin.com/company/nexio-management-ltd-/mycompany/"
+                    }
+                  >
+                    <FaLinkedinIn />
+                  </SocialButton>
+                  <SocialButton
+                    label={"Facebook"}
+                    href={"https://www.facebook.com/NexioManagement"}
+                  >
+                    <FaFacebookF />
+                  </SocialButton>
+                  <SocialButton
+                    label={"Instagram"}
+                    href={"https://www.instagram.com/nexiomanagement/"}
+                  >
+                    <FaInstagram />
+                  </SocialButton>
+                </HStack>
+                <Box my={6} color="#fff">
+                  <PrivatePolicy />
+                </Box>
+                <Text
+                  p={6}
+                  borderTop={"1px"}
+                  borderColor={"#282828"}
+                  color={"#ADADAD"}
+                >
+                  Copyright© 2023 Nexio Management. All rights reserved.
+                </Text>
+              </Box>
+            </Stack>
+          </Box>
+        ) : null}
       </Box>
-      <Modal
-        id="biznes"
-        isOpen={business}
-        onClose={() => {
-          setBusiness(!business);
-        }}
-      >
-        <ModalOverlay />
-        <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
-          <ModalHeader fontSize="38px" paddingTop="50px">
-            Zadbaj o rozwój swojego biznesu z zaufanym partnerem
-            technologicznym.
-          </ModalHeader>
-          <ModalCloseButton margin="50px" />
-          <ModalBody>
-            <BusinessModalBodyContent />
-          </ModalBody>
-        </ModalContent>
-      </Modal>
-      <Modal
-        id="kariera"
-        isOpen={career}
-        onClose={() => {
-          setCareer(!career);
-        }}
-      >
-        <ModalOverlay />
-        <ModalContent maxW="1200px" borderRadius="32px" paddingBottom={"120px"}>
-          <ModalHeader fontSize="38px" paddingTop="50px">
-            Kształtuj swoją karierę z Nexio.
-          </ModalHeader>
-          <ModalCloseButton margin="50px" />
-          <ModalBody>
-            <CareerModalBodyContent />
-          </ModalBody>
-        </ModalContent>
-      </Modal>
     </>
   );
-};
-
-// const DesktopNav = () => {
-//   const linkColor = useColorModeValue("gray.600", "gray.200");
-//   const linkHoverColor = useColorModeValue("gray.800", "white");
-//   const popoverContentBgColor = useColorModeValue("white", "gray.800");
-
-//   return (
-//     <Stack direction={"row"} spacing={4} alignItems={"center"}>
-//       {NAV_ITEMS.map((navItem) => (
-//         <Box key={navItem.label}>
-//           <Popover trigger={"hover"} placement={"bottom-start"}>
-//             <PopoverTrigger>
-//               <Link
-//                 p={2}
-//                 href={navItem.href ?? "#"}
-//                 fontSize={"sm"}
-//                 fontWeight={500}
-//                 color={linkColor}
-//                 _hover={{
-//                   textDecoration: "none",
-//                   color: linkHoverColor,
-//                 }}
-//               >
-//                 {navItem.label}
-//               </Link>
-//             </PopoverTrigger>
-
-//             {navItem.children && (
-//               <PopoverContent
-//                 border={0}
-//                 boxShadow={"xl"}
-//                 bg={popoverContentBgColor}
-//                 p={4}
-//                 rounded={"xl"}
-//                 minW={"sm"}
-//               >
-//                 <Stack>
-//                   {navItem.children.map((child) => (
-//                     <DesktopSubNav key={child.label} {...child} />
-//                   ))}
-//                 </Stack>
-//               </PopoverContent>
-//             )}
-//           </Popover>
-//         </Box>
-//       ))}
-//     </Stack>
-//   );
-// };
-
-// const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
-//   return (
-//     <Link
-//       href={href}
-//       role={"group"}
-//       display={"block"}
-//       p={2}
-//       rounded={"md"}
-//       _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
-//     >
-//       <Stack direction={"row"} align={"center"}>
-//         <Box>
-//           <Text
-//             transition={"all .3s ease"}
-//             _groupHover={{ color: "pink.400" }}
-//             fontWeight={500}
-//           >
-//             {label}
-//           </Text>
-//           <Text fontSize={"sm"}>{subLabel}</Text>
-//         </Box>
-//         <Flex
-//           transition={"all .3s ease"}
-//           transform={"translateX(-10px)"}
-//           opacity={0}
-//           _groupHover={{ opacity: "100%", transform: "translateX(0)" }}
-//           justify={"flex-end"}
-//           align={"center"}
-//           flex={1}
-//         >
-//           <Icon color={"pink.400"} w={5} h={5} as={ChevronRightIcon} />
-//         </Flex>
-//       </Stack>
-//     </Link>
-//   );
-// };
-
-const MobileNav = () => {
-  return (
-    <Stack
-      bg={useColorModeValue("white", "gray.800")}
-      p={4}
-      display={{ md: "none" }}
-    >
-      {NAV_ITEMS.map((navItem) => (
-        <MobileNavItem key={navItem.label} {...navItem} />
-      ))}
-    </Stack>
-  );
-};
-
-const MobileNavItem = ({ label, children, href }: NavItem) => {
-  const { isOpen, onToggle } = useDisclosure();
-
-  return (
-    <Stack spacing={4} onClick={children && onToggle}>
-      <Flex
-        py={2}
-        as={Link}
-        href={href ?? "#"}
-        justify={"space-between"}
-        align={"center"}
-        _hover={{
-          textDecoration: "none",
-        }}
-      >
-        <Text
-          fontWeight={600}
-          color={useColorModeValue("gray.600", "gray.200")}
-        >
-          {label}
-        </Text>
-        {children && (
-          <Icon
-            as={ChevronDownIcon}
-            transition={"all .25s ease-in-out"}
-            transform={isOpen ? "rotate(180deg)" : ""}
-            w={6}
-            h={6}
-          />
-        )}
-      </Flex>
-
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
-          align={"start"}
-        >
-          {children &&
-            children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
-                {child.label}
-              </Link>
-            ))}
-        </Stack>
-      </Collapse>
-    </Stack>
-  );
-};
-
-interface NavItem {
-  label: string;
-  subLabel?: string;
-  children?: Array<NavItem>;
-  href?: string;
 }
-
-const NAV_ITEMS: Array<NavItem> = [
-  {
-    label: "Dla biznesu",
-    href: "#",
-  },
-  {
-    label: "Kariera",
-    href: "#",
-  },
-];
-
-export default Nav;

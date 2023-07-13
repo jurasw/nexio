@@ -1,0 +1,190 @@
+{
+    "nexio-management": "Nexio Management to firma technologiczno-konsultingowa, świadcząca \n kompleksowe usługi w obszarze budowy, utrzymania i rozwoju rozwiązań softwareowych.",
+    "expert-button": "Porozmawiaj z ekspertem",
+    "offer-button": "Nasza oferta",
+
+    "talk-to-our-expert": "Porozmawiaj z naszym ekspertem",
+
+    "it-solution": "Rozwiązania IT, tworzone z myślą",
+    "business-needs": "o potrzebach Twojego biznesu.",
+    "client-support": "Wspieramy rozwój firm przy użyciu nowoczesnych technologii. Budujemy efektywne zespoły na miarę potrzeb naszych Klientów.",
+    "for-business": "Dla biznesu",
+    "develop-your-company": "Rozwijaj swoją firmę we współpracy z partnerem, który rozumie Twoje cyfrowe potrzeby.",
+    "see-our-offer": "Poznaj naszą ofertę",
+    "career": "Kariera", 
+    "positive-impact": "Miej realny wpływ na kształt swojej kariery. Zobacz, jak możesz rozwijać swoje umiejętności w Nexio.",
+    "create-together": "Sprawdź, co możemy wspólnie stworzyć",
+
+    "technology": "technologia",
+    "our-technological": "Nasze środowisko",
+    "environment": "technologiczne",
+    "proficiency": "Znajomość szeregu technologii pozwala naszym ekspertom tworzyć niestandardowe rozwiązania, które spełniają oczekiwania naszych klientów w zakresie funkcjonalności, wydajności i użyteczności.",
+
+    "see-our": "Zobacz nasze",
+    "see-projects": "realizacje",
+
+    "building-solutions": "Tworząc rozwiązania, skupiamy się na realnych potrzebach Klienta",
+    "depth-of-experience": " Polegamy na szerokim doświadczeniu i wiedzy naszych specjalistów.",
+
+
+    "know-us": "poznaj nas",
+    "contact-us": "Skontaktuj się z nami",
+
+    "see-reference" :"Zobacz Referencję",
+
+
+    "fund-title": "Fundusz dedykowany B+R",
+    "fund-text": "Mając na celu dalszy dynamiczny rozwój firmy oraz poszukiwanie nowoczesnych rozwiązań, produktów i usług, Nexio Management od stycznia 2019 roku zostało głównym inwestorem i udziałowcem w funduszu inwestycyjnym Platinum Alfa.",
+    "fund-btn": "Dowiedz się więcej",
+
+    "about-1a": "Jesteśmy zaufanym partnerem w tworzeniu szytych na miarę rozwiązań,", 
+    "about-1b": "wprowadzaniu biznesu",
+    "about-1c": "na drogę pełnej lub częściowej cyfryzacji oraz",
+    "about-1d": "optymalizacji procesów biznesowych",
+    "about-1e": "przy użyciu innowacyjnych technologii.",
+
+    "about-2a": "Posiadamy ponad",
+    "about-2b": "17-letnie doświadczenie na rynku IT",
+    "about-2c": "w Polsce i poza jej granicami. Prowadzimy działania w oparciu o transparentne i szczere relacje.",
+    
+    "about-3a": "W ramach naszych usług tworzymy",
+    "about-3b": "dedykowane rozwiązania",
+    "about-3c": ", utrzymujemy i rozwijamy nawet najbardziej wymagające systemy IT oraz dopasowujemy specjalistów do projektów klienta.",
+
+    "what-say": "Co mówią nasi",
+    "clients": " klienci",
+
+    "offer": "oferta",
+    "operate-models": "Poznaj modele biznesowe, w jakich się",
+    "operate": "poruszamy.",
+
+    "how-help": "w czym możemy pomóc",
+    "areas": "Obszary specjalizacji",
+
+    "business-analysis": "Analiza Biznesowa",
+    "system-analysis": "Analiza Systemowa",
+    "architecture-design": "Projektowanie Architektury",
+    "mvp": "Prototypowanie MVP",
+    "ux-ui": "UX/UI Design",
+    "project-management": "Zarządzenie projektami",
+    "programming": "Programowanie",
+    "env-config": "Konfigurowanie środowisk",
+    "implementations": "Wdrożenia",
+    "testing": "Testowanie",
+    "service": "Utrzymanie / serwis",
+
+    "business-analysis-text": "Przeprowadzenie analizy biznesowej i systemowej pozwala na kompleksowe zrozumienie działania przedsiębiorstwa, identyfikację zależności między różnymi elementami oraz usprawnienie procesów organizacyjnych. Wspólna analiza biznesowa i systemowa umożliwiają identyfikację optymalnych rozwiązań, eliminację nieefektywności i minimalizację ryzyka.",
+    "system-analysis-text": "",
+    "architecture-design-text": "IT architecture design involves creating a comprehensive plan for the structure and components of an IT system, considering both technical aspects and business requirements. The process includes identifying the needs and defining the goals of the organization, analyzing the existing IT infrastructure and developing an architectural strategy, with appropriate technologies.",
+    "mvp-text": "",
+    "ux-ui-text": "Usługa UI/UX (interfejs użytkownika/doświadczenie użytkownika) polega na projektowaniu i tworzeniu interaktywnych i intuicyjnych interfejsów oraz przyjemnych doświadczeń dla użytkowników aplikacji lub stron internetowych. Skupia się na zapewnieniu łatwego nawigowania, estetycznego wyglądu i responsywności, aby zwiększyć użyteczność i zadowolenie użytkowników.",
+    "project-management-text": "Zarządzanie projektami IT polega na planowaniu, organizowaniu, kontrolowaniu i koordynowaniu zasobów oraz działań mających na celu skuteczne wdrożenie projektów informatycznych. Obejmuje to identyfikację celów projektu, zarządzanie harmonogramem, budżetem i zespołem, monitorowanie postępu oraz rozwiązywanie problemów.",
+    "programming-text": "Proces programowania to sekwencja działań mających na celu tworzenie oprogramowania. Rozpoczyna się od analizy i zrozumienia wymagań, następnie projektowania struktury i logiki programu, a następnie implementacji, czyli pisania kodu. Po napisaniu kodu następuje testowanie, weryfikacja działania i ewentualne poprawki.",
+    "env-config-text": "Projektowanie architektury IT polega na tworzeniu kompleksowego planu struktury i komponentów systemu informatycznego, uwzględniającego zarówno techniczne aspekty, jak i wymagania biznesowe. Proces obejmuje identyfikację potrzeb i zdefiniowanie celów organizacji, analizę istniejącej infrastruktury IT oraz opracowanie strategii architektonicznej, przy odpowiednich technologii.",
+    "implementations-text": "",
+    "testing-text": "Kompleksowe testowanie IT to proces, w ramach którego przeprowadza się pełne i wszechstronne testy oprogramowania, aby zweryfikować jego funkcjonalność, wydajność i zgodność z wymaganiami. Obejmuje on testy jednostkowe, integracyjne, systemowe i akceptacyjne, w celu identyfikacji błędów, niezgodności i potencjalnych luk w systemie.",
+    "service-text": "",
+
+
+    "offer-for-business": "Oferta dla biznesu",
+    "business-hero1": "Zadbaj o rozwój swojego",
+    "business-hero2": " biznesu z zaufanym partnerem",
+    "business-hero3": "technologicznym.",
+    "look-after-idea": "Zaopiekujemy się Twoim pomysłem, usprawniając cyfrowy postęp Twojej firmy.",
+
+    "partenrs": "Partnerzy &",
+    "clients2": " Klienci",
+
+    "managed-services": "Podejście biznesowe, w którym Nexio przejmuje pełną odpowiedzialność za dostarczanie i zarządzanie określonym zakresem usług dla Klienta.",
+    "fixed-price": "Model najczęściej stosowany w przypadku usług software developmentu. Cena jest ustalana z góry na podstawie określonego zakresu prac. Wymaga dokładnej specyfikacji wymagań Klienta.",
+    "nearshoring": "Kompleksowa usługa wsparcia dla Klientów zagranicznych poszukujących wysokiej jakości specjalistów. W zależności od potrzeb, Nexio może pomóc w zbudowaniu zespołu (tu także kompetencje spoza IT), jak również zorganizować całe biuro na terenie Polski.",
+    "advanced-team-leasing": "Bardziej rozbudowana forma team leasingu, która oferuje klientowi pełny zespół specjalistów, zarówno w zakresie umiejętności technicznych, jak również elementów zarządzania projektami i przejęcia odpowiedzialności za efekt końcowy.",
+    "team-leasing": "Wynajmując cały zespół w ramach team leasingu, firma korzysta z wiedzy i umiejętności specjalistów, którzy są już zgrani jako zespół i posiadają doświadczenie w pracy nad podobnymi projektami.",
+    "body-leasing": "Jest strategią, która umożliwia firmom szybkie skorzystanie z naszych konsultantów, aby efektywnie zwiększyć swoją zdolność do realizacji projektów i osiągnięcia celów biznesowych.",
+
+
+    "carrer-in-nexio": "KaRIERA W NEXIO",
+    "shape-career" :"Kształtuj swoją",
+    "with" :"karierę z",
+    "career-description": " Sam decydujesz o tym, w którym kierunku chcesz się rozwijać. My Ci to umożliwiamy i ułatwiamy.",
+
+    "possibilities": "Możliwości w nexio",
+    "cooperation": "Zobacz, jak może przebiegać nasz współpraca.",
+
+    "possibilities-card1-title": "Działamy w wielu modelach współpracy",
+    "possibilities-card1-text": "Jesteśmy elastyczni względem Twoich potrzeb. Możesz pracować zdalnie, hybrydowo lub z biura. B2B, Umowa o Pracę i inne - w zależności od Twoich preferencji.",
+    "possibilities-card2-title": "Znajdziesz u nas możliwość pracy w różnych obszarach IT",    
+    "possibilities-card2-text": "Będziesz pracować z doświadczonymi: Project Managerami, Architektami, Analitykami, Scrum Masterami,  Programistami, Testerami, DevOpsami i Administratorami.",
+
+    "advantages": "dodatkowe atuty Nexio",
+    "why": "Dlaczego praca w Nexio jest tak lubiana?",
+    "atmosphere": "Poza świetną atmosferą w pracy, znajdziesz u nas:",
+    "technologies": "New technologies", 
+    "projects": "Attractive projects",
+    "people": "Interesting people", 
+    "benefits": "Benefits",
+
+    "opinions-title": "OPINIE NASZYCH KONSULTANTÓW",
+    "opinions-header": "Nasi pracownicy o nas",
+    "opinions-text": "Co myślą o pracy w Nexio?",
+
+    "how-it-work": "jak to działa?",
+    "recruitment": "Etapy",
+    "stages": "Rekrutacji",
+
+    "hr": "Rozmowa HR",
+    "technical": "Rozmowa techniczna", 
+    "job-offer": "Oferta współpracy",
+    "welcome": "Witamy w Nexio!",
+
+    "job-title": "ZNAJDŹ PRACĘ DLA SIEBIE",
+    "job-header": "Chcesz do nas dołączyć?",
+    "job-position": "Stanowisko",
+    "job-location": "Lokalizacja",
+    "job-technologies": "Technologia",
+    "job-text1": "Nie widzisz stanowiska dla siebie?",
+    "job-text2": "Przejdź do formularza zgłoszeniowego i wyślij swoje CV.",
+
+    "application-form": "Formularz zgłoszeniowy",
+    "no-offer-title": "Nie znalasłeś odpowiedniej oferty?",
+    "contact-anyway": "Zgłoś się do nas mimo tego. Często na początku szukamy specjalistów w naszej bazie - warto się w niej znaleźć!",
+    "send-application": "Wyślij nam swoje zgłoszenie", 
+
+
+    "contact-title1": "Z przyjemnością",
+    "contact-title2": "odpowiemy",
+    "contact-title3": "na Twoje pytania!",
+    "contact": "Kontakt",
+    "company-details": "Dane firmy",
+
+    "write-to-us": "Napisz do nas", 
+    "name": "Twoje imię", 
+    "email": "Twój adres e-mail", 
+    "select": "Wybierz dział",
+    "message": "Wiadomość",
+    "message-content": "Wprowadź treść wiadomośći",
+    "send-message": "Wyślij wiadomość",
+
+    "agree": "Wysyłając wiadomość zgadzasz sie na regulamin serwisu Nexio.pl",
+
+    "office-title": "Biuro Nexio.pl",
+    "office-text1": "Masz pytania?",
+    "office-text2": "Skontaktuj się z nami!",
+    "sales-title": "Dział sprzedaży",
+    "sales-text1": "Chcesz skorzystać z naszej oferty?",
+    "sales-text2": "Daj nam znać!",
+    "recruitment-title": "Dział rekrutacji",
+    "recruitment-text1": "Chcesz u nas pracować?",
+    "recruitment-text2": "Napisz do nas.",
+
+    "news": "Aktualności",
+
+    "polish": "Polski",
+    "english": "Angielski",
+    "close": "Zamknij",
+    "search": "Szukaj",
+
+    "additional-contact": "DODATKOWY KONTAKT",
+    "privacy-policy": "Polityka prywatności"
+
+}

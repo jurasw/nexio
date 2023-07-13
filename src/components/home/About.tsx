@@ -7,11 +7,15 @@ import {
   Image,
   Text,
   useBreakpointValue,
-  Link,
 } from "@chakra-ui/react";
-import Title from "./Title";
+import Title from "../SectionTitle";
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+import { Path } from "../../pages/Paths";
 
 const About: React.FC = () => {
+  const navigate = useNavigate();
+  const { t } = useTranslation();
   const columnSize = useBreakpointValue({ base: "100%", md: "50%" });
   return (
     <Flex
@@ -20,11 +24,11 @@ const About: React.FC = () => {
       flexWrap="wrap"
       px="10%"
       py="5%"
-      style={{ fontFamily: "Red Hat Display"}}
+      style={{ fontFamily: "Red Hat Display" }}
     >
       <Box flex={columnSize} maxWidth="100%" p={{ base: "1rem", md: "2rem" }}>
-        <Title title={"POZNAJ NAS"} />
-        <Heading fontSize={"48px"} fontWeight={400}>
+        <Title title={t("know-us")} />
+        <Heading fontSize={["38px", "48px"]} fontWeight={400}>
           <Text
             as={"span"}
             position={"relative"}
@@ -47,56 +51,28 @@ const About: React.FC = () => {
           </Text>
         </Heading>
         <Text
-          fontSize={{ base: "1rem", md: "1.5rem" }}
-          style={{
-            color: "#161616",
-            fontWeight: "400",
-            fontSize: "18px",
-            marginTop: "54px",
-          }}
+          mb={5}
+          color="#161616"
+          fontWeight={400}
+          fontSize={"18px"}
+          mt={"54px"}
         >
-          Jesteśmy zaufanym partnerem w tworzeniu szytych na miarę rozwiązań,
-          <span style={{ fontWeight: 700 }}> wprowadzaniu biznesu</span> na
-          drogę pełnej lub częściowej cyfryzacji oraz
-          <span style={{ fontWeight: 700 }}>
-            {" "}
-            optymalizacji procesów biznesowych
-          </span>{" "}
-          przy użyciu innowacyjnych technologii. <br />
-          <br /> Posiadamy ponad{" "}
-          <span style={{ fontWeight: 700 }}>
-            17-letnie doświadczenie na rynku IT
-          </span>{" "}
-          w Polsce i poza jej granicami. Prowadzimy działania w oparciu o
-          transparentne i szczere relacje. <br />
-          <br /> W ramach naszych usług tworzymy{" "}
-          <span style={{ fontWeight: 700 }}>dedykowane rozwiązania</span>,
-          utrzymujemy i rozwijamy nawet najbardziej wymagające systemy IT oraz
-          dopasowujemy specjalistów do projektów klienta.
+          {t("about-1a")}
+          <span style={{ fontWeight: 700 }}> {t("about-1b")}</span>{" "}
+          {t("about-1c")}
+          <span style={{ fontWeight: 700 }}> {t("about-1d")}</span>{" "}
+          {t("about-1e")} <br />
+          <br /> {t("about-2a")}{" "}
+          <span style={{ fontWeight: 700 }}>{t("about-2b")} </span>{" "}
+          {t("about-2c")} <br />
+          <br /> {t("about-3a")}{" "}
+          <span style={{ fontWeight: 700 }}>{t("about-3b")} </span>
+          {t("about-3c")}
         </Text>
-        <Link href={"#footer"}>
-          <Button
-            rounded={"full"}
-            size={"lg"}
-            fontWeight={"normal"}
-            px={6}
-            border="2px"
-            borderColor={"#F19E38"}
-            bg={"rgba(255, 255, 255, 0)"}
-            marginTop={"44px"}
-            _hover={{
-              borderColor: "#F19E38",
-              bg: "rgba(255, 208, 151, 0.2)",
-              color: "#000",
-            }}
-            _active={{
-              borderColor: "#F19E38",
-              bg: "rgba(255, 208, 151, 0.2)",
-            }}
-          >
-            Skontaktuj się z nami
-          </Button>
-        </Link>
+
+        <Button variant={"expertButton"} onClick={() => navigate(Path.CONTACT)}>
+          {t("contact-us")}
+        </Button>
       </Box>
       <Box
         flex={columnSize}
