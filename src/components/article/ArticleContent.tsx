@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Article } from "../../models/Article";
-import moment from 'moment';
+import moment from "moment";
 
 const ArticleContent = () => {
   const { id } = useParams();
@@ -103,5 +103,6 @@ const ArticleContent = () => {
         </Text>
       </section>
     );
+  return null;
 };
 export default ArticleContent;
