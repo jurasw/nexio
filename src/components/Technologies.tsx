@@ -12,9 +12,9 @@ const Technologies: React.FC = () => {
     { title: "Angular", imageUrl: "/icons/technologies/angular.svg" },
     { title: "React", imageUrl: "/icons/technologies/react.svg" },
     { title: "Flutter", imageUrl: "/icons/technologies/flutter.svg" },
-    { title: "Azure", imageUrl: "/icons/technologies/azure.svg" },
     { title: "Xamarin", imageUrl: "/icons/technologies/xamarin.svg" },
     { title: "MAUI", imageUrl: "/icons/technologies/muai.svg" },
+    { title: "Azure", imageUrl: "/icons/technologies/azure.svg" },
     { title: "AWS", imageUrl: "/icons/technologies/aws.svg" },
     { title: "ORACLE", imageUrl: "/icons/technologies/oracle.svg" },
   ];

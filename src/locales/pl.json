@@ -79,7 +79,7 @@
     "mvp-text": "",
     "ux-ui-text": "Usługa UI/UX (interfejs użytkownika/doświadczenie użytkownika) polega na projektowaniu i tworzeniu interaktywnych i intuicyjnych interfejsów oraz przyjemnych doświadczeń dla użytkowników aplikacji lub stron internetowych. Skupia się na zapewnieniu łatwego nawigowania, estetycznego wyglądu i responsywności, aby zwiększyć użyteczność i zadowolenie użytkowników.",
     "project-management-text": "Zarządzanie projektami IT polega na planowaniu, organizowaniu, kontrolowaniu i koordynowaniu zasobów oraz działań mających na celu skuteczne wdrożenie projektów informatycznych. Obejmuje to identyfikację celów projektu, zarządzanie harmonogramem, budżetem i zespołem, monitorowanie postępu oraz rozwiązywanie problemów.",
-    "programming-text": "Proces programowania to sekwencja działań mających na celu tworzenie oprogramowania. Rozpoczyna się od analizy i zrozumienia wymagań, następnie projektowania struktury i logiki programu, a następnie implementacji, czyli pisania kodu. Po napisaniu kodu następuje testowanie, weryfikacja działania i ewentualne poprawki.",
+    "programming-text": "Proces programowania to sekwencja działań mających na celu wytworzenie oprogramowania. Rozpoczyna się od analizy i zrozumienia wymagań, projektowania struktury i logiki programu, a potem implementacji, czyli pisania kodu. Po napisaniu kodu następuje testowanie, weryfikacja działania i ewentualne poprawki.",
     "env-config-text": "Projektowanie architektury IT polega na tworzeniu kompleksowego planu struktury i komponentów systemu informatycznego, uwzględniającego zarówno techniczne aspekty, jak i wymagania biznesowe. Proces obejmuje identyfikację potrzeb i zdefiniowanie celów organizacji, analizę istniejącej infrastruktury IT oraz opracowanie strategii architektonicznej, przy odpowiednich technologii.",
     "implementations-text": "",
     "testing-text": "Kompleksowe testowanie IT to proces, w ramach którego przeprowadza się pełne i wszechstronne testy oprogramowania, aby zweryfikować jego funkcjonalność, wydajność i zgodność z wymaganiami. Obejmuje on testy jednostkowe, integracyjne, systemowe i akceptacyjne, w celu identyfikacji błędów, niezgodności i potencjalnych luk w systemie.",
@@ -110,7 +110,7 @@
     "career-description2": "My Ci to umożliwiamy i ułatwiamy.",
 
     "possibilities": "Możliwości w nexio",
-    "cooperation": "Zobacz, jak może przebiegać nasz współpraca.",
+    "cooperation": "Zobacz, jak może przebiegać nasza współpraca.",
 
     "possibilities-card1-title": "Działamy w wielu modelach współpracy",
     "possibilities-card1-text": "Jesteśmy elastyczni względem Twoich potrzeb. Możesz pracować zdalnie, hybrydowo lub z biura. B2B, Umowa o Pracę i inne - w zależności od Twoich preferencji.",
@@ -148,7 +148,7 @@
 
     "application-form": "Formularz zgłoszeniowy",
     "no-offer-title": "Nie znalazłeś odpowiedniej oferty?",
-    "contact-anyway": "Zgłoś się do nas mimo tego. Często na początku szukamy specjalistów w naszej bazie - warto się w niej znaleźć!",
+    "contact-anyway": "Zgłoś się do nas mimo tego. Często na początku szukamy specjalistów w naszej bazie - warto się w niej znaleźć! \nDaj się poznać, wyślij swoje CV! Czesto w pierwszej kolejności szukamy specjalistów wśród osób, które wcześniej do nas zaaplikowały.",
     "send-application": "Wyślij nam swoje zgłoszenie", 
 
 

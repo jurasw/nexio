@@ -9,9 +9,8 @@ const Partners: React.FC = () => {
     "icons/companies/tmobile.svg",
     "icons/companies/netia.svg",
     "icons/companies/tvn.svg",
-    "icons/companies/fedex.svg",
-    "icons/companies/axa.svg",
-
+    "icons/companies/kaminski.svg",
+    "icons/companies/maczfit.svg",
   ];
   return (
     <section
@@ -60,7 +59,9 @@ const Partners: React.FC = () => {
             md: "repeat(3, 1fr)",
             lg: "repeat(6, 1fr)",
           }}
-          gap={10}
+          gap={5}
+          justifyItems="center"
+          alignItems="center"
         >
           {images.map((src, index) => (
             <Image key={index} src={src} mb="10px" />

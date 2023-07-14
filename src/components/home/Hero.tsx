@@ -122,8 +122,8 @@ const Hero = () => {
             <Image ml={"5%"} src={"icons/companies/tmobile.svg"} mb={"10px"} />
             <Image ml={"5%"} src={"icons/companies/netia.svg"} mb={"10px"} />
             <Image ml={"5%"} src={"icons/companies/tvn.svg"} mb={"10px"} />
-            <Image ml={"5%"} src={"icons/companies/fedex.svg"} mb={"10px"} />
-            <Image ml={"5%"} src={"icons/companies/axa.svg"} />
+            <Image ml={"5%"} src={"icons/companies/kaminski.svg"} mb={"10px"} />
+            <Image ml={"5%"} src={"icons/companies/maczfit.svg"} />
           </div>
         </Flex>
 
