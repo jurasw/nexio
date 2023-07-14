@@ -52,9 +52,9 @@ const Form = () => {
           {t("select")}
         </FormLabel>
         <Select focusBorderColor="brand.400">
-          <option>Biuro</option>
-          <option>Rekrutacja</option>
-          <option>Sprzedaz</option>
+          <option>{t("office")}</option>
+          <option>{t("recruitment")}</option>
+          <option>{t("sales")}</option>
         </Select>
       </FormControl>
       <FormControl id="description" mt={1}>
@@ -76,9 +76,13 @@ const Form = () => {
         />
       </FormControl>
       {/* do poprawy rozmiar fontu */}
-      <Stack fontSize={"10px"} fontWeight={400} color="#4A4A4A">
-        <Checkbox mb={4}>{t("agree")}</Checkbox>
-        <Checkbox>
+      <Checkbox mb={4}>
+        <Text fontSize={"10px"} fontWeight={400} color="#4A4A4A">
+          {t("agree")}
+        </Text>
+      </Checkbox>
+      <Checkbox>
+        <Text fontSize={"10px"} fontWeight={400} color="#4A4A4A">
           Wyrażam zgodę na przetwarzanie moich danych osobowych w celach
           marketingowych przez Nexio Management Sp. z o.o. z siedzibą w
           Warszawie w celu przekazywania za pośrednictwem środków komunikacji
@@ -88,8 +92,8 @@ const Form = () => {
           tym w szczególności informacji o produktach i usługach. Moje dane
           podaję dobrowolnie. Wiem, że w każdej chwili mogę zrezygnować z
           subskrypcji bez podawania przyczyny.
-        </Checkbox>
-      </Stack>
+        </Text>
+      </Checkbox>
       <Stack spacing={10} pt={5}>
         <Button
           borderRadius={"8px"}

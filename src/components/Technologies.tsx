@@ -4,24 +4,24 @@ import { useTranslation } from "react-i18next";
 
 const Technologies: React.FC = () => {
   const { t } = useTranslation();
- const technologies = [
-  { title: "Java", imageUrl: "/icons/technologies/java.svg" },
-  { title: "C#", imageUrl: "/icons/technologies/cs.svg" },
-  { title: "Python", imageUrl: "/icons/technologies/python.svg" },
-  { title: "JavaScript", imageUrl: "/icons/technologies/js.svg" },
-  { title: "Angular", imageUrl: "/icons/technologies/angular.svg" },
-  { title: "React", imageUrl: "/icons/technologies/react.svg" },
-  { title: "Flutter", imageUrl: "/icons/technologies/flutter.svg" },
-  { title: "Azure", imageUrl: "/icons/technologies/azure.svg" },
-  { title: "Xamarin", imageUrl: "/icons/technologies/xamarin.svg" },
-  { title: "MAUI", imageUrl: "/icons/technologies/muai.svg" },
-  { title: "AWS", imageUrl: "/icons/technologies/aws.svg" },
-  { title: "ORACLE", imageUrl: "/icons/technologies/oracle.svg" },
-]
+  const technologies = [
+    { title: "Java", imageUrl: "/icons/technologies/java.svg" },
+    { title: "C#", imageUrl: "/icons/technologies/cs.svg" },
+    { title: "Python", imageUrl: "/icons/technologies/python.svg" },
+    { title: "JavaScript", imageUrl: "/icons/technologies/js.svg" },
+    { title: "Angular", imageUrl: "/icons/technologies/angular.svg" },
+    { title: "React", imageUrl: "/icons/technologies/react.svg" },
+    { title: "Flutter", imageUrl: "/icons/technologies/flutter.svg" },
+    { title: "Azure", imageUrl: "/icons/technologies/azure.svg" },
+    { title: "Xamarin", imageUrl: "/icons/technologies/xamarin.svg" },
+    { title: "MAUI", imageUrl: "/icons/technologies/muai.svg" },
+    { title: "AWS", imageUrl: "/icons/technologies/aws.svg" },
+    { title: "ORACLE", imageUrl: "/icons/technologies/oracle.svg" },
+  ];
   return (
     <Container maxW={"100%"} px={"10%"}>
       <Flex direction={["column", "row"]}>
-        <Flex direction="column" w={["100%", "50%"]}>
+        <Flex direction="column" w={["100%", "100%", "50%"]}>
           <Title title={t("technology")} />
           <Heading
             lineHeight={1.1}
@@ -53,7 +53,7 @@ const Technologies: React.FC = () => {
             </Text>
           </Heading>
         </Flex>
-        <Flex direction="column" w={["100%", "50%"]}>
+        <Flex direction="column" w={["100%", "100%", "50%"]}>
           <Text color={"gray.500"} paddingTop="20px" pt={8}>
             {t("proficiency")}
           </Text>

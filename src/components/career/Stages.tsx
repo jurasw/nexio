@@ -39,7 +39,7 @@ const Stages = () => {
         mb={9}
       >
         <Text as={"span"} color="#000">
-          {t("recruitment")}{" "}
+          {t("stages1")}{" "}
         </Text>
         <Text
           as={"span"}
@@ -56,7 +56,7 @@ const Stages = () => {
             zIndex: -1,
           }}
         >
-          {t("stages")}
+          {t("stages2")}
         </Text>
       </Heading>
       <Flex

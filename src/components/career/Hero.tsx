@@ -65,7 +65,9 @@ const Hero = () => {
             </Text>
           </Heading>
           <Text color={"#000"} fontSize={"18px"} w={["100%", "45%"]}>
-            {t("career-description")}
+            {t("career-description1")}
+            <br />
+            {t("career-description2")}
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}

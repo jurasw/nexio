@@ -5,12 +5,13 @@ import { useTranslation } from "react-i18next";
 const Partners: React.FC = () => {
   const { t } = useTranslation();
   const images = [
-    "icons/companies/lot.svg",
     "icons/companies/orange.svg",
     "icons/companies/tmobile.svg",
     "icons/companies/netia.svg",
     "icons/companies/tvn.svg",
     "icons/companies/fedex.svg",
+    "icons/companies/axa.svg",
+
   ];
   return (
     <section

@@ -18,7 +18,7 @@ const Opinions = () => {
       image: "/opinions/victoria.png",
       name: "Victoriia",
       position: "Testerka Manualna",
-      period: "2 lata",
+      period: "2 lata w Nexio",
       opinion:
         "W Nexio miałam i mam same wspaniałe opiekunki! W ciągu 2 lat współpracy nigdy nie czułam, że jestem sama. Wiem, że mogę odezwać się z każdym pytaniem. Dla mnie, jako osoby, która nie pochodzi z Polski, to wsparcie jest bardzo ważne. Dodatkowo bardzo doceniam atmosferę w biurze - nie ma tej zbędnej sztywności. Polecam Nexio osobom, które doceniają dobry vibe w pracy!",
     },
@@ -26,15 +26,15 @@ const Opinions = () => {
       image: "/opinions/mateusz.png",
       name: "Mateusz",
       position: "Java Developer",
-      period: "3 lata",
+      period: "3 lata w Nexio",
       opinion:
         "Jako Java developer, doceniam w Nexio możliwość pracy w najnowszych wersjach tego języka programowania i to, że jestem na bieżąco z obecnie panującymi trendami, narzędziami. Dodatkowo, cieszę się z różnorodności projektów, które obejmują dziedziny takie jak transport, ubezpieczenia czy bankowość, w których miałem możliwość brać udział. Ciągła współpraca z architektami, analitykami, designerami i innymi developerami pomaga mi rozwijać nie tylko techniczne aspekty wytwarzania oprogramowania, ale również umiejętności miękkie. Dzięki temu biorę udział w całym procesie budowania aplikacji i mam satysfakcję z zadowolenia klienta.",
     },
     {
       image: "/opinions/bohdan.jpeg",
       name: "Bohdan",
-      position: "Lider Działu Aplikacji Mobilnych",
-      period: "3 lata",
+      position: "Lider Działu Aplikacji Mobilnych | Microsoft MVP",
+      period: "3 lata w Nexio",
       opinion:
         "Moje doświadczenie z Nexio Management mogę określić jako bardzo satysfakcjonujące - zaczynałem jako Senior Xamarin Developer, a obecnie pełnię funkcję Tech Lead w Dziale Aplikacji Mobilnych. W ciągu mojej kariery ukończyłem ponad sześć projektów, wykazując się zaangażowaniem i umiejętnościami. Cieszę się, że mogłem rozwijać się w Nexio. Doświadczyłem tu świetnej pracy zespołowej. To była i jest wspaniała podróż i jestem wdzięczny za możliwość bycia częścią takiej firmy.",
     },
@@ -42,7 +42,7 @@ const Opinions = () => {
       image: "/opinions/victoria.png",
       name: "Victoriia",
       position: "Testerka Manualna",
-      period: "2 lata",
+      period: "2 lata w Nexio",
       opinion:
         "W Nexio miałam i mam same wspaniałe opiekunki! W ciągu 2 lat współpracy nigdy nie czułam, że jestem sama. Wiem, że mogę odezwać się z każdym pytaniem. Dla mnie, jako osoby, która nie pochodzi z Polski, to wsparcie jest bardzo ważne. Dodatkowo bardzo doceniam atmosferę w biurze - nie ma tej zbędnej sztywności. Polecam Nexio osobom, które doceniają dobry vibe w pracy!",
     },
@@ -50,7 +50,7 @@ const Opinions = () => {
       image: "/opinions/mateusz.png",
       name: "Mateusz",
       position: "Java Developer",
-      period: "3 lata",
+      period: "3 lata w Nexio",
       opinion:
         "Jako Java developer, doceniam w Nexio możliwość pracy w najnowszych wersjach tego języka programowania i to, że jestem na bieżąco z obecnie panującymi trendami, narzędziami. Dodatkowo, cieszę się z różnorodności projektów, które obejmują dziedziny takie jak transport, ubezpieczenia czy bankowość, w których miałem możliwość brać udział. Ciągła współpraca z architektami, analitykami, designerami i innymi developerami pomaga mi rozwijać nie tylko techniczne aspekty wytwarzania oprogramowania, ale również umiejętności miękkie. Dzięki temu biorę udział w całym procesie budowania aplikacji i mam satysfakcję z zadowolenia klienta.",
     },

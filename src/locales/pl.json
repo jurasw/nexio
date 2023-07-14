@@ -18,7 +18,7 @@
     "technology": "technologia",
     "our-technological": "Nasze środowisko",
     "environment": "technologiczne",
-    "proficiency": "Znajomość szeregu technologii pozwala naszym ekspertom tworzyć niestandardowe rozwiązania, które spełniają oczekiwania naszych klientów w zakresie funkcjonalności, wydajności i użyteczności.",
+    "proficiency": "Znajomość szeregu technologii pozwala naszym ekspertom tworzyć niestandardowe rozwiązania, które spełniają oczekiwania naszych klientów \n w zakresie funkcjonalności, wydajności i użyteczności.",
 
     "see-our": "Zobacz nasze",
     "see-projects": "realizacje",
@@ -61,7 +61,7 @@
     "how-help": "w czym możemy pomóc",
     "areas": "Obszary specjalizacji",
 
-    "business-analysis": "Analiza Biznesowa",
+    "business-analysis": "Analiza Biznesowa i systemowa",
     "system-analysis": "Analiza Systemowa",
     "architecture-design": "Projektowanie Architektury",
     "mvp": "Prototypowanie MVP",
@@ -100,13 +100,14 @@
     "nearshoring": "Kompleksowa usługa wsparcia dla Klientów zagranicznych poszukujących wysokiej jakości specjalistów. W zależności od potrzeb, Nexio może pomóc w zbudowaniu zespołu (tu także kompetencje spoza IT), jak również zorganizować całe biuro na terenie Polski.",
     "advanced-team-leasing": "Bardziej rozbudowana forma team leasingu, która oferuje klientowi pełny zespół specjalistów, zarówno w zakresie umiejętności technicznych, jak również elementów zarządzania projektami i przejęcia odpowiedzialności za efekt końcowy.",
     "team-leasing": "Wynajmując cały zespół w ramach team leasingu, firma korzysta z wiedzy i umiejętności specjalistów, którzy są już zgrani jako zespół i posiadają doświadczenie w pracy nad podobnymi projektami.",
-    "body-leasing": "Jest strategią, która umożliwia firmom szybkie skorzystanie z naszych konsultantów, aby efektywnie zwiększyć swoją zdolność do realizacji projektów i osiągnięcia celów biznesowych.",
+    "body-leasing": "Jest strategią, która umożliwia firmom szybkie skorzystanie z usług naszych konsultantów, aby efektywnie zwiększyć swoją zdolność do realizacji projektów i osiągnięcia celów biznesowych.",
 
 
     "carrer-in-nexio": "KaRIERA W NEXIO",
     "shape-career" :"Kształtuj swoją",
     "with" :"karierę z",
-    "career-description": " Sam decydujesz o tym, w którym kierunku chcesz się rozwijać. My Ci to umożliwiamy i ułatwiamy.",
+    "career-description1": "Sam decydujesz o tym, w którym kierunku chcesz się rozwijać.",
+    "career-description2": "My Ci to umożliwiamy i ułatwiamy.",
 
     "possibilities": "Możliwości w nexio",
     "cooperation": "Zobacz, jak może przebiegać nasz współpraca.",
@@ -129,8 +130,8 @@
     "opinions-text": "Co myślą o pracy w Nexio?",
 
     "how-it-work": "jak to działa?",
-    "recruitment": "Etapy",
-    "stages": "Rekrutacji",
+    "stages1": "Etapy",
+    "stages2": "Rekrutacji",
 
     "hr": "Rozmowa HR",
     "technical": "Rozmowa techniczna", 
@@ -146,7 +147,7 @@
     "job-text2": "Przejdź do formularza zgłoszeniowego i wyślij swoje CV.",
 
     "application-form": "Formularz zgłoszeniowy",
-    "no-offer-title": "Nie znalasłeś odpowiedniej oferty?",
+    "no-offer-title": "Nie znalazłeś odpowiedniej oferty?",
     "contact-anyway": "Zgłoś się do nas mimo tego. Często na początku szukamy specjalistów w naszej bazie - warto się w niej znaleźć!",
     "send-application": "Wyślij nam swoje zgłoszenie", 
 
@@ -164,6 +165,10 @@
     "message": "Wiadomość",
     "message-content": "Wprowadź treść wiadomośći",
     "send-message": "Wyślij wiadomość",
+
+    "office": "Biuro",
+    "recruitment": "Rekrutacja",
+    "sales": "Sprzedaż",
 
     "agree": "Wysyłając wiadomość zgadzasz sie na regulamin serwisu Nexio.pl",
 

@@ -61,7 +61,7 @@
     "how-help": "How can we help",
     "areas": "Areas of specialization",
 
-    "business-analysis": "Business analysis",
+    "business-analysis": "Business & System analysis",
     "business-analysis-text": "Conducting a business and system analysis allows for a comprehensive understanding of the company's operations, the identification of relationships between different elements and the improvement of organizational processes. A joint business and system analysis enables identification of optimal solutions, elimination of inefficiencies and minimization of risks.",
     "system-analysis": "System analysis",
     "system-analysis-text": "",
@@ -103,7 +103,8 @@
     "carrer-in-nexio": "Carrer in nexio",
     "shape-career" :"Shape your career",
     "with" :"with",
-    "career-description": "It is YOU who decide in which direction you want to develop. We make it easy and possible for you",
+    "career-description1": "It is YOU who decide in which direction you want to develop.",
+    "career-description2": "We make it easy and possible for you",
 
     "possibilities": "Possibilities in Nexio",
     "cooperation": "See how our cooperation can looks like.",
@@ -126,8 +127,8 @@
     "opinions-text": "Co myślą o pracy w Nexio?",
 
     "how-it-work": "How does it work?",
-    "recruitment": "Recruitment",
-    "stages": "stages",
+    "stages1": "Recruitment",
+    "stages2": "stages",
 
     "hr": "HR conversations",
     "technical": "Technical interview", 
@@ -160,6 +161,10 @@
     "message": "Message",
     "message-content": "Enter the content of the message",
     "send-message": "Send a message",
+
+    "office": "Office",
+    "recruitment": "Recruitment",
+    "sales": "Sales",
 
     "agree": "By sending a message you agree to the regulations of the Nexio.pl website",
 
