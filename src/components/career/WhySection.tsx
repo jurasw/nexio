@@ -43,10 +43,10 @@ const WhySection = () => {
       >
         <Title title={t("advantages")} />
 
-        <Heading lineHeight={1.1} fontWeight={400} fontSize={"38px"} my={5}>
+        <Heading lineHeight={1.1} fontWeight={400} fontSize={"38px"} my={4}>
           <Text>{t("why")}</Text>
         </Heading>
-        <Text color={"#000"} mb={12}>
+        <Text color={"#000"} mb={16}>
           {t("atmosphere")}
         </Text>
         <Grid
