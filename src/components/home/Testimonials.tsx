@@ -30,10 +30,10 @@ const Testimonials = () => {
       text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
     },
     {
-      image: "testimonials/marek_kaminski.svg",
-      author: "Monika Samul",
-      position: "Product Manager",
-      text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
+      image: "testimonials/arimr.svg",
+      author: "Wiesław Szala",
+      position: "Dyrektor Departamentu Zarządzania Informatyką",
+      text: 'Z przyjemnością potwierdzamy, że firma Nexio Management w pełni sprostała naszym oczekiwaniom przy realizacji zamówienia na "Zapewnienie przez Wykonawcę Personelu Informatycznego". Usługi programistyczne, analityczne oraz testy aplikacji zostały wykonane z należytą starannością, terminowo i zgodnie z umową. Szczerze polecamy Nexio jako godnego zaufania partnera biznesowego. Dziękujemy za profesjonalne podejście do projektu!',
     },
     {
       image: "testimonials/marek_kaminski.svg",
@@ -42,10 +42,10 @@ const Testimonials = () => {
       text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
     },
     {
-      image: "testimonials/marek_kaminski.svg",
-      author: "Monika Samul",
-      position: "Product Manager",
-      text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
+      image: "testimonials/arimr.svg",
+      author: "Wiesław Szala",
+      position: "Dyrektor Departamentu Zarządzania Informatyką",
+      text: 'Z przyjemnością potwierdzamy, że firma Nexio Management w pełni sprostała naszym oczekiwaniom przy realizacji zamówienia na "Zapewnienie przez Wykonawcę Personelu Informatycznego". Usługi programistyczne, analityczne oraz testy aplikacji zostały wykonane z należytą starannością, terminowo i zgodnie z umową. Szczerze polecamy Nexio jako godnego zaufania partnera biznesowego. Dziękujemy za profesjonalne podejście do projektu!',
     },
     {
       image: "testimonials/marek_kaminski.svg",
@@ -186,14 +186,14 @@ const Testimonials = () => {
                     position="relative"
                     fontFamily={"Red Hat Display"}
                   >
-                    <Image src={item.image} mb={5} />
+                    <Image src={item.image} mb={5} maxW={"75%"} />
                     <Text
                       fontSize="16px"
                       mb={2}
                       overflow="hidden"
                       fontWeight={400}
                     >
-                      {item.text.substring(0, 315)}
+                      {item.text.substring(0, 300)}
                       {"... "}
                       <span
                         style={{
@@ -266,7 +266,7 @@ const Testimonials = () => {
             </Button>
           </ModalCloseButton>
           <ModalBody>
-            <Image src={modal.image} mb={5} />
+            <Image src={modal.image} mb={5} maxW={"75%"} />
             <Text fontSize="16px" mb={2} maxH={"175px"} overflow="hidden">
               {modal.text}
             </Text>
