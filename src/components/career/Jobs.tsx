@@ -21,6 +21,7 @@ const Jobs = () => {
   const [jobs, setJobs] = useState<Job[]>();
   const [query, setQuery] = useState("");
   const [location, setLocation] = useState("");
+  const [tech, setTech] = useState("");
   const fetchData = async () => {
     const response = await axios.get("/api/jobs");
     setJobs(response.data.data);
@@ -34,7 +35,17 @@ const Jobs = () => {
   }) => {
     setQuery(event.target.value);
     const response = await axios.get(
-      `/api/jobs?filters[Title][$containsi]=${event.target.value}&filters[Location][$containsi]=${location}`
+      `/api/jobs?filters[Title][$containsi]=${event.target.value}&filters[Location][$containsi]=${location}&filters[Technologies][$containsi]=${tech}`
+    );
+    setJobs(response.data.data);
+  };
+
+  const handleTech = async (event: {
+    target: { value: SetStateAction<string> };
+  }) => {
+    setTech(event.target.value);
+    const response = await axios.get(
+      `/api/jobs?filters[Title][$containsi]=${query}&filters[Location][$containsi]=${location}&filters[Technologies][$containsi]=${event.target.value}`
     );
     setJobs(response.data.data);
   };
@@ -44,14 +55,14 @@ const Jobs = () => {
   }) => {
     setLocation(event.target.value);
     const response = await axios.get(
-      `/api/jobs?filters[Title][$containsi]=${query}&filters[Location][$eq]=${event.target.value}`
+      `/api/jobs?filters[Title][$containsi]=${query}&filters[Location][$eq]=${event.target.value}&filters[Technologies][$containsi]=${tech}`
     );
     setJobs(response.data.data);
   };
 
   return (
     <>
-      <HStack fontFamily={"Red Hat Display"}>
+      <HStack fontFamily={"Red Hat Display"} p={2}>
         <Box w={"100%"}>
           <Text fontSize={"14px"} fontWeight={400} mb={2}>
             {t("job-position")}
@@ -69,6 +80,26 @@ const Jobs = () => {
               placeholder={t("search") || "search"}
               onChange={handleQuery}
               value={query}
+            />
+          </InputGroup>
+        </Box>
+        <Box w={"100%"}>
+          <Text fontSize={"14px"} fontWeight={400} mb={2}>
+            {t("job-technologies")}
+          </Text>
+          <InputGroup
+            border={"1px"}
+            borderRadius={"8px"}
+            borderColor={"#D3D3D3"}
+          >
+            <InputLeftElement pointerEvents="none">
+              <SearchIcon color="gray.300" />
+            </InputLeftElement>
+            <Input
+              type="text"
+              placeholder={t("search") || "search"}
+              onChange={handleTech}
+              value={tech}
             />
           </InputGroup>
         </Box>
@@ -128,8 +159,8 @@ const Jobs = () => {
                   {job.attributes.Location}
                 </Text>
                 <Text display={"flex"}>
-                  <Image src="/jobs/JobDepartament.svg" mr={2} />
-                  {job.attributes.Department}
+                  <Image src="/jobs/JobTechnologies.svg" mr={2} />
+                  {job.attributes.Technologies}
                 </Text>
               </HStack>
             </Box>

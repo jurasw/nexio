@@ -9,6 +9,7 @@ export interface Job {
     createdAt: string;
     updatedAt: string;
     publishedAt: string;
+    Technologies: string;
   };
 }
 [];
