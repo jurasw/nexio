@@ -1,10 +1,19 @@
 import React from "react";
-import { Button, Flex, Heading, Stack, Text, Image } from "@chakra-ui/react";
+import {
+  Button,
+  Flex,
+  Heading,
+  Stack,
+  Text,
+  Image,
+  Box,
+} from "@chakra-ui/react";
 import Card from "./home/CardProject";
 import Title from "./SectionTitle";
 import { Path } from "../pages/Paths";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
 const CaseStudy: React.FC = () => {
   const navigate = useNavigate();
@@ -75,16 +84,21 @@ const CaseStudy: React.FC = () => {
           mt="20px"
         >
           <Flex w="100%" h={["0em", "8em"]} mt="20px" />
-          <Card
-            imageUrl={"/appcase2.svg"}
-            title={""}
-            text={
-              "Firma specjalizująca się produkcji przesłon okiennych postanowiła stworzyć system, który docelowo miał znacząco zmienić proces składania zamówień przez współpracujących partnerów. Zaproponowane przez nasz zespół rozwiązanie - specjalny pulpit, który umożliwia składanie zamówień - eliminuje potrzebę tworzenia zewnętrznych portali B2B oraz dodatkowych integracji, znacząco usprawniając proces zamówień i ułatwiając współpracę z klientami."
-            }
-            buttonImg={"icons/arrow-right.svg"}
-            href={""}
-            stack={["React.js", ".Net", "Azure"]}
-          />
+          <motion.div
+            initial={{ y: "100%" }}
+            transition={{ duration: 0.5 }}
+            whileInView={{ y: 0 }}
+          >
+            <Box
+              borderRadius={"38px"}
+              maxW={"445px"}
+              w={"full"}
+              boxShadow={"2xl"}
+              overflow={"hidden"}
+            >
+              <Image src="/lifeplanapp.png" />
+            </Box>
+          </motion.div>
         </Flex>
       </Flex>
       <Stack align={"center"} marginTop={"80px"}>
