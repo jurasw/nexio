@@ -95,6 +95,7 @@ const CaseStudy: React.FC = () => {
               w={"full"}
               boxShadow={"2xl"}
               overflow={"hidden"}
+              h="82%"
             >
               <Image src="/lifeplanapp.png" />
             </Box>
