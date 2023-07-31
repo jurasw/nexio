@@ -77,13 +77,13 @@ const CaseStudy: React.FC = () => {
           <Flex w="100%" h={["0em", "8em"]} mt="20px" />
           <Card
             imageUrl={"/appcase2.svg"}
-            title={"LifePlan App"}
+            title={""}
             text={
-              "LifePlan App pomaga odkryć własny potencjał oraz wzmocnić odporność psychiczną. Aplikacja umożliwia usprawnienie własnej pracy oraz zarządzanie czasem i zadaniami."
+              "Firma specjalizująca się produkcji przesłon okiennych postanowiła stworzyć system, który docelowo miał znacząco zmienić proces składania zamówień przez współpracujących partnerów. Zaproponowane przez nasz zespół rozwiązanie - specjalny pulpit, który umożliwia składanie zamówień - eliminuje potrzebę tworzenia zewnętrznych portali B2B oraz dodatkowych integracji, znacząco usprawniając proces zamówień i ułatwiając współpracę z klientami."
             }
             buttonImg={"icons/arrow-right.svg"}
             href={""}
-            stack={["Flutter", "React", "iOS", "Android"]}
+            stack={["React.js", ".Net", "Azure"]}
           />
         </Flex>
       </Flex>

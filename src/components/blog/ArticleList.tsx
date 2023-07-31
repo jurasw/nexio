@@ -20,10 +20,22 @@ import moment from "moment";
 const Blog = () => {
   const { t } = useTranslation();
   const [articleList, setArticleList] = useState<BlogTile[]>();
+  const [news, setNews] = useState<BlogTile[]>();
   const [query, setQuery] = useState("");
   const fetchData = async () => {
-    const response = await axios.get(`/api/blogs?populate=*`);
-    setArticleList(response.data.data);
+    const response = await axios.get(
+      `/api/blogs?populate=*&sort[0]=createdAt:desc`
+    );
+    const newsResponse = await axios.get(
+      `/api/blogs?populate=*&sort[0]=createdAt:desc&pagination[limit]=2`
+    );
+    if (Array.isArray(response.data.data) && response.data.data.length >= 2) {
+      const articleListWithoutFirstTwo = response.data.data.slice(2);
+      setArticleList(articleListWithoutFirstTwo);
+    } else {
+      setArticleList([]);
+    }
+    setNews(newsResponse.data.data);
   };
   useEffect(() => {
     fetchData();
@@ -70,24 +82,15 @@ const Blog = () => {
         </InputGroup>
       </HStack>
       <HStack gap={4} mb={16}>
-        <ArticleTile
-          id={5}
-          imageUrl={"/batest2.png"}
-          date={"24 Kwietnia 2023"}
-          title={"Facylitacja, czyli jak poradzić sobie ze spotkaniami"}
-          text={
-            "Żyjemy w świecie spotkań, warsztatów, szkoleń. Część z nich prowadzimy my, na większość jesteśmy zapraszani, czasami z jakimś konkretnym zadaniem,..."
-          }
-        />
-        <ArticleTile
-          id={4}
-          imageUrl={"/batest1.png"}
-          date={"24 Kwietnia 2023"}
-          title={"Facylitacja, czyli jak poradzić sobie ze spotkaniami"}
-          text={
-            "Żyjemy w świecie spotkań, warsztatów, szkoleń. Część z nich prowadzimy my, na większość jesteśmy zapraszani, czasami z jakimś konkretnym zadaniem,..."
-          }
-        />
+        {news?.map((article) => (
+          <ArticleTile
+            id={article.id}
+            imageUrl={article.attributes.imageMain.data.attributes.url}
+            date={moment(article.attributes.publishedAt).format("DD MMMM YYYY")}
+            title={article.attributes.title}
+            text={article.attributes.description}
+          />
+        ))}
       </HStack>
       <Grid
         templateColumns={{
