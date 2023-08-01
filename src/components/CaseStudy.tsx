@@ -97,7 +97,7 @@ const CaseStudy: React.FC = () => {
               overflow={"hidden"}
               h="82%"
             >
-              <Image src="/lifeplanapp.png" />
+              <Image src="/lifeplanapp.png"  />
             </Box>
           </motion.div>
         </Flex>
