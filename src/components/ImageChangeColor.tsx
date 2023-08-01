@@ -10,7 +10,7 @@ const ImageChangeColor = ({ primaryImg, secondaryImg }: Params) => {
 
   return (
     <img
-      style={{ margin: "auto", height: "34px", width: "auto" }}
+      style={{ margin: "auto", height: "34px", width: "auto", maxWidth: "102px" }}
       onMouseOver={() => {
         if (imageRef.current) {
           imageRef.current.src = secondaryImg;

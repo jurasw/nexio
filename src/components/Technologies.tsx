@@ -136,6 +136,7 @@ const Technologies: React.FC = () => {
             />
             <p
               style={{
+                marginTop: "20px",
                 fontFamily: "Red Hat Display",
                 fontWeight: 700,
                 fontSize: "12px",
