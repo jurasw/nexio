@@ -124,7 +124,7 @@
 
     "opinions-title": "OPINIONS OF OUR CONSULTANTS",
     "opinions-header": "Our employees about us",
-    "opinions-text": "Co myślą o pracy w Nexio?",
+    "opinions-text": "What do they think about working at Nexio?",
 
     "how-it-work": "How does it work?",
     "stages1": "Recruitment",
@@ -177,6 +177,17 @@
     "recruitment-title": "Recruitment department",
     "recruitment-text1": "You want to work with us?",
     "recruitment-text2": "Write to us!",
+
+    "lifeplan-app": "LifePlan App helps you discover your own potential and strengthen your mental resilience. The app enables you to improve your own work and manage your time and tasks.",
+
+    "opinion-victoriia": "At Nexio, I have had and continue to have only wonderful supervisors! During the 2 years of working together, I never felt that I was alone. I know that I can talk to them with any question. For me, as a person who is not from Poland, this support is very important. In addition, I appreciate the atmosphere in the office - there is none of that unnecessary stiffness. I recommend Nexio to people who appreciate a good vibe at work!",
+    "opinion-mateusz": "As a Java developer, what I appreciate about Nexio is the opportunity to work in the latest versions of this programming language and the fact that I'm up to date with current trends and tools. Additionally, I enjoy the range of projects that include fields such as transportation, insurance, and banking that I have had the opportunity to participate in. Constant cooperation with architects, analysts, designers, and other developers helps me expand the technical aspects of software development and soft skills. As a result, I take part in the entire process of building applications and have the satisfaction of satisfying the customer.",
+    "opinion-bohdan": "I can describe my experience with Nexio Management as very rewarding - I started as a Senior Xamarin Developer and currently serve as Tech Lead in the Mobile Applications Department. Over the course of my career, I have completed more than six projects, demonstrating my commitment and skills. I am happy to have had the opportunity to develop at Nexio. I have experienced great teamwork here. It has been and continues to be a great journey and I am grateful for the opportunity to be part of such a company.",
+    "opinion-jacek": "I have been working at Nexio Management for over 7 years, as a .NET Developer. During this time, I have had the opportunity to be part of interesting projects for companies in many different industries. Thanks to the fact that we have numerous clients I think everyone can find a project for themselves in the technologies they like to work in. A big plus is that there's a very friendly atmosphere here. We form a harmonious team, even though the company has grown several times over these 7 years.",
+
+    "testimonial-monika": "The implementation of the project - LifePlan App, created in cooperation with Nexio Management sp. z o.o. - went very efficiently in a professional atmosphere. We experienced excellent communication and timeliness. The project team was committed and flexible, adapting to our changing needs and challenges. They were meticulous in understanding our requirements and offered innovative solutions that contributed to achieving the goals we set for the application. We could always count on the professional support of our mentor Project Manager. We are pleased to confirm that Nexio is a trustworthy and professional IT partner and highly recommend their services. Their excellent technical skills, professionalism, and commitment will contribute to the success of any project they are involved with.",
+    "testimonial-wieslaw": "We are pleased to confirm that Nexio Management has fully met our expectations in the execution of the contract for Contractor's Supply of IT Personnel. The programming, analysis and application testing services were performed with due diligence, on time and in accordance with the contract. We sincerely recommend Nexio as a trustworthy business partner. Thank you for your professional approach to the project!",
+    "testimonial-michal": " We have been working with Nexio Management since 2021. The services we use as part of the cooperation are related to the maintenance and development of systems and applications that support the operation of our company. The main technology we use as part of the collaboration is .NET. In addition, Nexio is also responsible for database migration, creation and maintenance of a mobile application developed using Xamarin technology. We can confidently confirm that Nexio's employees are distinguished by their high knowledge of dedicated systems and high commitment to the ongoing project. The team that provides the services consists of dozens of people, including, among others: PM, Business and System Analysts, .NET Developers, Testers, BI Developers, UI/UX Designer. We recommend Nexio as a reliable and proven IT service provider.",
 
     "news": "News",
 

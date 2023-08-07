@@ -52,7 +52,7 @@ const Blog = () => {
   };
 
   return (
-    <section style={{ padding: "10%" }}>
+    <section style={{ padding: "10%", minWidth: "100vw" }}>
       <Title title="blog" />
       <HStack mb={5}>
         <Heading

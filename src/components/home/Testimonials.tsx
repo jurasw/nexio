@@ -22,36 +22,38 @@ import { useTranslation } from "react-i18next";
 import { CloseIcon } from "@chakra-ui/icons";
 
 const Testimonials = () => {
+  const { t } = useTranslation();
+
   const testimonials = [
     {
       image: "testimonials/marek_kaminski.svg",
       author: "Monika Samul",
       position: "Product Manager",
-      text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
+      text: t("testimonial-monika"),
     },
     {
       image: "testimonials/arimr.svg",
       author: "Wiesław Szala",
       position: "Dyrektor Departamentu Zarządzania Informatyką",
-      text: 'Z przyjemnością potwierdzamy, że firma Nexio Management w pełni sprostała naszym oczekiwaniom przy realizacji zamówienia na "Zapewnienie przez Wykonawcę Personelu Informatycznego". Usługi programistyczne, analityczne oraz testy aplikacji zostały wykonane z należytą starannością, terminowo i zgodnie z umową. Szczerze polecamy Nexio jako godnego zaufania partnera biznesowego. Dziękujemy za profesjonalne podejście do projektu!',
+      text: t("testimonial-wieslaw"),
     },
     {
       image: "testimonials/maczfit.svg",
       author: "Michał Stabach",
       position: "Dyrektor IT",
-      text: "Z firmą Nexio Management współpracujemy od 2021 roku. Usługi, z których korzystamy w ramach współpracy dotyczą utrzymania i rozwoju systemów oraz aplikacji wspomagających działanie naszej firmy. Główną technologią, z której korzystamy w ramach współpracy jest .NET. Ponadto Nexio odpowiada również za migrację bazy danych, stworzenie i utrzymanie aplikacji mobilnej, stworzonej przy użyciu technologii Xamarin. Śmiało możemy potwierdzić, że pracownicy Nexio wyróżniają się wysoką wiedzą na temat dedykowanych systemów oraz dużym zaangażowaniem w prowadzonym projekcie. Zespół, który wykonuje usługi liczy kilkadziesiąt osób, w jego skład wchodzą, między innymi: PM, Analitycy Biznesowo-Systemowi, Programiści .NET, Testerzy, Programiści BI, UI/UX Designer. Polecamy firmę Nexio jako rzetelnego i sprawdzonego dostawcę usług informatycznych.",
+      text: t("testimonial-michal"),
     },
     {
       image: "testimonials/arimr.svg",
       author: "Wiesław Szala",
       position: "Dyrektor Departamentu Zarządzania Informatyką",
-      text: 'Z przyjemnością potwierdzamy, że firma Nexio Management w pełni sprostała naszym oczekiwaniom przy realizacji zamówienia na "Zapewnienie przez Wykonawcę Personelu Informatycznego". Usługi programistyczne, analityczne oraz testy aplikacji zostały wykonane z należytą starannością, terminowo i zgodnie z umową. Szczerze polecamy Nexio jako godnego zaufania partnera biznesowego. Dziękujemy za profesjonalne podejście do projektu!',
+      text: t("testimonial-wieslaw"),
     },
     {
       image: "testimonials/marek_kaminski.svg",
       author: "Monika Samul",
       position: "Product Manager",
-      text: "Realizacja projektu - aplikacji LifePlan App, tworzonego we współpracy z Nexio Management sp. z o.o. przebiegała bardzo sprawnie, w profesjonalnej atmosferze. Doświadczyliśmy doskonałej komunikacji i terminowości. Zespół projektowy był bardzo zaangażowany i elastyczny, dostosowując się do naszych zmieniających się potrzeb i wyzwań. Byli skrupulatni w zrozumieniu naszych wymagań i zaproponowali innowacyjne rozwiązania, które przyczyniły się do osiągnięcia naszych celów, jakie postawiliśmy dla aplikacji. W każdym momencie mogliśmy liczyć na merytoryczne wsparcie naszego opiekuna - Project Managera.Z przyjemnością potwierdzamy, że Nexio jest godnym zaufania i profesjonalnym partnerem w dziedzinie IT i gorąco polecamy ich usługi. Ich doskonałe umiejętności techniczne, profesjonalizm i zaangażowanie przyczynią się do sukcesu każdego projektu, z którym się zwiążą.",
+      text: t("testimonial-monika"),
     },
   ];
   const [activeIndex, setActiveIndex] = useState(0);
@@ -63,7 +65,6 @@ const Testimonials = () => {
   const handleClickDot = (index: number) => {
     setActiveIndex(index);
   };
-  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [modal, setModal] = useState({
     image: "",

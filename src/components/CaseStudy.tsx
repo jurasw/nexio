@@ -69,9 +69,7 @@ const CaseStudy: React.FC = () => {
           <Card
             imageUrl={"/appcase1.svg"}
             title={"LifePlan App"}
-            text={
-              "LifePlan App pomaga odkryć własny potencjał oraz wzmocnić odporność psychiczną. Aplikacja umożliwia usprawnienie własnej pracy oraz zarządzanie czasem i zadaniami."
-            }
+            text={t("lifeplan-app")}
             buttonImg={"icons/arrow-right.svg"}
             href={"https://kaminskifoundation.life/lifeplan-app/"}
             stack={["Flutter", "React", "iOS", "Android"]}
@@ -97,7 +95,7 @@ const CaseStudy: React.FC = () => {
               overflow={"hidden"}
               h="82%"
             >
-              <Image src="/lifeplanapp.png"  />
+              <Image src="/lifeplanapp.png" />
             </Box>
           </motion.div>
         </Flex>
